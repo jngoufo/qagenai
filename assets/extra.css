@@ -1,0 +1,9 @@
+:root {
+  /* Ton Bleu Foncé (#0e034d) */
+  --md-primary-fg-color:        #0e034d;
+  --md-primary-fg-color--light: #1f1266; /* Un peu plus clair pour les survols */
+  --md-primary-fg-color--dark:  #060033; /* Un peu plus foncé */
+
+  /* Ton Beige (#F4F1DE) */
+  --md-accent-fg-color:         #F4F1DE;
+}
