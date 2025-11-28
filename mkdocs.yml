@@ -1,0 +1,108 @@
+site_name: ISTQB GenAI Certification Prep Course
+site_url: https://qagenai.monwebmestre.tech/
+site_author: Monwebmestre
+site_description: A comprehensive course to prepare for the ISTQB GenAI certification exam for testing and quality-engineering professionals.
+# Configuration du Thème
+theme:
+  name: material
+  logo: assets/Monwebmestre-logo-512.jpg  # Le Logo du site
+  favicon: assets/Monwebmestre-fav-64.png # Le Favicon du site
+  language: en # Interface par défaut en Anglais
+  palette: 
+    - scheme: default
+      primary: custom
+      accent: custom
+  features:
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+  icon:
+    admonition:
+      example: fontawesome/solid/utensils
+      info: fontawesome/solid/graduation-cap
+      failure: fontawesome/solid/fire
+    repo: fontawesome/brands/github
+
+extra:
+  generator: false  # Désactive la mention "Made with Material for MkDocs"
+  # Liens sociaux
+  social:
+    - icon: fontawesome/solid/mug-hot
+      link: https://ko-fi.com/monwebmestre 
+      name: Buy me a Coffee
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:justin@monwebmestre.tech
+      name: Contact / Feedback
+  
+  consent:
+    title: Cookie Consent
+    description: >- 
+      I use cookies to analyze traffic. Do you accept?
+    actions:
+      - accept
+      - reject
+      - manage
+  
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX  
+
+extra_css:
+  - assets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+
+# Menu de navigation (Basé sur les noms de fichiers ANGLAIS)
+nav:
+  - 'Home': index.md
+  - 'Chapter 1':
+      - 'Introduction & Objectives': chapter1/introduction.md  
+      - '1.1 Foundations & Concepts': chapter1/1.1-foundations.md
+      - '1.2 Leveraging Generative AI': chapter1/1.2-leveraging-genai.md
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        # Configuration pour l'ANGLAIS (Défaut)
+        - locale: en
+          name: English
+          default: true
+          build: true
+
+        # Configuration pour le FRANÇAIS (Surcharge)
+        - locale: fr
+          name: Français
+          build: true
+          # 1. Traduction du Titre et de la Description du site
+          site_name: Cours de préparation à la certification ISTQB GenAI
+          site_description: Un cours complet pour préparer l'examen de certification ISTQB GenAI destiné aux professionnels des tests et de l'ingénierie de la qualité.
+          
+          # 2. Traduction du Copyright (Optionnel, pour avoir "Tous droits réservés")
+          copyright: >
+            &copy; 2025 made by 
+            <a href="https://monwebmestre.tech" target="_blank" rel="noopener">Monwebmestre</a>
+            - Tous droits réservés.
+
+          # 3. Traduction du Menu (On redéfinit le menu FR explicitement)
+          nav:
+            - 'Accueil': index.md
+            - 'Chapitre 1':
+                - 'Introduction et Objectifs': chapter1/introduction.md  
+                - '1.1 Fondements et concepts': chapter1/1.1-foundations.md
+                - '1.2 Exploiter l''IA générative': chapter1/1.2-leveraging-genai.md
+
+# Copyright personnalisé (HTML autorisé)
+copyright: >
+  &copy; 2025 made by 
+  <a href="https://monwebmestre.tech" target="_blank" rel="noopener">Monwebmestre</a>
+  - All rights reserved.
