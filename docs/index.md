@@ -1,25 +1,25 @@
 # Welcome to the ISTQB CT-GenAI Certification Guide
 
-**Prepare for your "Testing with Generative AI" certification without reading the dry 70-page official syllabus.**
+**Prepare for your "Testing with Generative AI" certification by reading the 70-page official syllabus… or this simpler guide.**
 
-This site is a comprehensive, free, and interactive course designed for QA and IT professionals.
+This site is a comprehensive, free, and interactive course on using generative AI in testing. It is designed for testing and software quality (QA) professionals.
 
 ---
 
 ## 🎯 Why this course?
 
 The official syllabus is dense. Very dense.
-My goal is to simplify every concept (LLM, Prompting, RAG, Risks...) to help you:
-1.  **Truly understand** how Generative AI works.
-2.  **Validate** the Learning Objectives (LO) of the exam.
+My goal is to simplify every concept (LLM, Prompting, RAG, Risks...) to help you:<br>
+1.  **Truly understand** how Generative AI works.<br>
+2.  **Validate** the Learning Objectives (LO) of the exam.<br>
 3.  **Pass** your certification on the first try.
 
 ## 🥑 The Red Thread: "MagicFridge"
 
 To avoid abstract theory, this entire course is illustrated by a unique concrete case study.
-You will follow the adventures of the QA team at **MagicFridge**, a fictional start-up whose mobile app uses AI to:
-*   Invent recipes (Text Generation).
-*   Scan fridges (Computer Vision).
+You will follow the adventures of the QA team at **MagicFridge**, a fictional start-up whose mobile app uses AI to:<br>
+*   Invent recipes (Text Generation).<br>
+*   Scan fridges (Computer Vision).<br>
 *   Manage inventory (Code Generation).
 
 Every technical concept will be immediately applied to this context.

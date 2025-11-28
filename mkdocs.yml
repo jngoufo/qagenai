@@ -2,12 +2,13 @@ site_name: ISTQB GenAI Certification Prep Course
 site_url: https://qagenai.monwebmestre.tech/
 site_author: Monwebmestre
 site_description: A comprehensive course to prepare for the ISTQB GenAI certification exam for testing and quality-engineering professionals.
+
 # Configuration du Thème
 theme:
   name: material
-  logo: assets/Monwebmestre-logo-512.jpg  # Le Logo du site
-  favicon: assets/Monwebmestre-fav-64.png # Le Favicon du site
-  language: en # Interface par défaut en Anglais
+  logo: assets/Monwebmestre-logo-512.jpg
+  favicon: assets/Monwebmestre-fav-64.png
+  language: en # Langue par défaut (Anglais)
   palette: 
     - scheme: default
       primary: custom
@@ -27,8 +28,23 @@ theme:
       failure: fontawesome/solid/fire
     repo: fontawesome/brands/github
 
+# Configuration CSS Personnalisée
+extra_css:
+  - assets/extra.css
+
+# Configuration des Extensions Markdown
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+
+# -------------------------------------------------------------------------
+# CONFIGURATION SUPPLÉMENTAIRE (Social, Analytics, Cookies)
+# -------------------------------------------------------------------------
 extra:
-  generator: false  # Désactive la mention "Made with Material for MkDocs"
+  generator: false  # Désactive la mention "Made with Material..."
+  
   # Liens sociaux
   social:
     - icon: fontawesome/solid/mug-hot
@@ -38,29 +54,38 @@ extra:
       link: mailto:justin@monwebmestre.tech
       name: Contact / Feedback
   
+  # Google Analytics
+  analytics:
+    provider: google
+    property: G-YL6KVB3K9Z
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: Yes, it was great!
+          data: 1
+          note: >-
+            Thanks! Feel free to buy me a coffee.
+        - icon: material/emoticon-sad-outline
+          name: No, not really
+          data: 0
+          note: >-
+            Sorry to hear that. Please send me feedback via email!
+
+  # Bannière Cookies (Version par défaut : ANGLAIS)
   consent:
     title: Cookie Consent
     description: >- 
-      I use cookies to analyze traffic. Do you accept?
+      I use cookies to analyze traffic and improve content.
+      No personal data is collected. Do you accept anonymous tracking?
     actions:
       - accept
       - reject
       - manage
-  
-  analytics:
-    provider: google
-    property: G-XXXXXXXXXX  
 
-extra_css:
-  - assets/extra.css
-
-markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - attr_list
-
-# Menu de navigation (Basé sur les noms de fichiers ANGLAIS)
+# -------------------------------------------------------------------------
+# MENU DE NAVIGATION (Version par défaut : ANGLAIS)
+# -------------------------------------------------------------------------
 nav:
   - 'Home': index.md
   - 'Chapter 1':
@@ -69,32 +94,44 @@ nav:
       - '1.2 Leveraging Generative AI': chapter1/1.2-leveraging-genai.md
       - '🧪 Practice Lab': chapter1/exercises.md
 
+# -------------------------------------------------------------------------
+# COPYRIGHT (Version par défaut : ANGLAIS)
+# -------------------------------------------------------------------------
+copyright: >
+  &copy; 2025 made by 
+  <a href="https://monwebmestre.tech" target="_blank" rel="noopener">Monwebmestre</a>
+  - All rights reserved.
+
+# -------------------------------------------------------------------------
+# PLUGINS & TRADUCTIONS (i18n)
+# -------------------------------------------------------------------------
 plugins:
   - search
   - i18n:
       docs_structure: folder
       languages:
-        # Configuration pour l'ANGLAIS (Défaut)
+        # --- Langue ANGLAISE (Défaut) ---
         - locale: en
           name: English
           default: true
           build: true
 
-        # Configuration pour le FRANÇAIS (Surcharge)
+        # --- Langue FRANÇAISE (Surcharge) ---
         - locale: fr
           name: Français
           build: true
-          # 1. Traduction du Titre et de la Description du site
-          site_name: Cours de préparation à la certification ISTQB GenAI
-          site_description: Un cours complet pour préparer l'examen de certification ISTQB GenAI destiné aux professionnels des tests et de l'ingénierie de la qualité.
           
-          # 2. Traduction du Copyright (Optionnel, pour avoir "Tous droits réservés")
+          # 1. Traduction des Métadonnées du site
+          site_name: Cours de préparation à la certification ISTQB GenAI
+          site_description: Un cours complet pour préparer l'examen de certification ISTQB GenAI.
+          
+          # 2. Traduction du Copyright
           copyright: >
             &copy; 2025 made by 
             <a href="https://monwebmestre.tech" target="_blank" rel="noopener">Monwebmestre</a>
             - Tous droits réservés.
 
-          # 3. Traduction du Menu (On redéfinit le menu FR explicitement)
+          # 3. Traduction du Menu
           nav:
             - 'Accueil': index.md
             - 'Chapitre 1':
@@ -102,10 +139,31 @@ plugins:
                 - '1.1 Fondements et concepts': chapter1/1.1-foundations.md
                 - '1.2 Exploiter l''IA générative': chapter1/1.2-leveraging-genai.md
                 - '🧪 Labo pratique': chapter1/exercises.md
-
-
-# Copyright personnalisé (HTML autorisé)
-copyright: >
-  &copy; 2025 made by 
-  <a href="https://monwebmestre.tech" target="_blank" rel="noopener">Monwebmestre</a>
-  - All rights reserved.
+          
+          # 4. Traduction de la section EXTRA (Cookies & Feedback)
+          extra:
+            consent:
+              title: Cookies & Suivi
+              description: >- 
+                J'utilise des cookies pour mesurer l'audience et améliorer le contenu.
+                Aucune donnée personnelle n'est collectée. Acceptez-vous le suivi anonyme ?
+              actions:
+                - accept
+                - reject
+                - manage
+            analytics:
+              provider: google
+              property: G-YL6KVB3K9Z
+              feedback:
+                title: Cette page vous a aidé ?
+                ratings:
+                  - icon: material/emoticon-happy-outline
+                    name: Oui, c'était top !
+                    data: 1
+                    note: >-
+                      Merci pour votre retour ! N'hésitez pas à m'offrir un café.
+                  - icon: material/emoticon-sad-outline
+                    name: Non, pas vraiment
+                    data: 0
+                    note: >-
+                      Désolé d'entendre ça. Envoyez-moi un courriel pour que j'améliore ce chapitre !

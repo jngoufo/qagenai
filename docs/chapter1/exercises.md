@@ -49,7 +49,7 @@ Click on the technology that matches the described feature.<br>
 *(Objective: understand tokenization - LO 1.1.2)*
 
 **Context:** you are testing the chatbot input limits. You type: *"I want to cook."*
-The model uses a standard Tokenizer.
+The model uses a standard tokenizer.
 
 ??? question "How many tokens does this sentence roughly consume?"
     **Answer: 5 to 6 tokens.**

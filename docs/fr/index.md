@@ -1,25 +1,25 @@
 # Bienvenue sur le Guide de Certification ISTQB CT-GenAI
 
-**Préparez votre certification "Testing with Generative AI" sans lire les 70 pages arides du syllabus officiel.**
+**Préparez votre certification "Testing with Generative AI" en lisant les 70 pages du syllabus officiel… ou bien ce guide plus simple.**
 
-Ce site est un cours complet, gratuit et interactif conçu pour les professionnels du test et de la qualité logicielle (QA).
+Ce site est un cours complet, gratuit et interactif sur l'utilisation de l'IA générative dans les tests. Il est conçu pour les professionnels du test et de la qualité logicielle (QA).
 
 ---
 
 ## 🎯 Pourquoi ce cours ?
 
 Le syllabus officiel est dense. Très dense.
-Mon objectif est de vulgariser chaque concept (LLM, Prompting, RAG, Risques...) pour vous permettre de :
-1.  **Comprendre** réellement comment fonctionne l'IA générative.
-2.  **Valider** les objectifs d'apprentissage (LO) de l'examen.
+Mon objectif est de vulgariser chaque concept (LLM, Prompting, RAG, Risques...) pour vous permettre de :<br>
+1.  **Comprendre** réellement comment fonctionne l'IA générative.<br>
+2.  **Valider** les objectifs d'apprentissage (LO) de l'examen.<br>
 3.  **Réussir** votre certification du premier coup.
 
 ## 🥑 Le Fil Rouge : "FrigoMagique"
 
 Pour éviter la théorie abstraite, tout ce cours est illustré par une étude de cas unique et concrète.
-Vous suivrez les aventures de l'équipe QA de **FrigoMagique**, une start-up fictive dont l'application mobile utilise l'IA pour :
-*   Inventer des recettes (Génération de texte).
-*   Scanner des frigos (Vision par ordinateur).
+Vous suivrez les aventures de l'équipe QA de **FrigoMagique**, une start-up fictive dont l'application mobile utilise l'IA pour :<br>
+*   Inventer des recettes (Génération de texte).<br>
+*   Scanner des frigos (Vision par ordinateur).<br>
 *   Gérer les stocks (Génération de code).
 
 Chaque notion technique sera immédiatement appliquée à ce contexte.

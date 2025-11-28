@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://qagenai.monwebmestre.tech/</loc>
+        <lastmod>2025-11-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qagenai.monwebmestre.tech/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/"/>
+    </url>
+    <url>
+        <loc>https://qagenai.monwebmestre.tech/chapter1/1.1-foundations/</loc>
+        <lastmod>2025-11-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qagenai.monwebmestre.tech/chapter1/1.1-foundations/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter1/1.1-foundations/"/>
+    </url>
+    <url>
+        <loc>https://qagenai.monwebmestre.tech/chapter1/1.2-leveraging-genai/</loc>
+        <lastmod>2025-11-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qagenai.monwebmestre.tech/chapter1/1.2-leveraging-genai/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter1/1.2-leveraging-genai/"/>
+    </url>
+    <url>
+        <loc>https://qagenai.monwebmestre.tech/chapter1/exercises/</loc>
+        <lastmod>2025-11-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qagenai.monwebmestre.tech/chapter1/exercises/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter1/exercises/"/>
+    </url>
+    <url>
+        <loc>https://qagenai.monwebmestre.tech/chapter1/introduction/</loc>
+        <lastmod>2025-11-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qagenai.monwebmestre.tech/chapter1/introduction/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter1/introduction/"/>
+    </url>
+    <url>
+        <loc>https://qagenai.monwebmestre.tech/fr/</loc>
+        <lastmod>2025-11-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qagenai.monwebmestre.tech/"/>
+    </url>
+    <url>
+        <loc>https://qagenai.monwebmestre.tech/fr/chapter1/1.1-foundations/</loc>
+        <lastmod>2025-11-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter1/1.1-foundations/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qagenai.monwebmestre.tech/chapter1/1.1-foundations/"/>
+    </url>
+    <url>
+        <loc>https://qagenai.monwebmestre.tech/fr/chapter1/1.2-leveraging-genai/</loc>
+        <lastmod>2025-11-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter1/1.2-leveraging-genai/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qagenai.monwebmestre.tech/chapter1/1.2-leveraging-genai/"/>
+    </url>
+    <url>
+        <loc>https://qagenai.monwebmestre.tech/fr/chapter1/exercises/</loc>
+        <lastmod>2025-11-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter1/exercises/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qagenai.monwebmestre.tech/chapter1/exercises/"/>
+    </url>
+    <url>
+        <loc>https://qagenai.monwebmestre.tech/fr/chapter1/introduction/</loc>
+        <lastmod>2025-11-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter1/introduction/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qagenai.monwebmestre.tech/chapter1/introduction/"/>
+    </url>
+</urlset>

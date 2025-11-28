@@ -49,7 +49,7 @@ Cliquez sur la technologie qui correspond à la fonctionnalité décrite.<br>
 *(Objectif : comprendre la tokenisation - LO 1.1.2)*
 
 **Contexte :** vous testez les limites de saisie du chatbot. Vous écrivez : *"Je veux cuisiner."*
-Le modèle utilise un "Tokenizer" standard.
+Le modèle utilise un "tokenizer" standard.
 
 ??? question "Combien de tokens cette phrase consomme-t-elle environ ?"
     **Réponse : 4 ou 5 tokens.**
