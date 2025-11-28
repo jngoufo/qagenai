@@ -67,6 +67,7 @@ nav:
       - 'Introduction & Objectives': chapter1/introduction.md  
       - '1.1 Foundations & Concepts': chapter1/1.1-foundations.md
       - '1.2 Leveraging Generative AI': chapter1/1.2-leveraging-genai.md
+      - '🧪 Practice Lab': chapter1/exercises.md
 
 plugins:
   - search
@@ -100,6 +101,8 @@ plugins:
                 - 'Introduction et Objectifs': chapter1/introduction.md  
                 - '1.1 Fondements et concepts': chapter1/1.1-foundations.md
                 - '1.2 Exploiter l''IA générative': chapter1/1.2-leveraging-genai.md
+                - '🧪 Labo pratique': chapter1/exercises.md
+
 
 # Copyright personnalisé (HTML autorisé)
 copyright: >
