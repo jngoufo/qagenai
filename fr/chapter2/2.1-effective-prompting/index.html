@@ -15,6 +15,8 @@
         <link rel="canonical" href="https://qagenai.monwebmestre.tech/fr/chapter2/2.1-effective-prompting/">
       
       
+        <link rel="prev" href="../introduction/">
+      
       
       
       <link rel="icon" href="../../../assets/Monwebmestre-fav-64.png">
@@ -22,7 +24,7 @@
     
     
       
-        <title>2.1 effective prompting - Cours de préparation à la certification ISTQB GenAI</title>
+        <title>2.1 Développement efficace de prompts - Cours de préparation à la certification ISTQB GenAI</title>
       
     
     
@@ -105,6 +107,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#21-developpement-efficace-de-prompts" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -136,7 +143,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2.1 effective prompting
+              2.1 Développement efficace de prompts
             
           </span>
         </div>
@@ -430,6 +437,206 @@
   
 
     
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Chapitre 2
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Chapitre 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction et Feuille de route
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    2.1 Développement efficace de prompts
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.1 Développement efficace de prompts
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#211-la-structure-dun-prompt-efficace" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.1 La structure d'un prompt efficace
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#212-techniques-de-prompting-fondamentales" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.2 Techniques de prompting fondamentales
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1.2 Techniques de prompting fondamentales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-le-prompt-chaining-chainage" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Le Prompt Chaining (chaînage)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-le-few-shot-prompting-apprentissage-par-lexemple" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Le Few-Shot Prompting (apprentissage par l'exemple)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-le-meta-prompting" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Le Meta-Prompting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#213-prompt-systeme-vs-prompt-utilisateur" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.3 Prompt Système vs Prompt Utilisateur
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -447,6 +654,76 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#211-la-structure-dun-prompt-efficace" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.1 La structure d'un prompt efficace
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#212-techniques-de-prompting-fondamentales" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.2 Techniques de prompting fondamentales
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1.2 Techniques de prompting fondamentales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-le-prompt-chaining-chainage" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Le Prompt Chaining (chaînage)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-le-few-shot-prompting-apprentissage-par-lexemple" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Le Few-Shot Prompting (apprentissage par l'exemple)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-le-meta-prompting" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Le Meta-Prompting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#213-prompt-systeme-vs-prompt-utilisateur" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.3 Prompt Système vs Prompt Utilisateur
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -462,9 +739,107 @@
 
 
 
-  <h1>2.1 effective prompting</h1>
+<h1 id="21-developpement-efficace-de-prompts">2.1 Développement efficace de prompts</h1>
+<p>Un prompt n'est pas juste une question posée à la volée. C'est une instruction technique qui doit être <strong>ingéniée</strong>. Pour <strong>FrigoMagique</strong>, la différence entre un ingénieur junior et un senior se joue souvent ici : la capacité à obtenir exactement ce qu'on veut de l'IA.</p>
+<h2 id="211-la-structure-dun-prompt-efficace">2.1.1 La structure d'un prompt efficace</h2>
+<p>Pour obtenir des résultats cohérents, un prompt ne doit pas être une phrase vague. Il doit suivre une structure précise. L'ISTQB identifie <strong>6 composants clés</strong> :</p>
+<ol>
+<li><strong>Rôle (persona) :</strong> qui l'IA doit-elle imiter ?</li>
+<li><strong>Contexte :</strong> de quoi parle-t-on ?</li>
+<li><strong>Instruction :</strong> que doit-elle faire (verbe d'action) ?</li>
+<li><strong>Données d'entrée :</strong> sur quoi doit-elle travailler ?</li>
+<li><strong>Contraintes :</strong> ce qu'elle ne doit PAS faire.</li>
+<li><strong>Format de sortie :</strong> à quoi doit ressembler la réponse ?</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Fil rouge : FrigoMagique</p>
+<p>Voici un exemple simple de prompt structuré pour tester la fonctionnalité "Panier" :</p>
+<ul>
+<li><strong>Rôle :</strong> agis comme une analyste de test senior certifié ISTQB.</li>
+<li><strong>Contexte :</strong> nous testons le module "Panier" de l'application FrigoMagique.</li>
+<li><strong>Instruction :</strong> génère des cas de test négatifs pour le champ "Code Promo".</li>
+<li><strong>Données :</strong> ce champ accepte 10 caractères alphanumériques max.</li>
+<li><strong>Contraintes :</strong> ne génère pas de code, uniquement des descriptions textuelles. N'inclut pas de tests de performance.</li>
+<li><strong>Sortie :</strong> fournis le résultat sous forme de tableau Markdown avec colonnes ID, Scénario, Oracle.</li>
+</ul>
+</div>
+<hr />
+<h2 id="212-techniques-de-prompting-fondamentales">2.1.2 Techniques de prompting fondamentales</h2>
+<p>Au-delà de la structure, il existe des techniques pour "guider" l'intelligence du modèle.</p>
+<h3 id="1-le-prompt-chaining-chainage">1. Le Prompt Chaining (chaînage)</h3>
+<p>Cette technique consiste à diviser une tâche complexe en sous-étapes séquentielles. La sortie de l'étape 1 devient l'entrée de l'étape 2.</p>
+<div class="admonition example">
+<p class="admonition-title">Fil rouge : FrigoMagique</p>
+<ul>
+<li><em>Prompt 1 :</em> "Analyse cette User Story sur l'ajout d'ingrédients et liste les règles de gestion."</li>
+<li><em>Prompt 2 :</em> "À partir de ces règles, génère les cas de test nominaux."</li>
+<li><em>Prompt 3 :</em> "Transforme ces cas de test en scripts Gherkin."</li>
+</ul>
+<p><em>Pourquoi ?</em> Cela évite que l'IA "oublie" des règles en essayant de tout faire en même temps.</p>
+</div>
+<h3 id="2-le-few-shot-prompting-apprentissage-par-lexemple">2. Le Few-Shot Prompting (apprentissage par l'exemple)</h3>
+<p>Au lieu de tout expliquer (zero-shot), on donne à l'IA quelques exemples (shots) de ce qu'on attend.</p>
+<div class="admonition example">
+<p class="admonition-title">Fil rouge : FrigoMagique</p>
+<p><em>Prompt :</em> "génère des données de test pour les légumes."
+*   <em>Exemple 1 :</em> Tomate -&gt; Catégorie: fruit-légume, Péremption: 7 jours.
+*   <em>Exemple 2 :</em> Carotte -&gt; Catégorie: racine, Péremption: 14 jours.
+*   <em>Tâche :</em> Fais de même pour "Poireau".</p>
+</div>
+<h3 id="3-le-meta-prompting">3. Le Meta-Prompting</h3>
+<p>C'est demander à l'IA d'améliorer ou de créer son propre prompt. C'est l'IA qui aide le testeur à mieux formuler sa demande.</p>
+<div class="admonition example">
+<p class="admonition-title">Fil rouge : FrigoMagique</p>
+<p><em>Testeur :</em> "Je veux tester la sécurité de l'API, mais je ne sais pas comment te le demander. Écris un prompt expert pour générer des tests d'injection SQL sur l'API de recettes."</p>
+</div>
+<hr />
+<h2 id="213-prompt-systeme-vs-prompt-utilisateur">2.1.3 Prompt Système vs Prompt Utilisateur</h2>
+<p>Il est crucial de distinguer ces deux niveaux d'interaction, surtout lors de l'utilisation d'API ou d'outils avancés.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Exemple FrigoMagique</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>System Prompt</strong></td>
+<td style="text-align: left;">Définit le comportement global, le ton et les règles immuables de l'IA. C'est la "personnalité" du chatbot.</td>
+<td style="text-align: left;"><em>"Tu es G.U.S, l'assistant QA de FrigoMagique. Tu es strict, concis, et tu réponds toujours en français. Tu refuses de générer du code malveillant."</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>User Prompt</strong></td>
+<td style="text-align: left;">L'instruction spécifique envoyée à l'instant T. C'est ce que tape la testeuse.</td>
+<td style="text-align: left;"><em>"Vérifie si cette liste d'ingrédients contient des allergènes."</em></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div class="admonition info">
+<p class="admonition-title">🎓 Point syllabus (résumé K2)</p>
+<ul>
+<li>Un prompt robuste contient <strong>6 éléments</strong> : rôle, contexte, instruction, données, contraintes, sortie.</li>
+<li><strong>Prompt Chaining (chaînage) :</strong> décomposer une tâche complexe en une séquence d'étapes logiques.</li>
+<li><strong>Few-Shot Prompting :</strong> fournir des exemples concrets pour guider le raisonnement et le format de réponse de l'IA.</li>
+<li><strong>System Prompt :</strong> la configuration globale et les règles de comportement (souvent invisibles pour l'utilisateur final).</li>
+</ul>
+</div>
+<p><br></p>
+<hr>
 
-
+<div class="admonition quote">
+<p class="admonition-title">Ce cours vous est utile ?</p>
+<p>Ce contenu est <strong>100% gratuit</strong>. Si cette section sur FrigoMagique vous a aidé :</p>
+<p><div style="text-align: center; margin-top: 15px;">
+    <a href='https://ko-fi.com/monwebmestre' target='_blank'>
+        <img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Soutenez-moi sur Ko-fi' />
+    </a>
+    <br>
+    <em>C'est 0% de frais pour moi, et 100% d'énergie pour la suite ! ☕</em>
+</div></p>
+</div>
 
 
 

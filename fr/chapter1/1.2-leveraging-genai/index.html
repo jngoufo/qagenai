@@ -523,6 +523,104 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Chapitre 2
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Chapitre 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction et Feuille de route
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/2.1-effective-prompting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.1 Développement efficace de prompts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -615,14 +713,14 @@
 <p><strong>1. Analyse et amélioration des exigences :</strong><br>
 Avant même de tester, l'IA peut relire les spécifications. Grâce à sa compréhension du langage naturel, elle identifie les ambiguïtés ou les oublis.</p>
 <div class="admonition example">
-<p class="admonition-title">Fil Rouge : FrigoMagique</p>
+<p class="admonition-title">Fil rouge : FrigoMagique</p>
 <p>Le Product Owner rédige une User Story : <em>"L'utilisatrice peut scanner son frigo."</em>
 L'IA analyse cette phrase et interroge l'équipe : <em>"Manque de précision : que se passe-t-il s'il fait sombre ? Si le frigo est vide ? L'utilisateur doit-il être connecté ?"</em> Elle aide à clarifier les critères d'acceptation avant le début du développement.</p>
 </div>
 <p><strong>2. Génération de cas de test et d'oracles :</strong><br>
 C'est l'usage le plus courant. Sur la base d'une exigence, l'IA génère des scénarios de test complets, incluant les étapes et les résultats attendus (les oracles).</p>
 <div class="admonition example">
-<p class="admonition-title">Fil Rouge : FrigoMagique</p>
+<p class="admonition-title">Fil rouge : FrigoMagique</p>
 <p>Le testeur demande à l'IA : <em>"Propose-moi des cas de test pour la fonction 'Suggérer une recette' à partir du contenu du frigo."</em></p>
 <p>L'IA génère un tableau complet avec le scénario et le résultat attendu (<strong>l'Oracle</strong>) :</p>
 <ul>
@@ -646,13 +744,13 @@ C'est l'usage le plus courant. Sur la base d'une exigence, l'IA génère des sc�
 <p><strong>3. Génération de données de test :</strong><br>
 L'IA excelle à inventer des données réalistes mais fictives, respectant le format demandé (JSON, CSV, SQL).</p>
 <div class="admonition example">
-<p class="admonition-title">Fil Rouge : FrigoMagique</p>
+<p class="admonition-title">Fil rouge : FrigoMagique</p>
 <p>Le testeur a besoin de tester l'importation de reçus. Il demande à l'IA : <em>"Génère-moi un fichier CSV simulant 20 tickets de caisse de supermarchés français, avec des produits variés et des dates de 2024."</em> L'IA crée le jeu de données instantanément.</p>
 </div>
 <p><strong>4. Assistance à l'automatisation (génération de scripts) :</strong><br>
 Le modèle peut traduire une intention de test (en français) en code exécutable (Python, Selenium, Playwright).</p>
 <div class="admonition example">
-<p class="admonition-title">Fil Rouge : FrigoMagique</p>
+<p class="admonition-title">Fil rouge : FrigoMagique</p>
 <p>L'ingénieure QA demande : <em>"Écris un script Selenium pour se connecter à l'appli et cliquer sur 'Ajouter un yaourt'."</em> L'IA fournit le code prêt à l'emploi, réduisant drastiquement le temps d'écriture des scripts répétitifs.</p>
 </div>
 <p><strong>5. Analyse des résultats et rapports :</strong><br>
@@ -665,7 +763,7 @@ Face à des logs d'erreurs techniques ou des rapports d'exécution volumineux, l
 <strong>Avantages :</strong> très flexible, réponse immédiate, idéal pour le brainstorming ou l'apprentissage.<br>
 <strong>Limites :</strong> nécessite de copier-coller le contexte à chaque fois, risque de confidentialité des données (copier du code sensible dans un chat public).</p>
 <div class="admonition example">
-<p class="admonition-title">Fil Rouge : FrigoMagique</p>
+<p class="admonition-title">Fil rouge : FrigoMagique</p>
 <p>Un testeur junior utilise un chatbot pour comprendre un message d'erreur SQL qu'il ne connaît pas. Il colle l'erreur, et le Chatbot lui explique la cause et comment la reproduire.</p>
 </div>
 <h3 id="2-les-outils-de-test-bases-sur-les-llm-lintegration">2. Les outils de test basés sur les LLM (l'intégration)</h3>
@@ -673,7 +771,7 @@ Face à des logs d'erreurs techniques ou des rapports d'exécution volumineux, l
 <strong>Avantages :</strong> contexte automatique (l'outil connaît déjà vos User Stories), automatisation massive, meilleure sécurité des données (si instance privée).<br>
 <strong>Limites :</strong> moins de flexibilité conversationnelle, souvent payant.</p>
 <div class="admonition example">
-<p class="admonition-title">Fil Rouge : FrigoMagique</p>
+<p class="admonition-title">Fil rouge : FrigoMagique</p>
 <p>L'équipe de test utilise un plugin Jira "AI-Assisted". Lorsque la testeuse crée une nouvelle User Story, elle clique simplement sur un bouton <strong>"Générer les Tests"</strong>. L'outil lit la Story et crée automatiquement 5 cas de test Xray liés, sans que le testeur ait eu à écrire un seul prompt.</p>
 </div>
 <hr />
