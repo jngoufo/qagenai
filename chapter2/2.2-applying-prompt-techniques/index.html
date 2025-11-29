@@ -1,35 +1,37 @@
 
 <!doctype html>
-<html lang="fr" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Un cours complet pour préparer l'examen de certification ISTQB GenAI.">
+        <meta name="description" content="A comprehensive course to prepare for the ISTQB GenAI certification exam for testing and quality-engineering professionals.">
       
       
         <meta name="author" content="Monwebmestre">
       
       
-        <link rel="canonical" href="https://qagenai.monwebmestre.tech/fr/chapter2/2.2-applying-techniques/">
+        <link rel="canonical" href="https://qagenai.monwebmestre.tech/chapter2/2.2-applying-prompt-techniques/">
+      
+      
+        <link rel="prev" href="../2.1-effective-prompting/">
       
       
       
-      
-      <link rel="icon" href="../../../assets/Monwebmestre-fav-64.png">
+      <link rel="icon" href="../../assets/Monwebmestre-fav-64.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
     
     
       
-        <title>2.2 Appliquer les techniques d'ingénierie des prompts aux tâches de test logiciel - Cours de préparation à la certification ISTQB GenAI</title>
+        <title>2.2 Applying Prompt Techniques - ISTQB GenAI Certification Prep Course</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
   
@@ -68,9 +70,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/extra.css">
+      <link rel="stylesheet" href="../../assets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -106,8 +108,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#22-appliquer-les-techniques-dingenierie-des-prompts-aux-taches-de-test-logiciel" class="md-skip">
-          Aller au contenu
+        <a href="#22-applying-prompt-engineering-techniques-to-software-testing-tasks" class="md-skip">
+          Skip to content
         </a>
       
     </div>
@@ -121,10 +123,10 @@
   
 
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="../../" title="Cours de préparation à la certification ISTQB GenAI" class="md-header__button md-logo" aria-label="Cours de préparation à la certification ISTQB GenAI" data-md-component="logo">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ISTQB GenAI Certification Prep Course" class="md-header__button md-logo" aria-label="ISTQB GenAI Certification Prep Course" data-md-component="logo">
       
-  <img src="../../../assets/Monwebmestre-logo-512.jpg" alt="logo">
+  <img src="../../assets/Monwebmestre-logo-512.jpg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -135,13 +137,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Cours de préparation à la certification ISTQB GenAI
+            ISTQB GenAI Certification Prep Course
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2.2 Appliquer les techniques d'ingénierie des prompts aux tâches de test logiciel
+              2.2 Applying Prompt Techniques
             
           </span>
         </div>
@@ -167,20 +169,20 @@
       <div class="md-header__option">
   <div class="md-select">
     
-    <button class="md-header__button md-icon" aria-label="Sélectionner la langue">
+    <button class="md-header__button md-icon" aria-label="Select language">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
     </button>
     <div class="md-select__inner">
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="../../../chapter2/2.2-applying-techniques/" hreflang="en" class="md-select__link">
+            <a href="./" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="./" hreflang="fr" class="md-select__link">
+            <a href="../../fr/chapter2/2.2-applying-prompt-techniques/" hreflang="fr" class="md-select__link">
               Français
             </a>
           </li>
@@ -201,16 +203,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Recherche">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -223,7 +225,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initialisation de la recherche
+            Initializing search
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -259,12 +261,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../" title="Cours de préparation à la certification ISTQB GenAI" class="md-nav__button md-logo" aria-label="Cours de préparation à la certification ISTQB GenAI" data-md-component="logo">
+    <a href="../.." title="ISTQB GenAI Certification Prep Course" class="md-nav__button md-logo" aria-label="ISTQB GenAI Certification Prep Course" data-md-component="logo">
       
-  <img src="../../../assets/Monwebmestre-logo-512.jpg" alt="logo">
+  <img src="../../assets/Monwebmestre-logo-512.jpg" alt="logo">
 
     </a>
-    Cours de préparation à la certification ISTQB GenAI
+    ISTQB GenAI Certification Prep Course
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -276,12 +278,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Accueil
+    Home
     
   </span>
   
@@ -321,7 +323,7 @@
   
   
   <span class="md-ellipsis">
-    Chapitre 1
+    Chapter 1
     
   </span>
   
@@ -332,7 +334,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Chapitre 1
+            Chapter 1
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -348,7 +350,7 @@
   
   
   <span class="md-ellipsis">
-    Introduction et Objectifs
+    Introduction & Objectives
     
   </span>
   
@@ -371,7 +373,7 @@
   
   
   <span class="md-ellipsis">
-    1.1 Fondements et concepts
+    1.1 Foundations & Concepts
     
   </span>
   
@@ -394,7 +396,7 @@
   
   
   <span class="md-ellipsis">
-    1.2 Exploiter l'IA générative
+    1.2 Leveraging Generative AI
     
   </span>
   
@@ -417,7 +419,7 @@
   
   
   <span class="md-ellipsis">
-    🧪 Laboratoire pratique
+    🧪 Practice Lab
     
   </span>
   
@@ -439,8 +441,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -451,13 +455,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -465,7 +467,7 @@
   
   
   <span class="md-ellipsis">
-    Chapitre 2
+    Chapter 2
     
   </span>
   
@@ -473,10 +475,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Chapitre 2
+            Chapter 2
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -492,7 +494,7 @@
   
   
   <span class="md-ellipsis">
-    Introduction et Feuille de route
+    Introduction & Roadmap
     
   </span>
   
@@ -515,12 +517,122 @@
   
   
   <span class="md-ellipsis">
-    2.1 Développement efficace de prompts
+    2.1 Effective Prompt Development
     
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    2.2 Applying Prompt Techniques
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.2 Applying Prompt Techniques
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#221-test-analysis-with-generative-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2.1 Test analysis with generative AI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#222-test-design-and-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2.2 Test design and implementation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#223-automated-regression-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2.3 Automated regression testing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#224-test-monitoring-and-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2.4 Test monitoring and control
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#225-choosing-the-right-prompting-technique" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2.5 Choosing the right prompting technique
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -546,7 +658,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -555,50 +667,50 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table des matières
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#221-analyse-des-tests-avec-lia-generative" class="md-nav__link">
+  <a href="#221-test-analysis-with-generative-ai" class="md-nav__link">
     <span class="md-ellipsis">
-      2.2.1 Analyse des tests avec l'IA générative
+      2.2.1 Test analysis with generative AI
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#222-conception-et-mise-en-uvre-des-tests" class="md-nav__link">
+  <a href="#222-test-design-and-implementation" class="md-nav__link">
     <span class="md-ellipsis">
-      2.2.2 Conception et mise en œuvre des tests
+      2.2.2 Test design and implementation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#223-tests-de-regression-automatises" class="md-nav__link">
+  <a href="#223-automated-regression-testing" class="md-nav__link">
     <span class="md-ellipsis">
-      2.2.3 Tests de régression automatisés
+      2.2.3 Automated regression testing
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#224-surveillance-et-controle-des-tests" class="md-nav__link">
+  <a href="#224-test-monitoring-and-control" class="md-nav__link">
     <span class="md-ellipsis">
-      2.2.4 Surveillance et contrôle des tests
+      2.2.4 Test monitoring and control
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#225-choisir-la-bonne-technique-de-prompting" class="md-nav__link">
+  <a href="#225-choosing-the-right-prompting-technique" class="md-nav__link">
     <span class="md-ellipsis">
-      2.2.5 Choisir la bonne technique de prompting
+      2.2.5 Choosing the right prompting technique
     </span>
   </a>
   
@@ -620,107 +732,107 @@
 
 
 
-<h1 id="22-appliquer-les-techniques-dingenierie-des-prompts-aux-taches-de-test-logiciel">2.2 Appliquer les techniques d'ingénierie des prompts aux tâches de test logiciel</h1>
-<p>Maintenant que vous savez structurer un prompt (le "comment"), voyons le "quand" et le "pourquoi".
-Pour l'équipe QA de <strong>FrigoMagique</strong>, l'IA est un outil de production qui intervient à chaque étape du processus de test, de l'analyse du besoin jusqu'au rapport final.</p>
-<h2 id="221-analyse-des-tests-avec-lia-generative">2.2.1 Analyse des tests avec l'IA générative</h2>
-<p>L'analyse est souvent l'étape la plus intellectuelle : comprendre ce qu'il faut tester. L'IA excelle ici pour détecter les trous dans la raquette.</p>
-<p>Elle peut <strong>identifier des défauts dans la base de test</strong> (exigences floues), <strong>générer des conditions de test</strong> et même <strong>suggérer des techniques de test</strong> (comme l'analyse des valeurs limites).</p>
+<h1 id="22-applying-prompt-engineering-techniques-to-software-testing-tasks">2.2 Applying prompt engineering techniques to software testing tasks</h1>
+<p>Now that you know how to structure a prompt (the "how"), let's look at the "when" and the "why".
+For the <strong>MagicFridge</strong> QA team, AI is a production tool that intervenes at every stage of the test process, from requirements analysis to final reporting.</p>
+<h2 id="221-test-analysis-with-generative-ai">2.2.1 Test analysis with generative AI</h2>
+<p>Analysis is often the most intellectual stage: understanding what needs to be tested. AI excels here at detecting gaps.</p>
+<p>It can <strong>identify defects in the test basis</strong> (unclear requirements), <strong>generate test conditions</strong>, and even <strong>suggest test techniques</strong> (such as boundary value analysis).</p>
 <div class="admonition example">
-<p class="admonition-title">Fil rouge : FrigoMagique</p>
-<p><strong>Contexte :</strong> La Product Owner fournit une maquette (image) du nouvel écran "Panier" et une User Story (texte) : <em>"L'utilisateur peut modifier la quantité."</em></p>
-<p><strong>L'action du testeur (Prompt Multimodal) :</strong>
-Il envoie l'image de la maquette et le texte à l'IA avec l'instruction : <em>"Agis comme un Business Analyst. Analyse cette maquette par rapport à la User Story. Identifie les incohérences et génère les critères d'acceptation manquants."</em></p>
-<p><strong>Le résultat de l'IA :</strong>
-1.  <em>"Alerte : La maquette montre un bouton 'Poubelle', mais la Story ne parle pas de suppression."</em>
-2.  <em>"Critère manquant : Que se passe-t-il si la quantité tombe à zéro ?"</em></p>
+<p class="admonition-title">Red thread: MagicFridge</p>
+<p><strong>Context:</strong> The Product Owner provides a wireframe (image) of the new "Cart" screen and a User Story (text): <em>"The user can modify the quantity."</em></p>
+<p><strong>The tester's action (multimodal prompt):</strong>
+He sends the wireframe image and the text to the AI with the instruction: <em>"Act as a Business Analyst. Analyze this wireframe against the User Story. Identify inconsistencies and generate missing acceptance criteria."</em></p>
+<p><strong>The AI result:</strong>
+1.  <em>"Alert: The wireframe shows a 'Trash' button, but the Story does not mention deletion."</em>
+2.  <em>"Missing criterion: What happens if the quantity drops to zero?"</em></p>
 </div>
-<h2 id="222-conception-et-mise-en-uvre-des-tests">2.2.2 Conception et mise en œuvre des tests</h2>
-<p>Une fois que nous savons <em>quoi</em> tester, il faut créer les cas de test et les données. C'est là que les techniques vues en 2.1 (Chain-of-thought, Few-shot) deviennent cruciales.</p>
-<p>L'IA permet de :
-1.  <strong>Générer des cas de test</strong> (Gherkin, tableaux).
-2.  <strong>Synthétiser des données de test</strong> (Anonymisation, génération de faux profils).
-3.  <strong>Planifier l'exécution</strong> (Ordonnancement des tests par priorité).</p>
+<h2 id="222-test-design-and-implementation">2.2.2 Test design and implementation</h2>
+<p>Once we know <em>what</em> to test, we need to create test cases and data. This is where the techniques seen in 2.1 (chain-of-thought, few-shot) become crucial.</p>
+<p>AI enables us to:
+1.  <strong>Generate test cases</strong> (Gherkin, tables).
+2.  <strong>Synthesize test data</strong> (anonymization, generation of fake profiles).
+3.  <strong>Schedule execution</strong> (prioritizing tests).</p>
 <div class="admonition example">
-<p class="admonition-title">Fil rouge : FrigoMagique</p>
-<p><strong>Objectif :</strong> Créer des tests BDD (Gherkin) pour la fonction "Ajout d'ingrédient".</p>
-<p><strong>Technique utilisée : Few-Shot Prompting (Apprentissage par l'exemple)</strong>
-Le testeur donne à l'IA deux exemples de scénarios Gherkin parfaits (Syntaxe, Style). Puis il demande : <em>"Génère le scénario pour un ingrédient périmé en suivant ce modèle."</em></p>
-<p><strong>Résultat :</strong> L'IA produit un scénario <code>Given-When-Then</code> parfaitement formaté, prêt à être copié dans l'outil d'automatisation.</p>
+<p class="admonition-title">Red thread: MagicFridge</p>
+<p><strong>Objective:</strong> Create BDD tests (Gherkin) for the "Add ingredient" feature.</p>
+<p><strong>Technique used: few-shot prompting (learning by example)</strong>
+The tester gives the AI two examples of perfect Gherkin scenarios (syntax, style). Then she asks: <em>"Generate the scenario for an expired ingredient following this model."</em></p>
+<p><strong>Result:</strong> The AI produces a perfectly formatted <code>Given-When-Then</code> scenario, ready to be copied into the automation tool.</p>
 </div>
-<h2 id="223-tests-de-regression-automatises">2.2.3 Tests de régression automatisés</h2>
-<p>C'est le domaine où le gain de temps est le plus spectaculaire. L'IA ne remplace pas l'ingénieur en automatisation, mais elle devient son "binôme de code" (Pair Programmer).</p>
-<p>Elle aide à :
-*   <strong>Générer des scripts</strong> (Selenium, Cypress, Playwright) à partir de descriptions textuelles.
-*   <strong>Réparer les tests (Self-healing) :</strong> Si un sélecteur CSS change, l'IA peut analyser le code HTML et proposer la correction.
-*   <strong>Analyser l'impact :</strong> Identifier quels tests relancer après une modification du code.</p>
+<h2 id="223-automated-regression-testing">2.2.3 Automated regression testing</h2>
+<p>This is the area where time savings are most spectacular. AI does not replace the automation engineer, but becomes his "coding partner" (Pair Programmer).</p>
+<p>It helps to:
+*   <strong>Generate scripts</strong> (Selenium, Cypress, Playwright) from textual descriptions.
+*   <strong>Repair tests (self-healing):</strong> If a CSS selector changes, the AI can analyze the HTML code and propose the fix.
+*   <strong>Analyze impact:</strong> Identify which tests to re-run after a code modification.</p>
 <div class="admonition example">
-<p class="admonition-title">Fil rouge : FrigoMagique</p>
-<p><strong>Le problème :</strong> Les développeurs ont renommé le bouton ID <code>#btn-add</code> en <code>#button-add-item</code>. Tous les tests automatisés échouent.</p>
-<p><strong>L'intervention de l'IA :</strong> Le testeur colle le log d'erreur et le nouveau code HTML dans le prompt.
-<strong>Instruction :</strong> <em>"Analyse cette erreur Selenium et propose le correctif."</em>
-<strong>Réponse :</strong> <em>"L'élément n'est plus trouvé. Remplacez <code>driver.find_element(By.ID, "btn-add")</code> par <code>driver.find_element(By.ID, "button-add-item")</code>."</em></p>
+<p class="admonition-title">Red thread: MagicFridge</p>
+<p><strong>The problem:</strong> Developers renamed the button ID <code>#btn-add</code> to <code>#button-add-item</code>. All automated tests are failing.</p>
+<p><strong>AI intervention:</strong> The tester pastes the error log and the new HTML code into the prompt.
+<strong>Instruction:</strong> <em>"Analyze this Selenium error and propose the fix."</em>
+<strong>Response:</strong> <em>"The element is no longer found. Replace <code>driver.find_element(By.ID, "btn-add")</code> with <code>driver.find_element(By.ID, "button-add-item")</code>."</em></p>
 </div>
-<h2 id="224-surveillance-et-controle-des-tests">2.2.4 Surveillance et contrôle des tests</h2>
-<p>Quand vous avez 5000 tests qui tournent chaque nuit, analyser les résultats est un cauchemar. L'IA peut "lire" ces montagnes de données pour en extraire du sens.</p>
-<p>Elle permet de <strong>résumer les rapports de test</strong>, de <strong>visualiser les métriques</strong> et de détecter des anomalies dans les logs que l'œil humain aurait ratées.</p>
+<h2 id="224-test-monitoring-and-control">2.2.4 Test monitoring and control</h2>
+<p>When you have 5,000 tests running every night, analyzing results is a nightmare. AI can "read" these mountains of data to extract meaning.</p>
+<p>It allows us to <strong>summarize test reports</strong>, <strong>visualize metrics</strong>, and detect anomalies in logs that the human eye might have missed.</p>
 <div class="admonition example">
-<p class="admonition-title">Fil rouge : FrigoMagique</p>
-<p>Lundi matin, 45 tests sont en échec. Au lieu de les ouvrir un par un, la Test Lead demande à l'IA : <em>"Analyse ces 45 logs d'erreur et groupe-les par cause racine."</em></p>
-<p><strong>L'Insight de l'IA :</strong> <em>"Sur les 45 échecs, 42 sont causés par un Timeout de l'API de paiement (Erreur 504). Les 3 autres sont des vrais bugs d'interface."</em></p>
-<p>Le gain de temps est immédiat : on sait qu'il faut appeler les développeurs Back-end, pas les développeurs Front-end.</p>
+<p class="admonition-title">Red thread: MagicFridge</p>
+<p>Monday morning, 45 tests failed. Instead of opening them one by one, the Test Lead asks the AI: <em>"Analyze these 45 error logs and group them by root cause."</em></p>
+<p><strong>AI insight:</strong> <em>"Out of 45 failures, 42 are caused by a Payment API Timeout (Error 504). The other 3 are real interface bugs."</em></p>
+<p>The time saving is immediate: she knows she needs to call the Back-end developers, not the Front-end developers.</p>
 </div>
-<h2 id="225-choisir-la-bonne-technique-de-prompting">2.2.5 Choisir la bonne technique de prompting</h2>
-<p>Le syllabus insiste : toutes les techniques ne se valent pas pour toutes les tâches. Voici le guide stratégique du testeur GenAI.</p>
+<h2 id="225-choosing-the-right-prompting-technique">2.2.5 Choosing the right prompting technique</h2>
+<p>The syllabus insists: not all techniques are equal for all tasks. Here is the GenAI tester's strategic guide.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Tâche de test</th>
-<th style="text-align: left;">Technique recommandée</th>
-<th style="text-align: left;">Pourquoi ?</th>
+<th style="text-align: left;">Test task</th>
+<th style="text-align: left;">Recommended technique</th>
+<th style="text-align: left;">Why?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Analyse complexe</strong> (ex: User Story ambiguë)</td>
-<td style="text-align: left;"><strong>Prompt Chaining</strong></td>
-<td style="text-align: left;">Découper le problème évite que l'IA ne se perde ou n'hallucine. On valide étape par étape.</td>
+<td style="text-align: left;"><strong>Complex analysis</strong> (e.g., ambiguous User Story)</td>
+<td style="text-align: left;"><strong>Prompt chaining</strong></td>
+<td style="text-align: left;">Breaking down the problem prevents the AI from getting lost or hallucinating. We validate step-by-step.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Génération répétitive</strong> (ex: Cas de test Gherkin)</td>
-<td style="text-align: left;"><strong>Few-Shot Prompting</strong></td>
-<td style="text-align: left;">L'exemple (le "Shot") force l'IA à respecter un format strict.</td>
+<td style="text-align: left;"><strong>Repetitive generation</strong> (e.g., Gherkin test case)</td>
+<td style="text-align: left;"><strong>Few-shot prompting</strong></td>
+<td style="text-align: left;">The example (the "shot") forces the AI to respect a strict format.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Exploration / Idéation</strong> (ex: Trouver des cas limites)</td>
-<td style="text-align: left;"><strong>Meta-Prompting</strong></td>
-<td style="text-align: left;">On demande à l'IA de réfléchir à la meilleure façon de tester, pour sortir des sentiers battus.</td>
+<td style="text-align: left;"><strong>Exploration / Ideation</strong> (e.g., finding edge cases)</td>
+<td style="text-align: left;"><strong>Meta-prompting</strong></td>
+<td style="text-align: left;">We ask the AI to think about the best way to test, to think outside the box.</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <div class="admonition info">
-<p class="admonition-title">🎓 Point syllabus (ce qu'il faut retenir)</p>
+<p class="admonition-title">🎓 Syllabus point (key takeaways)</p>
 <ul>
-<li><strong>Analyse :</strong> L'IA aide à clarifier la base de test et identifier les défauts en amont.</li>
-<li><strong>Conception :</strong> Elle génère cas de tests, oracles et données synthétiques.</li>
-<li><strong>Automatisation :</strong> Elle écrit et répare (self-healing) les scripts.</li>
-<li><strong>Management :</strong> Elle synthétise les logs et assiste la prise de décision.</li>
-<li><strong>Stratégie :</strong> Il faut adapter la technique de prompt (Chaining vs Few-shot) à la nature de la tâche.</li>
+<li><strong>Analysis:</strong> AI helps clarify the test basis and identify defects early.</li>
+<li><strong>Design:</strong> It generates test cases, oracles, and synthetic data.</li>
+<li><strong>Automation:</strong> It writes and repairs (self-healing) scripts.</li>
+<li><strong>Management:</strong> It synthesizes logs and assists decision-making.</li>
+<li><strong>Strategy:</strong> You must adapt the prompt technique (chaining vs few-shot) to the nature of the task.</li>
 </ul>
 </div>
 <p><br></p>
 <hr>
 
 <div class="admonition quote">
-<p class="admonition-title">Ce cours vous est utile ?</p>
-<p>Ce contenu est <strong>100% gratuit</strong>. Si cette section sur FrigoMagique vous a aidé :</p>
+<p class="admonition-title">Is this course useful?</p>
+<p>This content is <strong>100% free</strong>. If this section on MagicFridge helped you:</p>
 <p><div style="text-align: center; margin-top: 15px;">
     <a href='https://ko-fi.com/monwebmestre' target='_blank'>
-        <img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Soutenez-moi sur Ko-fi' />
+        <img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee' />
     </a>
     <br>
-    <em>C'est 0% de frais pour moi, et 100% d'énergie pour la suite ! ☕</em>
+    <em>It's 0% fees for me, and 100% fuel for the next chapter! ☕</em>
 </div></p>
 </div>
 
@@ -739,16 +851,16 @@ Le testeur donne à l'IA deux exemples de scénarios Gherkin parfaits (Syntaxe, 
   <form class="md-feedback" name="feedback" hidden>
     <fieldset>
       <legend class="md-feedback__title">
-        Cette page vous a aidé ?
+        Was this page helpful?
       </legend>
       <div class="md-feedback__inner">
         <div class="md-feedback__list">
           
-            <button class="md-feedback__icon md-icon" type="submit" title="Oui, c'était top !" data-md-value="1">
+            <button class="md-feedback__icon md-icon" type="submit" title="Yes, it was great!" data-md-value="1">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81"/></svg>
             </button>
           
-            <button class="md-feedback__icon md-icon" type="submit" title="Non, pas vraiment" data-md-value="0">
+            <button class="md-feedback__icon md-icon" type="submit" title="No, not really" data-md-value="0">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14"/></svg>
             </button>
           
@@ -765,7 +877,7 @@ Le testeur donne à l'IA deux exemples de scénarios Gherkin parfaits (Syntaxe, 
                 
                 
               
-              Merci pour votre retour ! N'hésitez pas à m'offrir un café.
+              Thanks! Feel free to buy me a coffee.
             </div>
           
             <div data-md-value="0" hidden>
@@ -778,7 +890,7 @@ Le testeur donne à l'IA deux exemples de scénarios Gherkin parfaits (Syntaxe, 
                 
                 
               
-              Je suis désolé. Envoyez-moi un courriel pour que j'améliore ce chapitre !
+              I'm sorry. Please send me feedback via email!
             </div>
           
         </div>
@@ -804,7 +916,7 @@ Le testeur donne à l'IA deux exemples de scénarios Gherkin parfaits (Syntaxe, 
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      &copy; 2025 made by  <a href="https://monwebmestre.tech" target="_blank" rel="noopener">Monwebmestre</a> - Tous droits réservés.
+      &copy; 2025 made by  <a href="https://monwebmestre.tech" target="_blank" rel="noopener">Monwebmestre</a> - All rights reserved.
 
     </div>
   
@@ -850,8 +962,8 @@ Le testeur donne à l'IA deux exemples de scénarios Gherkin parfaits (Syntaxe, 
 
 
 
-<h4>Cookies & Suivi</h4>
-<p>J'utilise des cookies pour mesurer l'audience et améliorer le contenu. Aucune donnée personnelle n'est collectée. Acceptez-vous le suivi anonyme ?</p>
+<h4>Cookie Consent</h4>
+<p>I use cookies to analyze traffic and improve content. No personal data is collected. Do you accept anonymous tracking?</p>
 <input class="md-toggle" type="checkbox" id="__settings" >
 <div class="md-consent__settings">
   <ul class="task-list">
@@ -883,21 +995,21 @@ Le testeur donne à l'IA deux exemples de scénarios Gherkin parfaits (Syntaxe, 
 <div class="md-consent__controls">
   
     
-      <button class="md-button md-button--primary">Accepter</button>
+      <button class="md-button md-button--primary">Accept</button>
     
     
     
   
     
     
-      <button type="reset" class="md-button md-button--primary">Refuser</button>
+      <button type="reset" class="md-button md-button--primary">Reject</button>
     
     
   
     
     
     
-      <label class="md-button" for="__settings">Paramétrer vos choix</label>
+      <label class="md-button" for="__settings">Manage settings</label>
     
   
 </div>
@@ -908,10 +1020,10 @@ Le testeur donne à l'IA deux exemples de scénarios Gherkin parfaits (Syntaxe, 
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.sections", "navigation.expand", "content.code.copy", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.expand", "content.code.copy", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>
