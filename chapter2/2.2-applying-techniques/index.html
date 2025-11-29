@@ -12,13 +12,9 @@
         <meta name="author" content="Monwebmestre">
       
       
-        <link rel="canonical" href="https://qagenai.monwebmestre.tech/chapter2/introduction/">
+        <link rel="canonical" href="https://qagenai.monwebmestre.tech/chapter2/2.2-applying-techniques/">
       
       
-        <link rel="prev" href="../../chapter1/exercises/">
-      
-      
-        <link rel="next" href="../2.1-effective-prompting/">
       
       
       <link rel="icon" href="../../assets/Monwebmestre-fav-64.png">
@@ -26,7 +22,7 @@
     
     
       
-        <title>Introduction & Roadmap - ISTQB GenAI Certification Prep Course</title>
+        <title>2.2 Applying prompt engineering techniques to software testing tasks - ISTQB GenAI Certification Prep Course</title>
       
     
     
@@ -110,7 +106,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction-to-chapter-2" class="md-skip">
+        <a href="#22-applying-prompt-engineering-techniques-to-software-testing-tasks" class="md-skip">
           Skip to content
         </a>
       
@@ -145,7 +141,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction & Roadmap
+              2.2 Applying prompt engineering techniques to software testing tasks
             
           </span>
         </div>
@@ -184,7 +180,7 @@
           </li>
         
           <li class="md-select__item">
-            <a href="../../fr/chapter2/introduction/" hreflang="fr" class="md-select__link">
+            <a href="../../fr/chapter2/2.2-applying-techniques/" hreflang="fr" class="md-select__link">
               Français
             </a>
           </li>
@@ -443,8 +439,6 @@
       
   
   
-    
-  
   
   
     
@@ -457,11 +451,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -477,7 +473,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Chapter 2
@@ -488,32 +484,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Introduction & Roadmap
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
         
   
   
@@ -524,35 +498,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#chapter-roadmap" class="md-nav__link">
-    <span class="md-ellipsis">
-      🗺️ Chapter roadmap
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -615,9 +560,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#chapter-roadmap" class="md-nav__link">
+  <a href="#221-test-analysis-with-generative-ai" class="md-nav__link">
     <span class="md-ellipsis">
-      🗺️ Chapter roadmap
+      2.2.1 Test analysis with generative AI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#222-test-design-and-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2.2 Test design and implementation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#223-automated-regression-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2.3 Automated regression testing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#224-test-monitoring-and-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2.4 Test monitoring and control
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#225-choosing-the-right-prompting-technique" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2.5 Choosing the right prompting technique
     </span>
   </a>
   
@@ -639,24 +620,101 @@
 
 
 
-<h1 id="introduction-to-chapter-2">Introduction to chapter 2</h1>
-<p>Welcome to the heart of the reactor: <strong>prompt engineering</strong>.</p>
-<p>If chapter 1 was the theory, chapter 2 is pure practice. For the <strong>MagicFridge</strong> QA team, knowing how to "speak" to AI has become a skill almost as critical as knowing how to code or write Gherkin.</p>
-<p>A bad question yields a bad answer. In this chapter, we will learn how to structure our requests to obtain reliable, precise, and actionable test results.</p>
-<h2 id="chapter-roadmap">🗺️ Chapter roadmap</h2>
-<p>This chapter is extensive. We will break it down into three major blocks:</p>
-<ol>
-<li><strong>The art of prompting (section 2.1):</strong> how to structure a perfect prompt and use advanced techniques (few-shot, chaining).</li>
-<li><strong>Application to testing (section 2.2):</strong> using AI for analysis, design, automation, and monitoring.</li>
-<li><strong>Continuous improvement (section 2.3):</strong> how to measure the quality of AI responses and refine prompts.</li>
-</ol>
-<p>Get your keyboard ready, we are going to transform natural language into a formidable testing tool.🤩</p>
+<h1 id="22-applying-prompt-engineering-techniques-to-software-testing-tasks">2.2 Applying prompt engineering techniques to software testing tasks</h1>
+<p>Now that you know how to structure a prompt (the "how"), let's look at the "when" and the "why".
+For the <strong>MagicFridge</strong> QA team, AI is a production tool that intervenes at every stage of the test process, from requirements analysis to final reporting.</p>
+<h2 id="221-test-analysis-with-generative-ai">2.2.1 Test analysis with generative AI</h2>
+<p>Analysis is often the most intellectual stage: understanding what needs to be tested. AI excels here at detecting gaps.</p>
+<p>It can <strong>identify defects in the test basis</strong> (unclear requirements), <strong>generate test conditions</strong>, and even <strong>suggest test techniques</strong> (such as boundary value analysis).</p>
+<div class="admonition example">
+<p class="admonition-title">Red thread: MagicFridge</p>
+<p><strong>Context:</strong> The Product Owner provides a wireframe (image) of the new "Cart" screen and a User Story (text): <em>"The user can modify the quantity."</em></p>
+<p><strong>The tester's action (multimodal prompt):</strong>
+He sends the wireframe image and the text to the AI with the instruction: <em>"Act as a Business Analyst. Analyze this wireframe against the User Story. Identify inconsistencies and generate missing acceptance criteria."</em></p>
+<p><strong>The AI result:</strong>
+1.  <em>"Alert: The wireframe shows a 'Trash' button, but the Story does not mention deletion."</em>
+2.  <em>"Missing criterion: What happens if the quantity drops to zero?"</em></p>
+</div>
+<h2 id="222-test-design-and-implementation">2.2.2 Test design and implementation</h2>
+<p>Once we know <em>what</em> to test, we need to create test cases and data. This is where the techniques seen in 2.1 (chain-of-thought, few-shot) become crucial.</p>
+<p>AI enables us to:
+1.  <strong>Generate test cases</strong> (Gherkin, tables).
+2.  <strong>Synthesize test data</strong> (anonymization, generation of fake profiles).
+3.  <strong>Schedule execution</strong> (prioritizing tests).</p>
+<div class="admonition example">
+<p class="admonition-title">Red thread: MagicFridge</p>
+<p><strong>Objective:</strong> Create BDD tests (Gherkin) for the "Add ingredient" feature.</p>
+<p><strong>Technique used: few-shot prompting (learning by example)</strong>
+The tester gives the AI two examples of perfect Gherkin scenarios (syntax, style). Then she asks: <em>"Generate the scenario for an expired ingredient following this model."</em></p>
+<p><strong>Result:</strong> The AI produces a perfectly formatted <code>Given-When-Then</code> scenario, ready to be copied into the automation tool.</p>
+</div>
+<h2 id="223-automated-regression-testing">2.2.3 Automated regression testing</h2>
+<p>This is the area where time savings are most spectacular. AI does not replace the automation engineer, but becomes his "coding partner" (Pair Programmer).</p>
+<p>It helps to:
+*   <strong>Generate scripts</strong> (Selenium, Cypress, Playwright) from textual descriptions.
+*   <strong>Repair tests (self-healing):</strong> If a CSS selector changes, the AI can analyze the HTML code and propose the fix.
+*   <strong>Analyze impact:</strong> Identify which tests to re-run after a code modification.</p>
+<div class="admonition example">
+<p class="admonition-title">Red thread: MagicFridge</p>
+<p><strong>The problem:</strong> Developers renamed the button ID <code>#btn-add</code> to <code>#button-add-item</code>. All automated tests are failing.</p>
+<p><strong>AI intervention:</strong> The tester pastes the error log and the new HTML code into the prompt.
+<strong>Instruction:</strong> <em>"Analyze this Selenium error and propose the fix."</em>
+<strong>Response:</strong> <em>"The element is no longer found. Replace <code>driver.find_element(By.ID, "btn-add")</code> with <code>driver.find_element(By.ID, "button-add-item")</code>."</em></p>
+</div>
+<h2 id="224-test-monitoring-and-control">2.2.4 Test monitoring and control</h2>
+<p>When you have 5,000 tests running every night, analyzing results is a nightmare. AI can "read" these mountains of data to extract meaning.</p>
+<p>It allows us to <strong>summarize test reports</strong>, <strong>visualize metrics</strong>, and detect anomalies in logs that the human eye might have missed.</p>
+<div class="admonition example">
+<p class="admonition-title">Red thread: MagicFridge</p>
+<p>Monday morning, 45 tests failed. Instead of opening them one by one, the Test Lead asks the AI: <em>"Analyze these 45 error logs and group them by root cause."</em></p>
+<p><strong>AI insight:</strong> <em>"Out of 45 failures, 42 are caused by a Payment API Timeout (Error 504). The other 3 are real interface bugs."</em></p>
+<p>The time saving is immediate: she knows she needs to call the Back-end developers, not the Front-end developers.</p>
+</div>
+<h2 id="225-choosing-the-right-prompting-technique">2.2.5 Choosing the right prompting technique</h2>
+<p>The syllabus insists: not all techniques are equal for all tasks. Here is the GenAI tester's strategic guide.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Test task</th>
+<th style="text-align: left;">Recommended technique</th>
+<th style="text-align: left;">Why?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Complex analysis</strong> (e.g., ambiguous User Story)</td>
+<td style="text-align: left;"><strong>Prompt chaining</strong></td>
+<td style="text-align: left;">Breaking down the problem prevents the AI from getting lost or hallucinating. We validate step-by-step.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Repetitive generation</strong> (e.g., Gherkin test case)</td>
+<td style="text-align: left;"><strong>Few-shot prompting</strong></td>
+<td style="text-align: left;">The example (the "shot") forces the AI to respect a strict format.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Exploration / Ideation</strong> (e.g., finding edge cases)</td>
+<td style="text-align: left;"><strong>Meta-prompting</strong></td>
+<td style="text-align: left;">We ask the AI to think about the best way to test, to think outside the box.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div class="admonition info">
+<p class="admonition-title">🎓 Syllabus point (key takeaways)</p>
+<ul>
+<li><strong>Analysis:</strong> AI helps clarify the test basis and identify defects early.</li>
+<li><strong>Design:</strong> It generates test cases, oracles, and synthetic data.</li>
+<li><strong>Automation:</strong> It writes and repairs (self-healing) scripts.</li>
+<li><strong>Management:</strong> It synthesizes logs and assists decision-making.</li>
+<li><strong>Strategy:</strong> You must adapt the prompt technique (chaining vs few-shot) to the nature of the task.</li>
+</ul>
+</div>
 <p><br></p>
 <hr>
 
 <div class="admonition quote">
 <p class="admonition-title">Is this course useful?</p>
-<p>This content is <strong>100% free</strong>. If this introduction makes you want to read more:</p>
+<p>This content is <strong>100% free</strong>. If this section on MagicFridge helped you:</p>
 <p><div style="text-align: center; margin-top: 15px;">
     <a href='https://ko-fi.com/monwebmestre' target='_blank'>
         <img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee' />

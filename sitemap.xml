@@ -43,6 +43,13 @@
         <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter2/2.1-effective-prompting/"/>
     </url>
     <url>
+        <loc>https://qagenai.monwebmestre.tech/chapter2/2.2-applying-techniques/</loc>
+        <lastmod>2025-11-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qagenai.monwebmestre.tech/chapter2/2.2-applying-techniques/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter2/2.2-applying-techniques/"/>
+    </url>
+    <url>
         <loc>https://qagenai.monwebmestre.tech/chapter2/introduction/</loc>
         <lastmod>2025-11-29</lastmod>
         <changefreq>daily</changefreq>
@@ -90,6 +97,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter2/2.1-effective-prompting/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://qagenai.monwebmestre.tech/chapter2/2.1-effective-prompting/"/>
+    </url>
+    <url>
+        <loc>https://qagenai.monwebmestre.tech/fr/chapter2/2.2-applying-techniques/</loc>
+        <lastmod>2025-11-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter2/2.2-applying-techniques/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qagenai.monwebmestre.tech/chapter2/2.2-applying-techniques/"/>
     </url>
     <url>
         <loc>https://qagenai.monwebmestre.tech/fr/chapter2/introduction/</loc>
