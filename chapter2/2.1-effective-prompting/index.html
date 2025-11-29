@@ -107,6 +107,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#21-effective-prompt-development" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -513,6 +518,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    2.1 Effective Prompt Development
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -525,6 +545,85 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#211-the-structure-of-an-effective-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.1 The structure of an effective prompt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#212-core-prompting-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.2 Core prompting techniques
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1.2 Core prompting techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-prompt-chaining" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Prompt chaining
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-few-shot-prompting-learning-by-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Few-shot prompting (learning by example)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-meta-prompting" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Meta prompting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#213-system-prompt-vs-user-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.3 System prompt vs user prompt
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -555,6 +654,76 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#211-the-structure-of-an-effective-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.1 The structure of an effective prompt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#212-core-prompting-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.2 Core prompting techniques
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1.2 Core prompting techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-prompt-chaining" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Prompt chaining
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-few-shot-prompting-learning-by-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Few-shot prompting (learning by example)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-meta-prompting" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Meta prompting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#213-system-prompt-vs-user-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.3 System prompt vs user prompt
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -570,9 +739,107 @@
 
 
 
-  <h1>2.1 Effective Prompt Development</h1>
+<h1 id="21-effective-prompt-development">2.1 Effective prompt development</h1>
+<p>A prompt is not just a question asked on the fly. It is a technical instruction that must be <strong>engineered</strong>. For <strong>MagicFridge</strong>, the difference between a junior and a senior engineer often lies here: the ability to get exactly what is needed from the AI.</p>
+<h2 id="211-the-structure-of-an-effective-prompt">2.1.1 The structure of an effective prompt</h2>
+<p>To obtain consistent results, a prompt should not be a vague sentence. It must follow a precise structure. The ISTQB identifies <strong>6 key components</strong>:</p>
+<ol>
+<li><strong>Role (persona):</strong> who should the AI imitate?</li>
+<li><strong>Context:</strong> what are we talking about?</li>
+<li><strong>Instruction:</strong> what must it do (action verb)?</li>
+<li><strong>Input data:</strong> what information is it working on?</li>
+<li><strong>Constraints:</strong> what it must NOT do.</li>
+<li><strong>Output format:</strong> what should the response look like?</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Red thread: MagicFridge</p>
+<p>Here is a simple example of a structured prompt to test the "Cart" feature:</p>
+<ul>
+<li><strong>Role:</strong> act as a senior test analyst certified by ISTQB.</li>
+<li><strong>Context:</strong> we are testing the "Cart" module of the MagicFridge application.</li>
+<li><strong>Instruction:</strong> generate negative test cases for the "Promo Code" field.</li>
+<li><strong>Input data:</strong> this field accepts a maximum of 10 alphanumeric characters.</li>
+<li><strong>Constraints:</strong> do not generate code, only textual descriptions. Do not include performance tests.</li>
+<li><strong>Output format:</strong> provide the result as a Markdown table with columns ID, Scenario, Oracle.</li>
+</ul>
+</div>
+<hr />
+<h2 id="212-core-prompting-techniques">2.1.2 Core prompting techniques</h2>
+<p>Beyond structure, there are techniques to "guide" the model's intelligence.</p>
+<h3 id="1-prompt-chaining">1. Prompt chaining</h3>
+<p>This technique involves breaking a complex task into sequential sub-steps. The output of step 1 becomes the input for step 2.</p>
+<div class="admonition example">
+<p class="admonition-title">Red thread: MagicFridge</p>
+<ul>
+<li><em>Prompt 1:</em> "Analyze this user story on adding ingredients and list the business rules."</li>
+<li><em>Prompt 2:</em> "Based on these rules, generate nominal test cases."</li>
+<li><em>Prompt 3:</em> "Convert these test cases into Gherkin scripts."</li>
+</ul>
+<p><em>Why?</em> This prevents the AI from "forgetting" rules by trying to do everything at once.</p>
+</div>
+<h3 id="2-few-shot-prompting-learning-by-example">2. Few-shot prompting (learning by example)</h3>
+<p>Instead of explaining everything from scratch (zero-shot), we provide the AI with a few examples (shots) of what is expected.</p>
+<div class="admonition example">
+<p class="admonition-title">Red thread: MagicFridge</p>
+<p><em>Prompt:</em> "generate test data for vegetables."
+*   <em>Example 1:</em> Tomato -&gt; Category: fruit-veg, Shelf-life: 7 days.
+*   <em>Example 2:</em> Carrot -&gt; Category: root, Shelf-life: 14 days.
+*   <em>Task:</em> Do the same for "Leek".</p>
+</div>
+<h3 id="3-meta-prompting">3. Meta prompting</h3>
+<p>This is asking the AI to improve or create its own prompt. It is the AI helping the tester formulate their request better.</p>
+<div class="admonition example">
+<p class="admonition-title">Red thread: MagicFridge</p>
+<p><em>Tester:</em> "I want to test the API security, but I don't know how to ask. Write an expert prompt to generate SQL injection tests for the recipe API."</p>
+</div>
+<hr />
+<h2 id="213-system-prompt-vs-user-prompt">2.1.3 System prompt vs user prompt</h2>
+<p>It is crucial to distinguish these two levels of interaction, especially when using APIs or advanced tools.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">MagicFridge Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>System prompt</strong></td>
+<td style="text-align: left;">Defines the global behavior, tone, and immutable rules of the AI. It is the "personality" of the chatbot.</td>
+<td style="text-align: left;"><em>"You are G.U.S, the MagicFridge QA assistant. You are strict, concise, and you always answer in English. You refuse to generate malicious code."</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>User prompt</strong></td>
+<td style="text-align: left;">The specific instruction sent at time T. This is what the tester types.</td>
+<td style="text-align: left;"><em>"Check if this ingredient list contains allergens."</em></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div class="admonition info">
+<p class="admonition-title">🎓 Syllabus point (K2 summary)</p>
+<ul>
+<li>A robust prompt contains <strong>6 elements</strong>: role, context, instruction, input data, constraints, output format.</li>
+<li><strong>Prompt chaining:</strong> breaking down a complex task into a sequence of logical steps.</li>
+<li><strong>Few-shot prompting:</strong> providing concrete examples to guide the AI's reasoning and response format.</li>
+<li><strong>System prompt:</strong> the global configuration and behavioral rules (often invisible to the end-user).</li>
+</ul>
+</div>
+<p><br></p>
+<hr>
 
-
+<div class="admonition quote">
+<p class="admonition-title">Is this course useful?</p>
+<p>This content is <strong>100% free</strong>. If this section on MagicFridge helped you:</p>
+<p><div style="text-align: center; margin-top: 15px;">
+    <a href='https://ko-fi.com/monwebmestre' target='_blank'>
+        <img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee' />
+    </a>
+    <br>
+    <em>It's 0% fees for me, and 100% fuel for the next chapter! ☕</em>
+</div></p>
+</div>
 
 
 
