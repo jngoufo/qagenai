@@ -770,19 +770,22 @@ You have learned the theory, now you must apply it. These exercises put you in t
 <blockquote>
 <p><em>"Test if it works when I add apples."</em></p>
 </blockquote>
-<p><strong>Your mission:</strong> this prompt is mediocre. Identify 3 critical components that are most sorely missing to make it a pro-level prompt.</p>
-<p>!!! question "Critical analysis" 🧐
-    Select the missing elements (mentally), then reveal the analysis to compare.</p>
-<pre><code>??? success "Reveal the Senior QA's analysis"
-    This prompt is unusable by the AI because it lacks:
-
-    1.  **The role (persona):** the AI does not know if it should act as an end-user or a technical tester.
-    2.  **The context:** "If it works" is too vague. Are we talking about performance? Functionality? Security?
-    3.  **The output format:** the AI will probably answer with a trivial sentence. We want a structured format (Gherkin or table).
-
-    **Corrected version:**
-    *"Act as a QA tester (role). For the 'Cart' function (context), generate 3 negative test cases for adding products (instruction). Present the result as a table (format)."*
-</code></pre>
+<p><strong>Your mission:</strong> this prompt is mediocre. Identify 3 critical components that are most sorely missing to make it a pro-level prompt.🧐</p>
+<div class="admonition question">
+<p class="admonition-title">Critical analysis</p>
+<p>Select the missing elements (mentally), then reveal the analysis to compare.</p>
+<details class="success">
+<summary>Reveal the Senior QA's analysis</summary>
+<p>This prompt is unusable by the AI because it lacks:</p>
+<ol>
+<li><strong>The role (persona):</strong> the AI does not know if it should act as an end-user or a technical tester.</li>
+<li><strong>The context:</strong> "If it works" is too vague. Are we talking about performance? Functionality? Security?</li>
+<li><strong>The output format:</strong> the AI will probably answer with a trivial sentence. We want a structured format (Gherkin or table).</li>
+</ol>
+<p><strong>Corrected version:</strong>
+<em>"Act as a QA tester (role). For the 'Cart' function (context), generate 3 negative test cases for adding products (instruction). Present the result as a table (format)."</em></p>
+</details>
+</div>
 <hr />
 <h2 id="exercise-2-which-technique-for-which-task">Exercise 2: which technique for which task? 🛠️</h2>
 <p><em>(Objective: choose the right prompting technique - LO 2.2.5)</em></p>

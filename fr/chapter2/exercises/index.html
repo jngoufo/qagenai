@@ -766,11 +766,11 @@ Vous avez appris la théorie, maintenant il faut l'appliquer. Ces exercices vous
 <hr />
 <h2 id="exercice-1-lanatomie-dun-prompt">Exercice 1 : l'anatomie d'un prompt 🦴</h2>
 <p><em>(Objectif : structurer un prompt efficace - LO 2.1.1)</em></p>
-<p><strong>Situation :</strong> Un testeur junior vous envoie ce prompt qu'il a utilisé pour tester la fonction "Ajout au panier" :</p>
+<p><strong>Situation :</strong> un testeur junior vous envoie ce prompt qu'il a utilisé pour tester la fonction "Ajout au panier" :</p>
 <blockquote>
 <p><em>"Teste si ça marche quand j'ajoute des pommes."</em></p>
 </blockquote>
-<p><strong>Votre mission :</strong> Ce prompt est médiocre. Identifiez 3 composants critiques qui manquent le plus cruellement pour en faire un prompt professionnel.</p>
+<p><strong>Votre mission :</strong> ce prompt est médiocre. Identifiez 3 composants critiques qui manquent le plus cruellement pour en faire un prompt professionnel.🧐</p>
 <div class="admonition question">
 <p class="admonition-title">Analyse critique</p>
 <p>Sélectionnez les éléments manquants (mentalement), puis révélez l'analyse pour comparer.</p>
@@ -778,12 +778,12 @@ Vous avez appris la théorie, maintenant il faut l'appliquer. Ces exercices vous
 <summary>Révéler l'analyse du Senior QA</summary>
 <p>Ce prompt est inexploitable par l'IA car il manque :</p>
 <ol>
-<li><strong>Le Rôle (Persona) :</strong> L'IA ne sait pas si elle doit agir comme un utilisateur final ou un testeur technique.</li>
-<li><strong>Le Contexte &amp; Contraintes :</strong> "Si ça marche" est trop vague. Parle-t-on de performance ? De fonctionnel ? De sécurité ?</li>
-<li><strong>Le Format de Sortie :</strong> L'IA va probablement répondre par une phrase banale. On veut un format structuré (Gherkin ou Tableau).</li>
+<li><strong>Le rôle (persona) :</strong> L'IA ne sait pas si elle doit agir comme un utilisateur final ou un testeur technique.</li>
+<li><strong>Le contexte :</strong> "Si ça marche" est trop vague. Parle-t-on de performance ? De fonctionnel ? De sécurité ?</li>
+<li><strong>Le format de sortie :</strong> L'IA va probablement répondre par une phrase banale. On veut un format structuré (Gherkin ou tableau).</li>
 </ol>
 <p><strong>Version corrigée :</strong>
-<em>"Agis comme un testeur QA (Rôle). Pour la fonction 'Panier' (Contexte), génère 3 cas de test négatifs pour l'ajout de produits (Instruction). Présente le résultat sous forme de tableau (Format)."</em></p>
+<em>"Agis comme un testeur QA (rôle). Pour la fonction 'Panier' (contexte), génère 3 cas de test négatifs pour l'ajout de produits (instruction). Présente le résultat sous forme de tableau (format)."</em></p>
 </details>
 </div>
 <hr />
