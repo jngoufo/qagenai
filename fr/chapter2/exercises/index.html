@@ -770,47 +770,45 @@ Vous avez appris la théorie, maintenant il faut l'appliquer. Ces exercices vous
 <blockquote>
 <p><em>"Teste si ça marche quand j'ajoute des pommes."</em></p>
 </blockquote>
-<p><strong>Votre mission :</strong> Ce prompt est médiocre. Identifiez 3 composants critiques qui manquent le plus cruellement pour en faire un prompt digne d'un pro.</p>
-<div class="admonition question analyse critique">
-<p class="admonition-title">Question</p>
-</div>
+<p><strong>Votre mission :</strong> Ce prompt est médiocre. Identifiez 3 composants critiques qui manquent le plus cruellement pour en faire un prompt professionnel.</p>
+<div class="admonition question">
+<p class="admonition-title">Analyse critique</p>
 <p>Sélectionnez les éléments manquants (mentalement), puis révélez l'analyse pour comparer.</p>
 <details class="success">
 <summary>Révéler l'analyse du Senior QA</summary>
 <p>Ce prompt est inexploitable par l'IA car il manque :</p>
 <ol>
-<li><strong>Le rôle (persona) :</strong> L'IA ne sait pas si elle doit agir comme un utilisateur final ou un testeur technique.</li>
-<li><strong>Le contexte :</strong> "Si ça marche" est trop vague. Parle-t-on de performance ? De fonctionnel ? De sécurité ?</li>
-<li><strong>Le format de sortie :</strong> L'IA va probablement répondre par une phrase banale. On veut un format structuré (Gherkin ou Tableau).</li>
+<li><strong>Le Rôle (Persona) :</strong> L'IA ne sait pas si elle doit agir comme un utilisateur final ou un testeur technique.</li>
+<li><strong>Le Contexte &amp; Contraintes :</strong> "Si ça marche" est trop vague. Parle-t-on de performance ? De fonctionnel ? De sécurité ?</li>
+<li><strong>Le Format de Sortie :</strong> L'IA va probablement répondre par une phrase banale. On veut un format structuré (Gherkin ou Tableau).</li>
 </ol>
 <p><strong>Version corrigée :</strong>
-<em>"Agis comme un testeur QA (rôle). Pour la fonction 'Panier' (contexte), génère 3 cas de test négatifs pour l'ajout de produits (instruction). Présente le résultat sous forme de tableau (format)."</em></p>
+<em>"Agis comme un testeur QA (Rôle). Pour la fonction 'Panier' (Contexte), génère 3 cas de test négatifs pour l'ajout de produits (Instruction). Présente le résultat sous forme de tableau (Format)."</em></p>
 </details>
 </div>
 <hr />
 <h2 id="exercice-2-quelle-technique-pour-quelle-tache">Exercice 2 : quelle technique pour quelle tâche ? 🛠️</h2>
 <p><em>(Objectif : choisir la bonne technique de prompting - LO 2.2.5)</em></p>
-<p><strong>Consigne :</strong> pour chaque situation rencontrée chez FrigoMagique, cliquez sur la technique la plus adaptée.</p>
-<p>??? question <strong>À vous de jouer</strong></p>
-<p><strong>1. Vous voulez que l'IA génère 50 cas de test au format Gherkin strict, sans erreur de syntaxe.</strong></p>
+<p><strong>Consigne :</strong> Pour chaque situation rencontrée chez FrigoMagique, cliquez sur la technique la plus adaptée.</p>
+<div class="admonition question">
+<p class="admonition-title">À vous de jouer</p>
+<p><strong>1. Vous voulez que l'IA génère 50 cas de test au format Gherkin strict, sans erreur de syntaxe.</strong>
 <div style="margin-bottom: 15px;">
-<button onclick="alert('😔 Non. Le Prompt Chaining est utile pour le raisonnement complexe, pas pour forcer un format répétitif.')" style="cursor: pointer;">Prompt Chaining</button>
-<button onclick="alert('🥳 EXACT ! En donnant 2 ou 3 exemples de Gherkin parfaits (shots), l\'IA va calquer sa structure dessus. C\'est la méthode reine pour le formatage.')" style="cursor: pointer;">Few-Shot Prompting</button>
-<button onclick="alert('😔 Risqué. Sans exemple, l\'IA risque d\'inventer sa propre syntaxe.')" style="cursor: pointer;">Zero-Shot Prompting</button>
-</div>
-
-<p><strong>2. Vous voulez que l'IA analyse une User Story complexe, identifie les règles métier, puis dérive les tests.</strong></p>
+● <button onclick="alert('❌ Non. Le Prompt Chaining est utile pour le raisonnement complexe, pas pour forcer un format répétitif.')" style="cursor: pointer;">Prompt Chaining</button><br>
+● <button onclick="alert('✅ EXACT ! En donnant 2 ou 3 exemples de Gherkin parfaits (Shots), l\'IA va calquer sa structure dessus. C\'est la méthode reine pour le formatage.')" style="cursor: pointer;">Few-Shot Prompting</button><br>
+● <button onclick="alert('❌ Risqué. Sans exemple, l\'IA risque d\'inventer sa propre syntaxe.')" style="cursor: pointer;">Zero-Shot Prompting</button>
+</div></p>
+<p><strong>2. Vous voulez que l'IA analyse une User Story complexe, identifie les règles métier, puis dérive les tests.</strong>
 <div style="margin-bottom: 15px;">
-<button onclick="alert('🥳 BRAVO ! On décompose : 1. Analyse, 2. Extraction règles, 3. Génération de tests. Cela évite que l\'IA ne s\'embrouille.')" style="cursor: pointer;">Prompt Chaining</button>
-<button onclick="alert('😔 Pas adapté. Les exemples ne suffisent pas ici, il faut un raisonnement logique étape par étape.')" style="cursor: pointer;">Few-Shot Prompting</button>
-<button onclick="alert('😔 Non. Le Meta-Prompting sert à créer des prompts, pas à exécuter une analyse complexe directement.')" style="cursor: pointer;">Meta-Prompting</button>
-</div>
-
-<p><strong>3. Vous devez tester la sécurité de l'API mais vous êtes bloqué et ne savez pas quoi demander à l'IA.</strong></p>
+● <button onclick="alert('✅ BRAVO ! On découpe : 1. Analyse, 2. Extraction règles, 3. Génération tests. Cela évite que l\'IA ne s\'embrouille.')" style="cursor: pointer;">Prompt Chaining</button><br>
+● <button onclick="alert('❌ Pas adapté. Les exemples ne suffisent pas ici, il faut un raisonnement logique étape par étape.')" style="cursor: pointer;">Few-Shot Prompting</button><br>
+● <button onclick="alert('❌ Non. Le Meta-Prompting sert à créer des prompts, pas à exécuter une analyse complexe directement.')" style="cursor: pointer;">Meta-Prompting</button>
+</div></p>
+<p><strong>3. Vous devez tester la sécurité de l'API mais vous êtes bloqué et ne savez pas quoi demander à l'IA.</strong>
 <div>
-<button onclick="alert('😔 Ce n\'est pas la meilleure option si vous ne savez même pas par où commencer.')" style="cursor: pointer;">Few-Shot Prompting</button>
-<button onclick="alert('🥳 GAGNÉ ! Demandez à l\'IA : \'Agis comme un expert en sécurité. Quels sont les meilleurs prompts pour tester une API REST ?\'. Elle fera le travail pour vous.')" style="cursor: pointer;">Meta-Prompting</button>
-</div>
+● <button onclick="alert('❌ Ce n\'est pas la meilleure option si vous ne savez même pas par où commencer.')" style="cursor: pointer;">Few-Shot Prompting</button><br>
+● <button onclick="alert('✅ GAGNÉ ! Demandez à l\'IA : \'Agis comme un expert en sécurité. Quels sont les meilleurs prompts pour tester une API REST ?\'. Elle fera le travail pour vous.')" style="cursor: pointer;">Meta-Prompting</button>
+</div></p>
 </div>
 <hr />
 <h2 id="exercice-3-systeme-ou-utilisateur">Exercice 3 : système ou utilisateur ? 🤖</h2>
