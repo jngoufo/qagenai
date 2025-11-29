@@ -30,9 +30,9 @@ Every technical concept will be immediately applied to this context.
 
 This guide strictly follows the official ISTQB plan (v1.0 - 2025):
 
-*   **[Chapter 1: Introduction to Generative AI](chapitre1/1.1-fondements.md)**
+*   **[Chapter 1: Introduction to Generative AI](chapter1/introduction.md)**
     *   Understanding LLMs, tokenization, and context windows.
-*   **Chapter 2: Prompt Engineering** 
+*   **[Chapter 2: Prompt Engineering](chapter2/introduction.md)** 
     *   The art of speaking to the machine.
 *   **Chapter 3: Risks and Ethics of Generative AI** 
     *   Hallucinations, bias, and security.

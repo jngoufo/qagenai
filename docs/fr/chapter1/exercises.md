@@ -24,14 +24,14 @@ Cliquez sur la technologie qui correspond à la fonctionnalité décrite.<br>
 <b>1."Si la date du jour > date de péremption, envoyer une alerte."</b>
 <div style="margin-bottom: 10px;">
 ● <button onclick="alert('😔 Raté. Le Machine Learning implique un apprentissage sur des données, ici c\'est une règle fixe.')" style="cursor: pointer;">Machine Learning</button><br>
-● <button onclick="alert('🤗 BRAVO ! C\'est une règle logique codée par un humain. C\'est de l\'IA Symbolique.')" style="cursor: pointer;">IA Symbolique</button><br>
+● <button onclick="alert('🥳 BRAVO ! C\'est une règle logique codée par un humain. C\'est de l\'IA Symbolique.')" style="cursor: pointer;">IA Symbolique</button><br>
 ● <button onclick="alert('😔 Non. Pas besoin de réseaux de neurones pour comparer deux dates.')" style="cursor: pointer;">Deep Learning</button>
 </div>
 
 <b>2."Scanner un ticket de caisse froissé et reconnaître le texte."</b>
 <div style="margin-bottom: 10px;">
 ● <button onclick="alert('😔 Trop simple pour de l\'IA symbolique, trop complexe pour du ML classique.')" style="cursor: pointer;">IA Symbolique</button><br>
-● <button onclick="alert('🤗 EXACT ! La reconnaissance d\'image (OCR complexe) repose sur des réseaux de neurones profonds.')" style="cursor: pointer;">Deep Learning</button><br>
+● <button onclick="alert('🥳 EXACT ! La reconnaissance d\'image (OCR complexe) repose sur des réseaux de neurones profonds.')" style="cursor: pointer;">Deep Learning</button><br>
 ● <button onclick="alert('😔 Non. L\'IA ne crée pas de nouveau contenu ici, elle analyse une image existante.')" style="cursor: pointer;">IA Générative</button>
 </div>
 
@@ -39,7 +39,7 @@ Cliquez sur la technologie qui correspond à la fonctionnalité décrite.<br>
 <div>
 ● <button onclick="alert('😔 Le Deep Learning reconnait, mais ne crée pas ex-nihilo.')" style="cursor: pointer;">Deep Learning</button><br>
 ● <button onclick="alert('😔 Le ML classique fait des prédictions, pas de la création.')" style="cursor: pointer;">Machine Learning</button><br>
-● <button onclick="alert('🤗 EXCELLENT ! Créer du contenu nouveau (texte/recette) est la définition même de la GenAI.')" style="cursor: pointer;">IA Générative</button>
+● <button onclick="alert('🥳 EXCELLENT ! Créer du contenu nouveau (texte/recette) est la définition même de la GenAI.')" style="cursor: pointer;">IA Générative</button>
 </div>
 </div>
 

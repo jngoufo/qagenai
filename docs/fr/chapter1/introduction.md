@@ -15,7 +15,7 @@ Nous allons structurer cette première partie en quatre points clés :
 
 ---
 
-## 🥑 Présentation du Fil Rouge : "FrigoMagique"
+## 🥑 Présentation du Fil rouge : "FrigoMagique"
 
 Avant de plonger complètement dans ce chapitre, laissez-moi vous présenter le compagnon de route qui va nous suivre tout au long de cette formation.
 
@@ -24,7 +24,9 @@ Pour rendre les concepts abstraits de l'IA générative concrets, nous allons no
 !!! example "Qui est FrigoMagique ?"
     **FrigoMagique** est une start-up innovante de la FoodTech. Son application mobile promet de révolutionner le quotidien de ses utilisateurs en gérant leurs courses et leurs repas.
     
-    Ce n'est pas une simple liste de courses numérique ; c'est une application qui intègre massivement de l'intelligence artificielle pour :
+    Ce n'est pas une simple liste de courses numérique ; c'est une application qui intègre une intelligence artificielle générative nommée **GUS** (**G**uide **U**niversel des **S**aveurs).
+    
+    **GUS** est capable de :
     
     *   Scanner les produits (Vision).
     *   Inventer des recettes personnalisées (Génération de texte).

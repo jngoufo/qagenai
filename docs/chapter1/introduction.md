@@ -24,11 +24,13 @@ To make the abstract concepts of Generative AI concrete, we will immerse ourselv
 !!! example "What is MagicFridge?"
     **MagicFridge** is an innovative FoodTech start-up. Its mobile app promises to revolutionize users' daily lives by managing their groceries and meals.
     
-    It is not just a simple digital shopping list; it is an application that heavily integrates Artificial Intelligence to:
+    It is not just a simple digital shopping list; it is an application that integrates a generative Artificial Intelligence named **GUS** (**G**uide for **U**niversal **S**avors).
     
-    *   Scan products (Computer Vision).
-    *   Invent personalized recipes (Text Generation).
-    *   Interact with users via a Chatbot.
+    **GUS** is capable of:
+    
+    *   Scanning products (Computer Vision).
+    *   Inventing personalized recipes (Text Generation).
+    *   Interacting with users via a Chatbot.
     
     We will illustrate every point of the syllabus through the testing challenges of this application.
 

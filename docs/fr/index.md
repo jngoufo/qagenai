@@ -14,7 +14,7 @@ Mon objectif est de vulgariser chaque concept (LLM, Prompting, RAG, Risques...) 
 2.  **Valider** les objectifs d'apprentissage (LO) de l'examen.<br>
 3.  **Réussir** votre certification du premier coup.
 
-## 🥑 Le Fil Rouge : "FrigoMagique"
+## 🥑 Le Fil rouge : "FrigoMagique"
 
 Pour éviter la théorie abstraite, tout ce cours est illustré par une étude de cas unique et concrète.
 Vous suivrez les aventures de l'équipe QA de **FrigoMagique**, une start-up fictive dont l'application mobile utilise l'IA pour :<br>
@@ -30,9 +30,9 @@ Chaque notion technique sera immédiatement appliquée à ce contexte.
 
 Ce guide suit scrupuleusement le plan officiel de l'ISTQB (v1.0 - 2025) :
 
-*   **[Chapitre 1 : Introduction à l'IA générative](chapitre1/1.1-fondements.md)**
+*   **[Chapitre 1 : Introduction à l'IA générative](chapter1/introduction.md)**
     *   Comprendre les LLM, la tokenisation et les fenêtres contextuelles.
-*   **Chapitre 2 : Ingénierie de prompt**
+*   **[Chapitre 2 : Ingénierie de prompt](chapter2/introduction.md)**
     *   L'art de parler à la machine.
 *   **Chapitre 3 : Gestion des risques de l'IA générative**
     *   Hallucinations, biais et sécurité.

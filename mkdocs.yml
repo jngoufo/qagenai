@@ -70,7 +70,7 @@ extra:
           name: No, not really
           data: 0
           note: >-
-            Sorry to hear that. Please send me feedback via email!
+            I'm sorry. Please send me feedback via email!
 
   # Bannière Cookies (Version par défaut : ANGLAIS)
   consent:
@@ -93,7 +93,12 @@ nav:
       - '1.1 Foundations & Concepts': chapter1/1.1-foundations.md
       - '1.2 Leveraging Generative AI': chapter1/1.2-leveraging-genai.md
       - '🧪 Practice Lab': chapter1/exercises.md
-
+  - 'Chapter 2':
+      - 'Introduction & Roadmap': chapter2/introduction.md
+      - '2.1 Effective Prompt Development': chapter2/2.1-effective-prompting.md
+      - '2.2 Applying Prompt Techniques': chapter2/2.2-applying-prompt-techniques.md
+      - '2.3 Evaluate Results & Refine': chapter2/2.3-evaluate-refine-prompt.md
+      - '🧪 Practice Lab': chapter2/exercises.md
 # -------------------------------------------------------------------------
 # COPYRIGHT (Version par défaut : ANGLAIS)
 # -------------------------------------------------------------------------
@@ -138,8 +143,13 @@ plugins:
                 - 'Introduction et Objectifs': chapter1/introduction.md  
                 - '1.1 Fondements et concepts': chapter1/1.1-foundations.md
                 - '1.2 Exploiter l''IA générative': chapter1/1.2-leveraging-genai.md
-                - '🧪 Labo pratique': chapter1/exercises.md
-          
+                - '🧪 Laboratoire pratique': chapter1/exercises.md
+            - 'Chapitre 2':
+                - 'Introduction et Feuille de route': chapter2/introduction.md
+                - '2.1 Développement efficace de prompts': chapter2/2.1-effective-prompting.md
+                - '2.2 Appliquer les techniques de prompt': chapter2/2.2-applying-prompt-techniques.md
+                - '2.3 Évaluer les résultats et affiner': chapter2/2.3-evaluate-refine-prompt.md
+                - '🧪 Laboratoire pratique': chapter2/exercises.md
           # 4. Traduction de la section EXTRA (Cookies & Feedback)
           extra:
             consent:
@@ -166,4 +176,4 @@ plugins:
                     name: Non, pas vraiment
                     data: 0
                     note: >-
-                      Désolé d'entendre ça. Envoyez-moi un courriel pour que j'améliore ce chapitre !
+                      Je suis désolé. Envoyez-moi un courriel pour que j'améliore ce chapitre !
