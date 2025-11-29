@@ -18,6 +18,8 @@
         <link rel="prev" href="../2.2-applying-prompt-techniques/">
       
       
+        <link rel="next" href="../exercises/">
+      
       
       <link rel="icon" href="../../../assets/Monwebmestre-fav-64.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
@@ -667,6 +669,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🧪 Laboratoire pratique
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -848,13 +873,13 @@ Chez <strong>FrigoMagique</strong>, l'équipe QA ne fait pas confiance aveuglém
 <p>C'est l'examen critique des réponses pour détecter les hallucinations ou les biais. Cela permet de comprendre <em>pourquoi</em> l'IA s'est trompée et d'ajouter une contrainte explicite dans le prompt pour empêcher que cela ne se reproduise (technique du "Negative Constraint").</p>
 <div class="admonition example">
 <p class="admonition-title">Fil rouge : FrigoMagique</p>
-<p><strong>Le contexte :</strong> La testeuse demande à <strong>G.U.S</strong> : <em>"Génère un menu de la semaine pour une famille de 4 personnes."</em></p>
-<p><strong>1. L'Analyse de la sortie (Le constat) :</strong>
+<p><strong>Le contexte :</strong> La testeuse demande à <strong>GUS</strong> : <em>"Génère un menu de la semaine pour une famille de 4 personnes."</em></p>
+<p><strong>1. L'analyse de la sortie (le constat) :</strong>
 La testeuse lit le menu généré. À première vue, tout semble correct (il y a bien 7 jours, midi et soir).
-Cependant, en analysant le détail, elle repère une anomalie logique : pour le <strong>Mardi midi</strong>, G.U.S a proposé un <em>"Bœuf Bourguignon (Temps de cuisson : 4h00)"</em>.</p>
-<p><strong>2. Le Diagnostic (Pourquoi l'IA a échoué ?) :</strong>
+Cependant, en analysant le détail, elle repère une anomalie logique : pour le <strong>Mardi midi</strong>, GUS a proposé un <em>"Bœuf Bourguignon (Temps de cuisson : 4h00)"</em>.</p>
+<p><strong>2. Le diagnostic (pourquoi l'IA a échoué ?) :</strong>
 L'IA n'a pas halluciné (la recette existe), mais elle a manqué de <strong>contexte implicite</strong>. Elle n'a pas "compris" que le mardi midi, les gens travaillent et ne peuvent pas cuisiner pendant 4 heures.</p>
-<p><strong>3. L'Action corrective (Affinement du prompt) :</strong>
+<p><strong>3. L'action corrective (affinement du prompt) :</strong>
 Suite à cette analyse, la testeuse ajoute une <strong>contrainte négative</strong> explicite dans le prompt système :
 <em>"Pour les repas du midi en semaine (Lundi-Vendredi), ne propose JAMAIS de recettes nécessitant plus de 30 minutes de préparation."</em></p>
 </div>

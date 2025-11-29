@@ -57,6 +57,13 @@
         <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter2/2.3-evaluate-refine-prompt/"/>
     </url>
     <url>
+        <loc>https://qagenai.monwebmestre.tech/chapter2/exercises/</loc>
+        <lastmod>2025-11-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qagenai.monwebmestre.tech/chapter2/exercises/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter2/exercises/"/>
+    </url>
+    <url>
         <loc>https://qagenai.monwebmestre.tech/chapter2/introduction/</loc>
         <lastmod>2025-11-29</lastmod>
         <changefreq>daily</changefreq>
@@ -118,6 +125,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter2/2.3-evaluate-refine-prompt/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://qagenai.monwebmestre.tech/chapter2/2.3-evaluate-refine-prompt/"/>
+    </url>
+    <url>
+        <loc>https://qagenai.monwebmestre.tech/fr/chapter2/exercises/</loc>
+        <lastmod>2025-11-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter2/exercises/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qagenai.monwebmestre.tech/chapter2/exercises/"/>
     </url>
     <url>
         <loc>https://qagenai.monwebmestre.tech/fr/chapter2/introduction/</loc>

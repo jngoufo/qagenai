@@ -18,6 +18,8 @@
         <link rel="prev" href="../2.2-applying-prompt-techniques/">
       
       
+        <link rel="next" href="../exercises/">
+      
       
       <link rel="icon" href="../../assets/Monwebmestre-fav-64.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
@@ -667,6 +669,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🧪 Practice Lab
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -769,7 +794,7 @@
 
 <h1 id="23-evaluate-generative-ai-results-and-refine-prompts">2.3 Evaluate generative AI results and refine prompts</h1>
 <p>Getting an AI response is good. Getting a <em>good</em> response is better.
-At <strong>MagicFridge</strong>, the QA team does not blindly trust G.U.S (our application's AI). As with any software, the AI output must be verified. But how do we "test the tester"?</p>
+At <strong>MagicFridge</strong>, the QA team does not blindly trust GUS (our application's AI). As with any software, the AI output must be verified. But how do we "test the tester"?</p>
 <p>This section teaches you how to measure the quality of AI responses and iteratively improve your prompts.</p>
 <h2 id="231-metrics-for-evaluating-results-on-test-tasks">2.3.1 Metrics for evaluating results on test tasks</h2>
 <p>Evaluating AI is not done by "guesswork". The syllabus defines specific metrics to judge whether the AI has done a good job.</p>
@@ -848,14 +873,14 @@ At <strong>MagicFridge</strong>, the QA team does not blindly trust G.U.S (our a
 <p>This is the critical examination of responses to detect hallucinations or biases. This allows understanding <em>why</em> the AI made a mistake and adding an explicit constraint in the prompt to prevent it from happening again (Negative Constraint technique).</p>
 <div class="admonition example">
 <p class="admonition-title">Red thread: MagicFridge</p>
-<p><strong>Context:</strong> The tester asks <strong>G.U.S</strong>: <em>"Generate a weekly menu for a family of 4."</em></p>
+<p><strong>Context:</strong> The tester asks <strong>GUS</strong>: <em>"Generate a weekly menu for a family of 4."</em></p>
 <p><strong>1. Output analysis (the observation):</strong>
-The tester reads the generated menu. At first glance, everything looks correct (7 days, lunch and dinner).
-However, upon closer analysis, she spots a logical anomaly: for <strong>Tuesday lunch</strong>, G.U.S suggested a <em>"Beef Bourguignon (Cooking time: 4h00)"</em>.</p>
+the tester reads the generated menu. At first glance, everything looks correct (7 days, lunch and dinner).
+However, upon closer analysis, she spots a logical anomaly: for <strong>Tuesday lunch</strong>, GUS suggested a <em>"Beef Bourguignon (Cooking time: 4h00)"</em>.</p>
 <p><strong>2. Diagnosis (why did the AI fail?):</strong>
-The AI did not hallucinate (the recipe exists), but it lacked <strong>implicit context</strong>. It did not "understand" that on Tuesday noon, people work and cannot cook for 4 hours.</p>
+the AI did not hallucinate (the recipe exists), but it lacked <strong>implicit context</strong>. It did not "understand" that on Tuesday noon, people work and cannot cook for 4 hours.</p>
 <p><strong>3. Corrective action (prompt refinement):</strong>
-Following this analysis, the tester adds an explicit <strong>negative constraint</strong> to the system prompt:
+following this analysis, the tester adds an explicit <strong>negative constraint</strong> to the system prompt:
 <em>"For weekday lunches (Monday-Friday), NEVER suggest recipes requiring more than 30 minutes of preparation."</em></p>
 </div>
 <hr />
