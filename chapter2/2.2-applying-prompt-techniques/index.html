@@ -18,6 +18,8 @@
         <link rel="prev" href="../2.1-effective-prompting/">
       
       
+        <link rel="next" href="../2.3-evaluate-refine-prompt/">
+      
       
       <link rel="icon" href="../../assets/Monwebmestre-fav-64.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
@@ -638,6 +640,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.3-evaluate-refine-prompt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.3 Evaluate Results & Refine
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -750,12 +775,12 @@ He sends the wireframe image and the text to the AI with the instruction: <em>"A
 <h2 id="222-test-design-and-implementation">2.2.2 Test design and implementation</h2>
 <p>Once we know <em>what</em> to test, we need to create test cases and data. This is where the techniques seen in 2.1 (chain-of-thought, few-shot) become crucial.</p>
 <p>AI enables us to:
-1.  <strong>Generate test cases</strong> (Gherkin, tables).
-2.  <strong>Synthesize test data</strong> (anonymization, generation of fake profiles).
+1.  <strong>Generate test cases</strong> (Gherkin, tables).<br>
+2.  <strong>Synthesize test data</strong> (anonymization, generation of fake profiles).<br>
 3.  <strong>Schedule execution</strong> (prioritizing tests).</p>
 <div class="admonition example">
 <p class="admonition-title">Red thread: MagicFridge</p>
-<p><strong>Objective:</strong> Create BDD tests (Gherkin) for the "Add ingredient" feature.</p>
+<p><strong>Objective:</strong> create BDD tests (Gherkin) for the "Add ingredient" feature.</p>
 <p><strong>Technique used: few-shot prompting (learning by example)</strong>
 The tester gives the AI two examples of perfect Gherkin scenarios (syntax, style). Then she asks: <em>"Generate the scenario for an expired ingredient following this model."</em></p>
 <p><strong>Result:</strong> The AI produces a perfectly formatted <code>Given-When-Then</code> scenario, ready to be copied into the automation tool.</p>
@@ -763,8 +788,8 @@ The tester gives the AI two examples of perfect Gherkin scenarios (syntax, style
 <h2 id="223-automated-regression-testing">2.2.3 Automated regression testing</h2>
 <p>This is the area where time savings are most spectacular. AI does not replace the automation engineer, but becomes his "coding partner" (Pair Programmer).</p>
 <p>It helps to:
-*   <strong>Generate scripts</strong> (Selenium, Cypress, Playwright) from textual descriptions.
-*   <strong>Repair tests (self-healing):</strong> If a CSS selector changes, the AI can analyze the HTML code and propose the fix.
+*   <strong>Generate scripts</strong> (Selenium, Cypress, Playwright) from textual descriptions.<br>
+*   <strong>Repair tests (self-healing):</strong> If a CSS selector changes, the AI can analyze the HTML code and propose the fix.<br>
 *   <strong>Analyze impact:</strong> Identify which tests to re-run after a code modification.</p>
 <div class="admonition example">
 <p class="admonition-title">Red thread: MagicFridge</p>

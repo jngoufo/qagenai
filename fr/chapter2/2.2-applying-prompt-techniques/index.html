@@ -18,6 +18,8 @@
         <link rel="prev" href="../2.1-effective-prompting/">
       
       
+        <link rel="next" href="../2.3-evaluate-refine-prompt/">
+      
       
       <link rel="icon" href="../../../assets/Monwebmestre-fav-64.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
@@ -638,6 +640,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.3-evaluate-refine-prompt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.3 Évaluer les résultats et affiner
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -750,8 +775,8 @@ Il envoie l'image de la maquette et le texte à l'IA avec l'instruction : <em>"A
 <h2 id="222-conception-et-mise-en-uvre-des-tests">2.2.2 Conception et mise en œuvre des tests</h2>
 <p>Une fois que nous savons <em>quoi</em> tester, il faut créer les cas de test et les données. C'est là que les techniques vues en 2.1 (Chain-of-thought, Few-shot) deviennent cruciales.</p>
 <p>L'IA permet de :
-1.  <strong>Générer des cas de test</strong> (Gherkin, tableaux).
-2.  <strong>Synthétiser des données de test</strong> (Anonymisation, génération de faux profils).
+1.  <strong>Générer des cas de test</strong> (Gherkin, tableaux).<br>
+2.  <strong>Synthétiser des données de test</strong> (Anonymisation, génération de faux profils).<br>
 3.  <strong>Planifier l'exécution</strong> (Ordonnancement des tests par priorité).</p>
 <div class="admonition example">
 <p class="admonition-title">Fil rouge : FrigoMagique</p>
@@ -763,8 +788,8 @@ Le testeur donne à l'IA deux exemples de scénarios Gherkin parfaits (Syntaxe, 
 <h2 id="223-tests-de-regression-automatises">2.2.3 Tests de régression automatisés</h2>
 <p>C'est le domaine où le gain de temps est le plus spectaculaire. L'IA ne remplace pas l'ingénieur en automatisation, mais elle devient son "binôme de code" (Pair Programmer).</p>
 <p>Elle aide à :
-*   <strong>Générer des scripts</strong> (Selenium, Cypress, Playwright) à partir de descriptions textuelles.
-*   <strong>Réparer les tests (Self-healing) :</strong> Si un sélecteur CSS change, l'IA peut analyser le code HTML et proposer la correction.
+*   <strong>Générer des scripts</strong> (Selenium, Cypress, Playwright) à partir de descriptions textuelles.<br>
+*   <strong>Réparer les tests (Self-healing) :</strong> Si un sélecteur CSS change, l'IA peut analyser le code HTML et proposer la correction.<br>
 *   <strong>Analyser l'impact :</strong> Identifier quels tests relancer après une modification du code.</p>
 <div class="admonition example">
 <p class="admonition-title">Fil rouge : FrigoMagique</p>
