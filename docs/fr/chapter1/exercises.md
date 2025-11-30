@@ -24,14 +24,14 @@ Cliquez sur la technologie qui correspond à la fonctionnalité décrite.<br>
 <b>1."Si la date du jour > date de péremption, envoyer une alerte."</b>
 <div style="margin-bottom: 10px;">
 ● <button onclick="alert('😔 Raté. Le Machine Learning implique un apprentissage sur des données, ici c\'est une règle fixe.')" style="cursor: pointer;">Machine Learning</button><br>
-● <button onclick="alert('🤗 BRAVO ! C\'est une règle logique codée par un humain. C\'est de l\'IA Symbolique.')" style="cursor: pointer;">IA Symbolique</button><br>
+● <button onclick="alert('🥳 BRAVO ! C\'est une règle logique codée par un humain. C\'est de l\'IA Symbolique.')" style="cursor: pointer;">IA Symbolique</button><br>
 ● <button onclick="alert('😔 Non. Pas besoin de réseaux de neurones pour comparer deux dates.')" style="cursor: pointer;">Deep Learning</button>
 </div>
 
 <b>2."Scanner un ticket de caisse froissé et reconnaître le texte."</b>
 <div style="margin-bottom: 10px;">
 ● <button onclick="alert('😔 Trop simple pour de l\'IA symbolique, trop complexe pour du ML classique.')" style="cursor: pointer;">IA Symbolique</button><br>
-● <button onclick="alert('🤗 EXACT ! La reconnaissance d\'image (OCR complexe) repose sur des réseaux de neurones profonds.')" style="cursor: pointer;">Deep Learning</button><br>
+● <button onclick="alert('🥳 EXACT ! La reconnaissance d\'image (OCR complexe) repose sur des réseaux de neurones profonds.')" style="cursor: pointer;">Deep Learning</button><br>
 ● <button onclick="alert('😔 Non. L\'IA ne crée pas de nouveau contenu ici, elle analyse une image existante.')" style="cursor: pointer;">IA Générative</button>
 </div>
 
@@ -39,7 +39,7 @@ Cliquez sur la technologie qui correspond à la fonctionnalité décrite.<br>
 <div>
 ● <button onclick="alert('😔 Le Deep Learning reconnait, mais ne crée pas ex-nihilo.')" style="cursor: pointer;">Deep Learning</button><br>
 ● <button onclick="alert('😔 Le ML classique fait des prédictions, pas de la création.')" style="cursor: pointer;">Machine Learning</button><br>
-● <button onclick="alert('🤗 EXCELLENT ! Créer du contenu nouveau (texte/recette) est la définition même de la GenAI.')" style="cursor: pointer;">IA Générative</button>
+● <button onclick="alert('🥳 EXCELLENT ! Créer du contenu nouveau (texte/recette) est la définition même de la GenAI.')" style="cursor: pointer;">IA Générative</button>
 </div>
 </div>
 
@@ -49,25 +49,25 @@ Cliquez sur la technologie qui correspond à la fonctionnalité décrite.<br>
 *(Objectif : comprendre la tokenisation - LO 1.1.2)*
 
 **Contexte :** vous testez les limites de saisie du chatbot. Vous écrivez : *"Je veux cuisiner."*
-Le modèle utilise un "Tokenizer" standard.
+Le modèle utilise un "tokenizer" standard.
 
 ??? question "Combien de tokens cette phrase consomme-t-elle environ ?"
     **Réponse : 4 ou 5 tokens.**
     
     **Analyse du découpage :**
-    Contrairement aux mots (3 mots), les tokens découpent souvent les verbes ou ajoutent la ponctuation.
+    contrairement aux mots (3 mots), les tokens découpent souvent les verbes ou ajoutent la ponctuation.
     
     *   Probable découpage : `[Je]` `[ veux]` `[ cuisin]` `[er]` `[.]`
     
     **Leçon pour le testeur :**
-    Si votre fenêtre contextuelle est de 4000 tokens, ne pensez pas "4000 mots". Le nombre réel de mots correspondant est inférieur à 4 000, et dépend de la langue employée.
+    si votre fenêtre contextuelle est de 4000 tokens, ne pensez pas "4000 mots". Le nombre réel de mots correspondant est inférieur à 4 000, et dépend de la langue employée.
 
 ---
 
 ## Exercice 3 : le bon chef au bon poste 👨‍🍳
 *(Objectif : choisir le bon modèle LLM - LO 1.1.3)*
 
-**Situation :** l'équipe de développement veut implanter 3 nouvelles fonctionnalités. Quel type de LLM (Base, Instruction-Tuned, ou Raisonnement) leur recommandez-vous pour obtenir le meilleur résultat ?
+**Situation :** l'équipe de développement veut implanter 3 nouvelles fonctionnalités. Quel type de LLM (Base, Instruction-tuned, ou Raisonnement) leur recommandez-vous pour obtenir le meilleur résultat ?
 
 **A. Un Chatbot de service client qui répond poliment aux plaintes.**
 
