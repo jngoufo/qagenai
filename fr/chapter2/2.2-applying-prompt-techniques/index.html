@@ -789,7 +789,7 @@ Pour l'équipe QA de <strong>FrigoMagique</strong>, l'IA est un outil de product
 <ol>
 <li><strong>Identifier des défauts dans la base de test :</strong> repérer les ambiguïtés, incohérences ou omissions dans les User Stories.</li>
 <li><strong>Générer des conditions de test :</strong> décomposer une exigence en affirmations testables.</li>
-<li><strong>Hiérarchiser les conditions de test (Priorisation) :</strong> suggérer un niveau de risque (impact/probabilité) pour concentrer l'effort.</li>
+<li><strong>Hiérarchiser les conditions de test (priorisation) :</strong> suggérer un niveau de risque (impact/probabilité) pour concentrer l'effort.</li>
 <li><strong>Supporter l'analyse de couverture :</strong> vérifier que chaque exigence est couverte par au moins une condition de test (matrice de traçabilité).</li>
 <li><strong>Suggérer des techniques de test :</strong> recommander l'approche la plus adaptée (ex: analyse des valeurs limites, partitionnement d'équivalence).</li>
 </ol>
@@ -808,7 +808,7 @@ Pour l'équipe QA de <strong>FrigoMagique</strong>, l'IA est un outil de product
 </li>
 <li><strong>Priorisation :</strong> <em>"Risque Élevé pour les valeurs négatives (risque de corruption de commande). Priorité Haute."</em></li>
 <li><strong>Couverture :</strong> <em>"Alerte : Aucune règle métier fournie pour la gestion des stocks liés au panier. Trou de couverture détecté."</em></li>
-<li><strong>Technique suggérée :</strong> <em>"Utilisez l'</em><em>Analyse des Valeurs Limites</em><em> pour tester les seuils 0, 1 et 99."</em></li>
+<li><strong>Technique suggérée :</strong> <em>"Utilisez l'</em><em>analyse des valeurs limites</em><em> pour tester les seuils 0, 1 et 99."</em></li>
 </ol>
 </div>
 <h2 id="222-conception-et-mise-en-uvre-des-tests">2.2.2 Conception et mise en œuvre des tests</h2>
@@ -828,12 +828,12 @@ Le testeur donne à l'IA deux exemples de scénarios Gherkin parfaits (Syntaxe, 
 <p>C'est le domaine où le gain de temps est le plus spectaculaire. L'IA ne remplace pas l'ingénieur en automatisation, mais elle devient son "binôme de code" (Pair Programmer).</p>
 <p>Elle aide à :<br>
 1.  <strong>Générer des scripts</strong> (Selenium, Cypress, Playwright) à partir de descriptions textuelles.<br>
-2.  <strong>Réparer les tests (Self-healing) :</strong> Si un sélecteur CSS change, l'IA peut analyser le code HTML et proposer la correction.<br>
-3.  <strong>Analyser l'impact :</strong> Identifier quels tests relancer après une modification du code.</p>
+2.  <strong>Réparer les tests (self-healing) :</strong> si un sélecteur CSS change, l'IA peut analyser le code HTML et proposer la correction.<br>
+3.  <strong>Analyser l'impact :</strong> identifier quels tests relancer après une modification du code.</p>
 <div class="admonition example">
 <p class="admonition-title">Fil rouge : FrigoMagique</p>
-<p><strong>Le problème :</strong> Les développeurs ont renommé le bouton ID <code>#btn-add</code> en <code>#button-add-item</code>. Tous les tests automatisés échouent.</p>
-<p><strong>L'intervention de l'IA :</strong> Le testeur colle le log d'erreur et le nouveau code HTML dans le prompt.
+<p><strong>Le problème :</strong> les développeurs ont renommé le bouton ID <code>#btn-add</code> en <code>#button-add-item</code>. Tous les tests automatisés échouent.</p>
+<p><strong>L'intervention de l'IA :</strong> le testeur colle le log d'erreur et le nouveau code HTML dans le prompt.
 <strong>Instruction :</strong> <em>"Analyse cette erreur Selenium et propose le correctif."</em>
 <strong>Réponse :</strong> <em>"L'élément n'est plus trouvé. Remplacez <code>driver.find_element(By.ID, "btn-add")</code> par <code>driver.find_element(By.ID, "button-add-item")</code>."</em></p>
 </div>

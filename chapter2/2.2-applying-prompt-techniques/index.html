@@ -789,7 +789,7 @@ For the <strong>MagicFridge</strong> QA team, AI is a production tool that inter
 <ol>
 <li><strong>Identify potential defects in the test basis:</strong> spot ambiguities, inconsistencies, or omissions in User Stories.</li>
 <li><strong>Generate test conditions:</strong> break down a requirement into testable statements.</li>
-<li><strong>Prioritize test conditions (Risk-based):</strong> suggest a risk level (impact/likelihood) to focus the effort.</li>
+<li><strong>Prioritize test conditions (risk-based):</strong> suggest a risk level (impact/likelihood) to focus the effort.</li>
 <li><strong>Support coverage analysis:</strong> verify that every requirement is mapped to at least one test condition (traceability matrix).</li>
 <li><strong>Suggest test techniques:</strong> recommend the most suitable approach (e.g., boundary value analysis, equivalence partitioning).</li>
 </ol>
@@ -808,7 +808,7 @@ For the <strong>MagicFridge</strong> QA team, AI is a production tool that inter
 </li>
 <li><strong>Prioritization:</strong> <em>"High Risk for negative values (risk of order corruption). High Priority."</em></li>
 <li><strong>Coverage:</strong> <em>"Alert: No business rules provided for stock management related to the cart. Coverage gap detected."</em></li>
-<li><strong>Suggested technique:</strong> <em>"Use </em><em>Boundary Value Analysis</em><em> to test the 0, 1, and 99 thresholds."</em></li>
+<li><strong>Suggested technique:</strong> <em>"Use </em><em>boundary value analysis</em><em> to test the 0, 1, and 99 thresholds."</em></li>
 </ol>
 </div>
 <h2 id="222-test-design-and-implementation">2.2.2 Test design and implementation</h2>
@@ -828,12 +828,12 @@ The tester gives the AI two examples of perfect Gherkin scenarios (syntax, style
 <p>This is the area where time savings are most spectacular. AI does not replace the automation engineer, but becomes his "coding partner" (Pair Programmer).</p>
 <p>It helps to:<br>
 1.  <strong>Generate scripts</strong> (Selenium, Cypress, Playwright) from textual descriptions.<br>
-2.  <strong>Repair tests (self-healing):</strong> If a CSS selector changes, the AI can analyze the HTML code and propose the fix.<br>
-3.  <strong>Analyze impact:</strong> Identify which tests to re-run after a code modification.</p>
+2.  <strong>Repair tests (self-healing):</strong> if a CSS selector changes, the AI can analyze the HTML code and propose the fix.<br>
+3.  <strong>Analyze impact:</strong> identify which tests to re-run after a code modification.</p>
 <div class="admonition example">
 <p class="admonition-title">Red thread: MagicFridge</p>
-<p><strong>The problem:</strong> Developers renamed the button ID <code>#btn-add</code> to <code>#button-add-item</code>. All automated tests are failing.</p>
-<p><strong>AI intervention:</strong> The tester pastes the error log and the new HTML code into the prompt.
+<p><strong>The problem:</strong> developers renamed the button ID <code>#btn-add</code> to <code>#button-add-item</code>. All automated tests are failing.</p>
+<p><strong>AI intervention:</strong> the tester pastes the error log and the new HTML code into the prompt.
 <strong>Instruction:</strong> <em>"Analyze this Selenium error and propose the fix."</em>
 <strong>Response:</strong> <em>"The element is no longer found. Replace <code>driver.find_element(By.ID, "btn-add")</code> with <code>driver.find_element(By.ID, "button-add-item")</code>."</em></p>
 </div>
