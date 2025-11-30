@@ -421,7 +421,7 @@
   
   
   <span class="md-ellipsis">
-    🧪 Practice Lab
+    🧪 Practice lab
     
   </span>
   
@@ -496,7 +496,7 @@
   
   
   <span class="md-ellipsis">
-    Introduction & Roadmap
+    Introduction & roadmap
     
   </span>
   
@@ -675,7 +675,7 @@
   
   
   <span class="md-ellipsis">
-    🧪 Practice Lab
+    🧪 Practice lab
     
   </span>
   
@@ -785,19 +785,35 @@
 For the <strong>MagicFridge</strong> QA team, AI is a production tool that intervenes at every stage of the test process, from requirements analysis to final reporting.</p>
 <h2 id="221-test-analysis-with-generative-ai">2.2.1 Test analysis with generative AI</h2>
 <p>Analysis is often the most intellectual stage: understanding what needs to be tested. AI excels here at detecting gaps.</p>
-<p>It can <strong>identify defects in the test basis</strong> (unclear requirements), <strong>generate test conditions</strong>, and even <strong>suggest test techniques</strong> (such as boundary value analysis).</p>
+<p>The syllabus lists 5 major analytical tasks that generative AI can support:</p>
+<ol>
+<li><strong>Identify potential defects in the test basis:</strong> spot ambiguities, inconsistencies, or omissions in User Stories.</li>
+<li><strong>Generate test conditions:</strong> break down a requirement into testable statements.</li>
+<li><strong>Prioritize test conditions (Risk-based):</strong> suggest a risk level (impact/likelihood) to focus the effort.</li>
+<li><strong>Support coverage analysis:</strong> verify that every requirement is mapped to at least one test condition (traceability matrix).</li>
+<li><strong>Suggest test techniques:</strong> recommend the most suitable approach (e.g., boundary value analysis, equivalence partitioning).</li>
+</ol>
 <div class="admonition example">
 <p class="admonition-title">Red thread: MagicFridge</p>
-<p><strong>Context:</strong> The Product Owner provides a wireframe (image) of the new "Cart" screen and a User Story (text): <em>"The user can modify the quantity."</em></p>
-<p><strong>The tester's action (multimodal prompt):</strong>
-He sends the wireframe image and the text to the AI with the instruction: <em>"Act as a Business Analyst. Analyze this wireframe against the User Story. Identify inconsistencies and generate missing acceptance criteria."</em></p>
-<p><strong>The AI result:</strong>
-1.  <em>"Alert: The wireframe shows a 'Trash' button, but the Story does not mention deletion."</em>
-2.  <em>"Missing criterion: What happens if the quantity drops to zero?"</em></p>
+<p><strong>Context:</strong> the Product Owner provides a User Story: <em>"The user can modify the quantity of an ingredient in the cart."</em></p>
+<p><strong>The tester sends this text to the AI with the instruction:</strong> <em>"Act as a test analyst. Analyze this requirement, identify gaps, generate test conditions, propose prioritization by risk, and suggest test techniques."</em></p>
+<p><strong>The AI response (The 5 tasks in action):</strong></p>
+<ol>
+<li><strong>Defect identified:</strong> <em>"The requirement does not specify what happens if the quantity is 0. Should the item be removed?"</em></li>
+<li><strong>Conditions generated:</strong> <ul>
+<li>Modify quantity &gt; 0 (Valid).</li>
+<li>Modify quantity = 99 (Max).</li>
+<li>Modify quantity = -1 (Invalid).</li>
+</ul>
+</li>
+<li><strong>Prioritization:</strong> <em>"High Risk for negative values (risk of order corruption). High Priority."</em></li>
+<li><strong>Coverage:</strong> <em>"Alert: No business rules provided for stock management related to the cart. Coverage gap detected."</em></li>
+<li><strong>Suggested technique:</strong> <em>"Use </em><em>Boundary Value Analysis</em><em> to test the 0, 1, and 99 thresholds."</em></li>
+</ol>
 </div>
 <h2 id="222-test-design-and-implementation">2.2.2 Test design and implementation</h2>
 <p>Once we know <em>what</em> to test, we need to create test cases and data. This is where the techniques seen in 2.1 (chain-of-thought, few-shot) become crucial.</p>
-<p>AI enables us to:
+<p>AI enables us to:<br>
 1.  <strong>Generate test cases</strong> (Gherkin, tables).<br>
 2.  <strong>Synthesize test data</strong> (anonymization, generation of fake profiles).<br>
 3.  <strong>Schedule execution</strong> (prioritizing tests).</p>
@@ -810,10 +826,10 @@ The tester gives the AI two examples of perfect Gherkin scenarios (syntax, style
 </div>
 <h2 id="223-automated-regression-testing">2.2.3 Automated regression testing</h2>
 <p>This is the area where time savings are most spectacular. AI does not replace the automation engineer, but becomes his "coding partner" (Pair Programmer).</p>
-<p>It helps to:
-*   <strong>Generate scripts</strong> (Selenium, Cypress, Playwright) from textual descriptions.<br>
-*   <strong>Repair tests (self-healing):</strong> If a CSS selector changes, the AI can analyze the HTML code and propose the fix.<br>
-*   <strong>Analyze impact:</strong> Identify which tests to re-run after a code modification.</p>
+<p>It helps to:<br>
+1.  <strong>Generate scripts</strong> (Selenium, Cypress, Playwright) from textual descriptions.<br>
+2.  <strong>Repair tests (self-healing):</strong> If a CSS selector changes, the AI can analyze the HTML code and propose the fix.<br>
+3.  <strong>Analyze impact:</strong> Identify which tests to re-run after a code modification.</p>
 <div class="admonition example">
 <p class="admonition-title">Red thread: MagicFridge</p>
 <p><strong>The problem:</strong> Developers renamed the button ID <code>#btn-add</code> to <code>#button-add-item</code>. All automated tests are failing.</p>

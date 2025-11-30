@@ -496,7 +496,7 @@
   
   
   <span class="md-ellipsis">
-    Introduction et Feuille de route
+    Introduction et feuille de route
     
   </span>
   
@@ -647,9 +647,27 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-lanalyse-des-sorties-output-analysis" class="md-nav__link">
+  <a href="#3-lanalyse-des-sorties" class="md-nav__link">
     <span class="md-ellipsis">
-      3. L'analyse des sorties (Output analysis)
+      3. L'analyse des sorties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-integrer-les-retours-des-utilisateurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Intégrer les retours des utilisateurs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-ajuster-la-longueur-et-la-specificite-des-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Ajuster la longueur et la spécificité des prompts
     </span>
   </a>
   
@@ -763,9 +781,27 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-lanalyse-des-sorties-output-analysis" class="md-nav__link">
+  <a href="#3-lanalyse-des-sorties" class="md-nav__link">
     <span class="md-ellipsis">
-      3. L'analyse des sorties (Output analysis)
+      3. L'analyse des sorties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-integrer-les-retours-des-utilisateurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Intégrer les retours des utilisateurs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-ajuster-la-longueur-et-la-specificite-des-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Ajuster la longueur et la spécificité des prompts
     </span>
   </a>
   
@@ -809,22 +845,22 @@ Chez <strong>FrigoMagique</strong>, l'équipe QA ne fait pas confiance aveuglém
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Exactitude (Accuracy)</strong></td>
+<td style="text-align: left;"><strong>Exactitude</strong></td>
 <td style="text-align: left;">Le pourcentage de réponses correctes par rapport à une référence.</td>
 <td style="text-align: left;">L'IA a généré 10 cas de test. 9 sont valides, 1 est hors sujet. Exactitude = 90%.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Précision (Precision)</strong></td>
+<td style="text-align: left;"><strong>Précision</strong></td>
 <td style="text-align: left;">La qualité des défauts trouvés (éviter les faux positifs).</td>
 <td style="text-align: left;">L'IA signale 5 bugs dans le code. 4 sont des vrais bugs, 1 est une erreur de l'IA.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Rappel (Recall)</strong></td>
+<td style="text-align: left;"><strong>Rappel</strong></td>
 <td style="text-align: left;">La capacité à tout trouver (éviter les faux négatifs).</td>
 <td style="text-align: left;">Il y avait 10 bugs cachés dans le code. L'IA en a trouvé 6. Son rappel est de 60% (elle en a raté 4).</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Pertinence (Relevance)</strong></td>
+<td style="text-align: left;"><strong>Pertinence</strong></td>
 <td style="text-align: left;">L'adéquation au contexte métier.</td>
 <td style="text-align: left;">Les recettes générées respectent-elles les contraintes "Sans Gluten" demandées ?</td>
 </tr>
@@ -833,17 +869,18 @@ Chez <strong>FrigoMagique</strong>, l'équipe QA ne fait pas confiance aveuglém
 <td style="text-align: left;">La variété des réponses.</td>
 <td style="text-align: left;">Si on demande 50 scénarios de test, sont-ils tous différents ou l'IA répète-t-elle le même schéma ?</td>
 </tr>
+<tr>
+<td style="text-align: left;"><strong>Taux de réussite de l'exécution</strong></td>
+<td style="text-align: left;">La proportion de scripts ou de cas de test générés qui peuvent être exécutés sans erreur technique (syntaxe, format).</td>
+<td style="text-align: left;">Sur 10 scripts Selenium générés par l'IA, 8 tournent du premier coup, 2 plantent à cause d'une erreur de syntaxe. Taux = 80%.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Efficacité en termes de temps</strong></td>
+<td style="text-align: left;">Le gain de temps comparé à un effort manuel équivalent (ROI).</td>
+<td style="text-align: left;">L'IA génère 100 lignes de données SQL en 2 minutes. Un humain aurait mis 4 heures. Le gain est massif.</td>
+</tr>
 </tbody>
 </table>
-<div class="admonition example">
-<p class="admonition-title">Fil rouge : FrigoMagique</p>
-<p><strong>Le testeur</strong> évalue l'IA sur la génération de scripts d'automatisation. Il utilise la métrique <strong>"Taux de succès d'exécution"</strong>.</p>
-<ul>
-<li><strong>Prompt :</strong> "Génère un script Cypress pour le login."</li>
-<li><strong>Résultat IA :</strong> Un code qui semble propre.</li>
-<li><strong>Mesure :</strong> Le testeur copie le code et le lance. Si le script plante à la ligne 3 à cause d'un sélecteur inventé, le taux de succès est de 0%. L'IA a "halluciné" du code non fonctionnel.</li>
-</ul>
-</div>
 <h2 id="232-techniques-pour-evaluer-et-affiner-les-prompts-de-maniere-iterative">2.3.2 Techniques pour évaluer et affiner les prompts de manière itérative</h2>
 <p>L'ingénierie de prompt est un cycle : on écrit, on teste, on corrige. Si le résultat de l'IA est médiocre, ce n'est souvent pas la faute du modèle, mais celle du prompt.</p>
 <p>Voici les techniques pour améliorer vos résultats :</p>
@@ -859,7 +896,7 @@ Chez <strong>FrigoMagique</strong>, l'équipe QA ne fait pas confiance aveuglém
 </ul>
 </div>
 <h3 id="2-le-test-ab-de-prompts">2. Le test A/B de prompts</h3>
-<p>On écrit deux variantes du même prompt et on compare statistiquement les résultats pour garder le meilleur "template".</p>
+<p>On écrit plusieurs variantes du même prompt et on compare statistiquement les résultats pour garder le meilleur "template".</p>
 <div class="admonition example">
 <p class="admonition-title">Fil rouge : FrigoMagique</p>
 <p>L'équipe veut résumer les tickets de bug. L'ingénieure QA teste deux approches :</p>
@@ -869,8 +906,8 @@ Chez <strong>FrigoMagique</strong>, l'équipe QA ne fait pas confiance aveuglém
 </ul>
 <p>Après essai sur 20 tickets, le <strong>Prompt B</strong> offre une pertinence et une utilité bien supérieures. Il devient le standard de l'équipe.</p>
 </div>
-<h3 id="3-lanalyse-des-sorties-output-analysis">3. L'analyse des sorties (Output analysis)</h3>
-<p>C'est l'examen critique des réponses pour détecter les hallucinations ou les biais. Cela permet de comprendre <em>pourquoi</em> l'IA s'est trompée et d'ajouter une contrainte explicite dans le prompt pour empêcher que cela ne se reproduise (technique du "Negative Constraint").</p>
+<h3 id="3-lanalyse-des-sorties">3. L'analyse des sorties</h3>
+<p>C'est l'examen critique des réponses pour détecter les hallucinations ou les biais. Cela permet de comprendre <em>pourquoi</em> l'IA s'est trompée et d'ajouter une contrainte explicite dans le prompt pour empêcher que cela ne se reproduise.</p>
 <div class="admonition example">
 <p class="admonition-title">Fil rouge : FrigoMagique</p>
 <p><strong>Le contexte :</strong> La testeuse demande à <strong>GUS</strong> : <em>"Génère un menu de la semaine pour une famille de 4 personnes."</em></p>
@@ -880,15 +917,43 @@ Cependant, en analysant le détail, elle repère une anomalie logique : pour le 
 <p><strong>2. Le diagnostic (pourquoi l'IA a échoué ?) :</strong>
 L'IA n'a pas halluciné (la recette existe), mais elle a manqué de <strong>contexte implicite</strong>. Elle n'a pas "compris" que le mardi midi, les gens travaillent et ne peuvent pas cuisiner pendant 4 heures.</p>
 <p><strong>3. L'action corrective (affinement du prompt) :</strong>
-Suite à cette analyse, la testeuse ajoute une <strong>contrainte négative</strong> explicite dans le prompt système :
+Suite à cette analyse, la testeuse ajoute une contrainte explicite dans le prompt système :
 <em>"Pour les repas du midi en semaine (Lundi-Vendredi), ne propose JAMAIS de recettes nécessitant plus de 30 minutes de préparation."</em></p>
+</div>
+<h3 id="4-integrer-les-retours-des-utilisateurs">4. Intégrer les retours des utilisateurs</h3>
+<p>L'ingénieur qualité n'est pas le seul juge. Il est crucial de demander aux consommateurs finaux du résultat de l'IA (développeurs, PO, autres testeurs) si la sortie leur a été utile.</p>
+<div class="admonition example">
+<p class="admonition-title">Fil rouge : FrigoMagique</p>
+<p><strong>Le contexte :</strong> l'IA génère automatiquement des descriptions de bugs pour les développeurs.</p>
+<p><strong>Le retour utilisateur :</strong> un développeur fait remarquer à la testeuse : <em>"Les rapports de GUS sont techniquement justes, mais trop verbeux. Je perds du temps à lire 3 paragraphes pour trouver l'ID de l'erreur."</em></p>
+<p><strong>L'ajustement :</strong> la testeuse modifie le prompt pour intégrer ce retour : <em>"Format de sortie : commence impérativement par l'ID de l'erreur et la ligne de code, puis donne une description en une seule phrase."</em></p>
+</div>
+<h3 id="5-ajuster-la-longueur-et-la-specificite-des-prompts">5. Ajuster la longueur et la spécificité des prompts</h3>
+<p>C'est le réglage du "curseur". Parfois, un prompt trop court donne des résultats génériques. Parfois, un prompt trop long "noie" l'IA sous trop de détails contradictoires. Il faut expérimenter pour trouver le juste milieu.</p>
+<div class="admonition example">
+<p class="admonition-title">Fil rouge : FrigoMagique</p>
+<p><strong>Objectif :</strong> générer des idées de recettes innovantes.</p>
+<ul>
+<li><strong>Essai 1 (trop court) :</strong> <em>"Donne-moi une idée de recette."</em><ul>
+<li><em>Résultat :</em> "Pâtes au beurre." (Trop banal).</li>
+</ul>
+</li>
+<li><strong>Essai 2 (trop spécifique) :</strong> <em>"Donne-moi une recette vegan, sans gluten, bleue, qui utilise du yuzu, cuite au micro-ondes en 3 minutes pour un astronaute."</em><ul>
+<li><em>Résultat :</em> l'IA hallucine ou dit que c'est impossible.</li>
+</ul>
+</li>
+<li><strong>Essai 3 (ajusté) :</strong> <em>"Propose une recette originale et colorée, utilisant un agrumes asiatique, réalisable en moins de 20 minutes."</em><ul>
+<li><em>Résultat :</em> "Carpaccio de Saint-Jacques au Yuzu et perles de grenade." (L'équilibre parfait).</li>
+</ul>
+</li>
+</ul>
 </div>
 <hr />
 <div class="admonition info">
 <p class="admonition-title">🎓 Point syllabus (ce qu'il faut retenir)</p>
 <ul>
 <li>Il ne suffit pas de générer, il faut <strong>évaluer</strong>.</li>
-<li>Les métriques clés sont : <strong>exactitude, précision, rappel, pertinence, diversité</strong>.</li>
+<li>Les métriques clés sont : <strong>exactitude, précision, rappel, pertinence, diversité, taux de réussite, efficacité temporelle</strong>.</li>
 <li>L'amélioration est <strong>itérative</strong> : on affine le prompt en fonction des erreurs et omissions observées.</li>
 <li>Le <strong>Test A/B</strong> permet de choisir objectivement le meilleur prompt pour une tâche donnée.</li>
 </ul>

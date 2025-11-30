@@ -496,7 +496,7 @@
   
   
   <span class="md-ellipsis">
-    Introduction et Feuille de route
+    Introduction et feuille de route
     
   </span>
   
@@ -785,19 +785,35 @@
 Pour l'équipe QA de <strong>FrigoMagique</strong>, l'IA est un outil de production qui intervient à chaque étape du processus de test, de l'analyse du besoin jusqu'au rapport final.</p>
 <h2 id="221-analyse-des-tests-avec-lia-generative">2.2.1 Analyse des tests avec l'IA générative</h2>
 <p>L'analyse est souvent l'étape la plus intellectuelle : comprendre ce qu'il faut tester. L'IA excelle ici pour détecter les trous dans la raquette.</p>
-<p>Elle peut <strong>identifier des défauts dans la base de test</strong> (exigences floues), <strong>générer des conditions de test</strong> et même <strong>suggérer des techniques de test</strong> (comme l'analyse des valeurs limites).</p>
+<p>Le syllabus liste 5 tâches majeures d'analyse que l'IA générative peut supporter :</p>
+<ol>
+<li><strong>Identifier des défauts dans la base de test :</strong> repérer les ambiguïtés, incohérences ou omissions dans les User Stories.</li>
+<li><strong>Générer des conditions de test :</strong> décomposer une exigence en affirmations testables.</li>
+<li><strong>Hiérarchiser les conditions de test (Priorisation) :</strong> suggérer un niveau de risque (impact/probabilité) pour concentrer l'effort.</li>
+<li><strong>Supporter l'analyse de couverture :</strong> vérifier que chaque exigence est couverte par au moins une condition de test (matrice de traçabilité).</li>
+<li><strong>Suggérer des techniques de test :</strong> recommander l'approche la plus adaptée (ex: analyse des valeurs limites, partitionnement d'équivalence).</li>
+</ol>
 <div class="admonition example">
 <p class="admonition-title">Fil rouge : FrigoMagique</p>
-<p><strong>Contexte :</strong> La Product Owner fournit une maquette (image) du nouvel écran "Panier" et une User Story (texte) : <em>"L'utilisateur peut modifier la quantité."</em></p>
-<p><strong>L'action du testeur (Prompt Multimodal) :</strong>
-Il envoie l'image de la maquette et le texte à l'IA avec l'instruction : <em>"Agis comme un Business Analyst. Analyse cette maquette par rapport à la User Story. Identifie les incohérences et génère les critères d'acceptation manquants."</em></p>
-<p><strong>Le résultat de l'IA :</strong>
-1.  <em>"Alerte : La maquette montre un bouton 'Poubelle', mais la Story ne parle pas de suppression."</em>
-2.  <em>"Critère manquant : Que se passe-t-il si la quantité tombe à zéro ?"</em></p>
+<p><strong>Contexte :</strong> la Product Owner fournit une User Story : <em>"L'utilisateur peut modifier la quantité d'un ingrédient dans le panier."</em></p>
+<p><strong>Le Testeur envoie ce texte à l'IA avec l'instruction :</strong> <em>"Agis comme un analyste de test. Analyse cette exigence, identifie les manques, génère les conditions de test, propose une priorisation par risque et suggère les techniques de test."</em></p>
+<p><strong>La réponse de l'IA (Les 5 tâches en action) :</strong></p>
+<ol>
+<li><strong>Défaut identifié :</strong> <em>"L'exigence ne précise pas ce qui arrive si la quantité est 0. Doit-on supprimer l'article ?"</em></li>
+<li><strong>Conditions générées :</strong> <ul>
+<li>Modifier quantité &gt; 0 (Valide).</li>
+<li>Modifier quantité = 99 (Max).</li>
+<li>Modifier quantité = -1 (Invalide).</li>
+</ul>
+</li>
+<li><strong>Priorisation :</strong> <em>"Risque Élevé pour les valeurs négatives (risque de corruption de commande). Priorité Haute."</em></li>
+<li><strong>Couverture :</strong> <em>"Alerte : Aucune règle métier fournie pour la gestion des stocks liés au panier. Trou de couverture détecté."</em></li>
+<li><strong>Technique suggérée :</strong> <em>"Utilisez l'</em><em>Analyse des Valeurs Limites</em><em> pour tester les seuils 0, 1 et 99."</em></li>
+</ol>
 </div>
 <h2 id="222-conception-et-mise-en-uvre-des-tests">2.2.2 Conception et mise en œuvre des tests</h2>
 <p>Une fois que nous savons <em>quoi</em> tester, il faut créer les cas de test et les données. C'est là que les techniques vues en 2.1 (Chain-of-thought, Few-shot) deviennent cruciales.</p>
-<p>L'IA permet de :
+<p>L'IA permet de :<br>
 1.  <strong>Générer des cas de test</strong> (Gherkin, tableaux).<br>
 2.  <strong>Synthétiser des données de test</strong> (Anonymisation, génération de faux profils).<br>
 3.  <strong>Planifier l'exécution</strong> (Ordonnancement des tests par priorité).</p>
@@ -810,10 +826,10 @@ Le testeur donne à l'IA deux exemples de scénarios Gherkin parfaits (Syntaxe, 
 </div>
 <h2 id="223-tests-de-regression-automatises">2.2.3 Tests de régression automatisés</h2>
 <p>C'est le domaine où le gain de temps est le plus spectaculaire. L'IA ne remplace pas l'ingénieur en automatisation, mais elle devient son "binôme de code" (Pair Programmer).</p>
-<p>Elle aide à :
-*   <strong>Générer des scripts</strong> (Selenium, Cypress, Playwright) à partir de descriptions textuelles.<br>
-*   <strong>Réparer les tests (Self-healing) :</strong> Si un sélecteur CSS change, l'IA peut analyser le code HTML et proposer la correction.<br>
-*   <strong>Analyser l'impact :</strong> Identifier quels tests relancer après une modification du code.</p>
+<p>Elle aide à :<br>
+1.  <strong>Générer des scripts</strong> (Selenium, Cypress, Playwright) à partir de descriptions textuelles.<br>
+2.  <strong>Réparer les tests (Self-healing) :</strong> Si un sélecteur CSS change, l'IA peut analyser le code HTML et proposer la correction.<br>
+3.  <strong>Analyser l'impact :</strong> Identifier quels tests relancer après une modification du code.</p>
 <div class="admonition example">
 <p class="admonition-title">Fil rouge : FrigoMagique</p>
 <p><strong>Le problème :</strong> Les développeurs ont renommé le bouton ID <code>#btn-add</code> en <code>#button-add-item</code>. Tous les tests automatisés échouent.</p>
