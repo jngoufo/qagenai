@@ -1,6 +1,6 @@
-# Bienvenue sur le Guide de Certification ISTQB CT-GenAI
+# Bienvenue sur le guide de Certification ISTQB CT-GenAI
 
-**Préparez votre certification "Testing with Generative AI" en lisant les 70 pages du syllabus officiel… ou bien ce guide plus simple.**
+**Préparez votre certification "Testing with Generative AI" en lisant les 70 pages du syllabus officiel… ou bien en parcourant ce guide plus simple.**
 
 Ce site est un cours complet, gratuit et interactif sur l'utilisation de l'IA générative dans les tests. Il est conçu pour les professionnels du test et de la qualité logicielle (QA).
 
@@ -8,21 +8,26 @@ Ce site est un cours complet, gratuit et interactif sur l'utilisation de l'IA g�
 
 ## 🎯 Pourquoi ce cours ?
 
-Le syllabus officiel est dense. Très dense.
-Mon objectif est de vulgariser chaque concept (LLM, Prompting, RAG, Risques...) pour vous permettre de :<br>
+Le syllabus officiel est dense. Très dense. <br>En vous fournissant ce guide, je vulgarise chaque concept (LLM, Prompting, RAG, Risques...) pour vous permettre de :<br>
 1.  **Comprendre** réellement comment fonctionne l'IA générative.<br>
-2.  **Valider** les objectifs d'apprentissage (LO) de l'examen.<br>
+2.  **Valider** les objectifs d'apprentissage du syllabus.<br>
 3.  **Réussir** votre certification du premier coup.
 
 ## 🥑 Le Fil rouge : "FrigoMagique"
 
-Pour éviter la théorie abstraite, tout ce cours est illustré par une étude de cas unique et concrète.
-Vous suivrez les aventures de l'équipe QA de **FrigoMagique**, une start-up fictive dont l'application mobile utilise l'IA pour :<br>
-*   Inventer des recettes (Génération de texte).<br>
-*   Scanner des frigos (Vision par ordinateur).<br>
-*   Gérer les stocks (Génération de code).
+Pour rendre les concepts abstraits de l'IA générative concrets, nous allons nous immerger dans les coulisses d'une entreprise fictive, mais très réaliste : **FrigoMagique**.
 
-Chaque notion technique sera immédiatement appliquée à ce contexte.
+**FrigoMagique** est une start-up innovante de la FoodTech. Son application mobile promet de révolutionner le quotidien de ses utilisateurs en gérant leurs courses et leurs repas.
+
+Ce n'est pas une simple liste de courses numérique; c'est une application qui intègre une intelligence artificielle générative nommée **GUS** (**G**uide **U**niversel des **S**aveurs).
+
+**GUS** est capable de :
+
+*   Scanner les produits (vision).
+*   Inventer des recettes personnalisées (génération de texte).
+*   Interagir avec les utilisateurs via un chatbot.
+
+C'est à travers les défis de test de cette application que nous illustrerons chaque point du syllabus.
 
 ---
 
@@ -47,7 +52,7 @@ Ce guide suit scrupuleusement le plan officiel de l'ISTQB (v1.0 - 2025) :
 
 Ce cours est entièrement **gratuit**.
 
-Il est rédigé sur mon temps libre. Si ce contenu vous aide à progresser ou à obtenir votre certification, vous pouvez soutenir le projet en m'offrant un café symbolique. Cela couvre les frais d'hébergement et me garde motivé !
+Il a été minutieusement préparé pendant de très longues heures. Si ce contenu vous aide à progresser dans votre vie professionnelle ou à obtenir votre certification, vous pouvez me remercier en m'offrant un café symbolique et/ou en m'envoyant un message (voir ✉︎ dans le pied de page). Je vous en remercie chaleureusement, d'avance !
 
 <div style="text-align: center; margin-top: 20px;">
     <a href='https://ko-fi.com/monwebmestre' target='_blank'>

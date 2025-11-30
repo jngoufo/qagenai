@@ -38,7 +38,7 @@ Vous avez appris la théorie, maintenant il faut l'appliquer. Ces exercices vous
     **1. Vous voulez que l'IA génère 50 cas de test au format Gherkin strict, sans erreur de syntaxe.**
     <div style="margin-bottom: 15px;">
     ● <button onclick="alert('😔 Non. Le Prompt Chaining est utile pour le raisonnement complexe, pas pour forcer un format répétitif.')" style="cursor: pointer;">Prompt Chaining</button><br>
-    ● <button onclick="alert('🥳 EXACT ! En donnant 2 ou 3 exemples de Gherkin parfaits (Shots), l\'IA va calquer sa structure dessus. C\'est la méthode reine pour le formatage.')" style="cursor: pointer;">Few-Shot Prompting</button><br>
+    ● <button onclick="alert('🥳 EXACT ! En donnant 2 ou 3 exemples de Gherkin parfaits (shots), l\'IA va calquer sa structure dessus. C\'est la méthode reine pour le formatage.')" style="cursor: pointer;">Few-Shot Prompting</button><br>
     ● <button onclick="alert('😔 Risqué. Sans exemple, l\'IA risque d\'inventer sa propre syntaxe.')" style="cursor: pointer;">Zero-Shot Prompting</button>
     </div>
 
@@ -101,7 +101,7 @@ Cependant, en les exécutant, 4 requêtes échouent car les adresses email gén�
 <hr>
 
 !!! quote "Vous avez validé ce chapitre ?"
-    Si ces exercices vous ont aidé à y voir plus clair, un petit café pour le coach serait grandement apprécié ! ☕
+    Si ces exercices vous ont aidé à y voir plus clair, un petit café pour le coach serait grandement apprécié ! 🤗
     
     <div style="text-align: center; margin-top: 15px;">
         <a href='https://ko-fi.com/monwebmestre' target='_blank'>

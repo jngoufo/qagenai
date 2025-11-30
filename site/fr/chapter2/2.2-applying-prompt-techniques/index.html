@@ -352,7 +352,7 @@
   
   
   <span class="md-ellipsis">
-    Introduction et Objectifs
+    Introduction et objectifs
     
   </span>
   
@@ -496,7 +496,7 @@
   
   
   <span class="md-ellipsis">
-    Introduction et Feuille de route
+    Introduction et feuille de route
     
   </span>
   
@@ -785,19 +785,35 @@
 Pour l'équipe QA de <strong>FrigoMagique</strong>, l'IA est un outil de production qui intervient à chaque étape du processus de test, de l'analyse du besoin jusqu'au rapport final.</p>
 <h2 id="221-analyse-des-tests-avec-lia-generative">2.2.1 Analyse des tests avec l'IA générative</h2>
 <p>L'analyse est souvent l'étape la plus intellectuelle : comprendre ce qu'il faut tester. L'IA excelle ici pour détecter les trous dans la raquette.</p>
-<p>Elle peut <strong>identifier des défauts dans la base de test</strong> (exigences floues), <strong>générer des conditions de test</strong> et même <strong>suggérer des techniques de test</strong> (comme l'analyse des valeurs limites).</p>
+<p>Le syllabus liste 5 tâches majeures d'analyse que l'IA générative peut supporter :</p>
+<ol>
+<li><strong>Identifier des défauts dans la base de test :</strong> repérer les ambiguïtés, incohérences ou omissions dans les User Stories.</li>
+<li><strong>Générer des conditions de test :</strong> décomposer une exigence en affirmations testables.</li>
+<li><strong>Hiérarchiser les conditions de test (priorisation) :</strong> suggérer un niveau de risque (impact/probabilité) pour concentrer l'effort.</li>
+<li><strong>Supporter l'analyse de couverture :</strong> vérifier que chaque exigence est couverte par au moins une condition de test (matrice de traçabilité).</li>
+<li><strong>Suggérer des techniques de test :</strong> recommander l'approche la plus adaptée (ex: analyse des valeurs limites, partitionnement d'équivalence).</li>
+</ol>
 <div class="admonition example">
 <p class="admonition-title">Fil rouge : FrigoMagique</p>
-<p><strong>Contexte :</strong> La Product Owner fournit une maquette (image) du nouvel écran "Panier" et une User Story (texte) : <em>"L'utilisateur peut modifier la quantité."</em></p>
-<p><strong>L'action du testeur (Prompt Multimodal) :</strong>
-Il envoie l'image de la maquette et le texte à l'IA avec l'instruction : <em>"Agis comme un Business Analyst. Analyse cette maquette par rapport à la User Story. Identifie les incohérences et génère les critères d'acceptation manquants."</em></p>
-<p><strong>Le résultat de l'IA :</strong>
-1.  <em>"Alerte : La maquette montre un bouton 'Poubelle', mais la Story ne parle pas de suppression."</em>
-2.  <em>"Critère manquant : Que se passe-t-il si la quantité tombe à zéro ?"</em></p>
+<p><strong>Contexte :</strong> la Product Owner fournit une User Story : <em>"L'utilisateur peut modifier la quantité d'un ingrédient dans le panier."</em></p>
+<p><strong>Le Testeur envoie ce texte à l'IA avec l'instruction :</strong> <em>"Agis comme un analyste de test. Analyse cette exigence, identifie les manques, génère les conditions de test, propose une priorisation par risque et suggère les techniques de test."</em></p>
+<p><strong>La réponse de l'IA (Les 5 tâches en action) :</strong></p>
+<ol>
+<li><strong>Défaut identifié :</strong> <em>"L'exigence ne précise pas ce qui arrive si la quantité est 0. Doit-on supprimer l'article ?"</em></li>
+<li><strong>Conditions générées :</strong> <ul>
+<li>Modifier quantité &gt; 0 (Valide).</li>
+<li>Modifier quantité = 99 (Max).</li>
+<li>Modifier quantité = -1 (Invalide).</li>
+</ul>
+</li>
+<li><strong>Priorisation :</strong> <em>"Risque Élevé pour les valeurs négatives (risque de corruption de commande). Priorité Haute."</em></li>
+<li><strong>Couverture :</strong> <em>"Alerte : Aucune règle métier fournie pour la gestion des stocks liés au panier. Trou de couverture détecté."</em></li>
+<li><strong>Technique suggérée :</strong> <em>"Utilisez l'</em><em>analyse des valeurs limites</em><em> pour tester les seuils 0, 1 et 99."</em></li>
+</ol>
 </div>
 <h2 id="222-conception-et-mise-en-uvre-des-tests">2.2.2 Conception et mise en œuvre des tests</h2>
 <p>Une fois que nous savons <em>quoi</em> tester, il faut créer les cas de test et les données. C'est là que les techniques vues en 2.1 (Chain-of-thought, Few-shot) deviennent cruciales.</p>
-<p>L'IA permet de :
+<p>L'IA permet de :<br>
 1.  <strong>Générer des cas de test</strong> (Gherkin, tableaux).<br>
 2.  <strong>Synthétiser des données de test</strong> (Anonymisation, génération de faux profils).<br>
 3.  <strong>Planifier l'exécution</strong> (Ordonnancement des tests par priorité).</p>
@@ -810,14 +826,14 @@ Le testeur donne à l'IA deux exemples de scénarios Gherkin parfaits (Syntaxe, 
 </div>
 <h2 id="223-tests-de-regression-automatises">2.2.3 Tests de régression automatisés</h2>
 <p>C'est le domaine où le gain de temps est le plus spectaculaire. L'IA ne remplace pas l'ingénieur en automatisation, mais elle devient son "binôme de code" (Pair Programmer).</p>
-<p>Elle aide à :
-*   <strong>Générer des scripts</strong> (Selenium, Cypress, Playwright) à partir de descriptions textuelles.<br>
-*   <strong>Réparer les tests (Self-healing) :</strong> Si un sélecteur CSS change, l'IA peut analyser le code HTML et proposer la correction.<br>
-*   <strong>Analyser l'impact :</strong> Identifier quels tests relancer après une modification du code.</p>
+<p>Elle aide à :<br>
+1.  <strong>Générer des scripts</strong> (Selenium, Cypress, Playwright) à partir de descriptions textuelles.<br>
+2.  <strong>Réparer les tests (self-healing) :</strong> si un sélecteur CSS change, l'IA peut analyser le code HTML et proposer la correction.<br>
+3.  <strong>Analyser l'impact :</strong> identifier quels tests relancer après une modification du code.</p>
 <div class="admonition example">
 <p class="admonition-title">Fil rouge : FrigoMagique</p>
-<p><strong>Le problème :</strong> Les développeurs ont renommé le bouton ID <code>#btn-add</code> en <code>#button-add-item</code>. Tous les tests automatisés échouent.</p>
-<p><strong>L'intervention de l'IA :</strong> Le testeur colle le log d'erreur et le nouveau code HTML dans le prompt.
+<p><strong>Le problème :</strong> les développeurs ont renommé le bouton ID <code>#btn-add</code> en <code>#button-add-item</code>. Tous les tests automatisés échouent.</p>
+<p><strong>L'intervention de l'IA :</strong> le testeur colle le log d'erreur et le nouveau code HTML dans le prompt.
 <strong>Instruction :</strong> <em>"Analyse cette erreur Selenium et propose le correctif."</em>
 <strong>Réponse :</strong> <em>"L'élément n'est plus trouvé. Remplacez <code>driver.find_element(By.ID, "btn-add")</code> par <code>driver.find_element(By.ID, "button-add-item")</code>."</em></p>
 </div>
@@ -880,7 +896,7 @@ Le testeur donne à l'IA deux exemples de scénarios Gherkin parfaits (Syntaxe, 
         <img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Soutenez-moi sur Ko-fi' />
     </a>
     <br>
-    <em>C'est 0% de frais pour moi, et 100% d'énergie pour la suite ! ☕</em>
+    <em>J'apprécie chaleureusement votre générosité ! 🤗</em>
 </div></p>
 </div>
 
@@ -955,9 +971,55 @@ Le testeur donne à l'IA deux exemples de scénarios Gherkin parfaits (Syntaxe, 
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Retour en haut de la page
+</button>
+        
       </main>
       
         <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+        
+          
+          <a href="../2.1-effective-prompting/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: 2.1 Développement efficace de prompts">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              <div class="md-ellipsis">
+                2.1 Développement efficace de prompts
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../2.3-evaluate-refine-prompt/" class="md-footer__link md-footer__link--next" aria-label="Suivant: 2.3 Évaluer les résultats et affiner">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              <div class="md-ellipsis">
+                2.3 Évaluer les résultats et affiner
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -987,7 +1049,7 @@ Le testeur donne à l'IA deux exemples de scénarios Gherkin parfaits (Syntaxe, 
     
     
     <a href="mailto:justin@monwebmestre.tech" target="_blank" rel="noopener" title="Contact / Feedback" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M536.4-26.3c9.8-3.5 20.6-1 28 6.3s9.8 18.2 6.3 28l-178 496.9c-5 13.9-18.1 23.1-32.8 23.1-14.2 0-27-8.6-32.3-21.7l-64.2-158c-4.5-11-2.5-23.6 5.2-32.6l94.5-112.4c5.1-6.1 4.7-15-.9-20.6s-14.6-6-20.6-.9l-112.4 94.3c-9.1 7.6-21.6 9.6-32.6 5.2L38.1 216.8c-13.1-5.3-21.7-18.1-21.7-32.3 0-14.7 9.2-27.8 23.1-32.8z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
     </a>
   
 </div>
@@ -1068,7 +1130,7 @@ Le testeur donne à l'IA deux exemples de scénarios Gherkin parfaits (Syntaxe, 
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.sections", "navigation.expand", "content.code.copy", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.sections", "navigation.expand", "content.code.copy", "search.suggest", "search.highlight", "navigation.top", "navigation.footer"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>

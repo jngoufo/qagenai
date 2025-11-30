@@ -20,6 +20,8 @@ theme:
     - content.code.copy
     - search.suggest
     - search.highlight
+    - navigation.top
+    - navigation.footer
 
   icon:
     admonition:
@@ -50,7 +52,7 @@ extra:
     - icon: fontawesome/solid/mug-hot
       link: https://ko-fi.com/monwebmestre 
       name: Buy me a Coffee
-    - icon: fontawesome/solid/paper-plane
+    - icon: fontawesome/solid/envelope
       link: mailto:justin@monwebmestre.tech
       name: Contact / Feedback
   
@@ -92,13 +94,13 @@ nav:
       - 'Introduction & Objectives': chapter1/introduction.md  
       - '1.1 Foundations & Concepts': chapter1/1.1-foundations.md
       - '1.2 Leveraging Generative AI': chapter1/1.2-leveraging-genai.md
-      - '🧪 Practice Lab': chapter1/exercises.md
+      - '🧪 Practice lab': chapter1/exercises.md
   - 'Chapter 2':
-      - 'Introduction & Roadmap': chapter2/introduction.md
+      - 'Introduction & roadmap': chapter2/introduction.md
       - '2.1 Effective Prompt Development': chapter2/2.1-effective-prompting.md
       - '2.2 Applying Prompt Techniques': chapter2/2.2-applying-prompt-techniques.md
       - '2.3 Evaluate Results & Refine': chapter2/2.3-evaluate-refine-prompt.md
-      - '🧪 Practice Lab': chapter2/exercises.md
+      - '🧪 Practice lab': chapter2/exercises.md
 # -------------------------------------------------------------------------
 # COPYRIGHT (Version par défaut : ANGLAIS)
 # -------------------------------------------------------------------------
@@ -140,12 +142,12 @@ plugins:
           nav:
             - 'Accueil': index.md
             - 'Chapitre 1':
-                - 'Introduction et Objectifs': chapter1/introduction.md  
+                - 'Introduction et objectifs': chapter1/introduction.md  
                 - '1.1 Fondements et concepts': chapter1/1.1-foundations.md
                 - '1.2 Exploiter l''IA générative': chapter1/1.2-leveraging-genai.md
                 - '🧪 Laboratoire pratique': chapter1/exercises.md
             - 'Chapitre 2':
-                - 'Introduction et Feuille de route': chapter2/introduction.md
+                - 'Introduction et feuille de route': chapter2/introduction.md
                 - '2.1 Développement efficace de prompts': chapter2/2.1-effective-prompting.md
                 - '2.2 Appliquer les techniques de prompt': chapter2/2.2-applying-prompt-techniques.md
                 - '2.3 Évaluer les résultats et affiner': chapter2/2.3-evaluate-refine-prompt.md

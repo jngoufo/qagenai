@@ -27,5 +27,5 @@ Get your keyboard ready, we are going to transform natural language into a formi
             <img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee' />
         </a>
         <br>
-        <em>It's 0% fees for me, and 100% fuel for the next chapter! ☕</em>
+        <em>I truly appreciate your generosity ! 🤗</em>
     </div>

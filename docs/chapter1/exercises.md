@@ -45,29 +45,29 @@ Click on the technology that matches the described feature.<br>
 
 ---
 
-## Exercise 2: the token scale ⚖️
+## Exercise 2 : the token scale ⚖️
 *(Objective: understand tokenization - LO 1.1.2)*
 
-**Context:** you are testing the chatbot input limits. You type: *"I want to cook."*
+**Context :** you are testing the chatbot input limits. You type: *"I want to cook."*
 The model uses a standard tokenizer.
 
 ??? question "How many tokens does this sentence roughly consume?"
     **Answer: 5 to 6 tokens.**
     
     **Breakdown analysis:**
-    Unlike words (4 words), tokens often split verbs or add punctuation.
+    unlike words (4 words), tokens often split verbs or add punctuation.
     
     *   Probable breakdown: `[I]` `[ want]` `[ to]` `[ cook]` `[.]`
     
     **Tester's lesson:**
-    If your context window is 4000 tokens, do not think "4000 words". The actual number of corresponding words is lower than 4,000, and depends on the language used.
+    if your context window is 4000 tokens, do not think "4000 words". The actual number of corresponding words is lower than 4,000, and depends on the language used.
 
 ---
 
-## Exercise 3: the right chef for the job 👨‍🍳
+## Exercise 3 : the right chef for the job 👨‍🍳
 *(Objective: select the right LLM model - LO 1.1.3)*
 
-**Situation:** the dev team wants to implement 3 new features. Which LLM type (Base, Instruction-Tuned, or Reasoning) do you recommend for the best result?
+**Situation:** the dev team wants to implement 3 new features. Which LLM type (Base, Instruction-tuned, or Reasoning) do you recommend for the best result?
 
 **A. A customer service chatbot that answers complaints politely.**
 

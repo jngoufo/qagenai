@@ -55,19 +55,19 @@ Le modèle utilise un "tokenizer" standard.
     **Réponse : 4 ou 5 tokens.**
     
     **Analyse du découpage :**
-    Contrairement aux mots (3 mots), les tokens découpent souvent les verbes ou ajoutent la ponctuation.
+    contrairement aux mots (3 mots), les tokens découpent souvent les verbes ou ajoutent la ponctuation.
     
     *   Probable découpage : `[Je]` `[ veux]` `[ cuisin]` `[er]` `[.]`
     
     **Leçon pour le testeur :**
-    Si votre fenêtre contextuelle est de 4000 tokens, ne pensez pas "4000 mots". Le nombre réel de mots correspondant est inférieur à 4 000, et dépend de la langue employée.
+    si votre fenêtre contextuelle est de 4000 tokens, ne pensez pas "4000 mots". Le nombre réel de mots correspondant est inférieur à 4 000, et dépend de la langue employée.
 
 ---
 
 ## Exercice 3 : le bon chef au bon poste 👨‍🍳
 *(Objectif : choisir le bon modèle LLM - LO 1.1.3)*
 
-**Situation :** l'équipe de développement veut implanter 3 nouvelles fonctionnalités. Quel type de LLM (Base, Instruction-Tuned, ou Raisonnement) leur recommandez-vous pour obtenir le meilleur résultat ?
+**Situation :** l'équipe de développement veut implanter 3 nouvelles fonctionnalités. Quel type de LLM (Base, Instruction-tuned, ou Raisonnement) leur recommandez-vous pour obtenir le meilleur résultat ?
 
 **A. Un Chatbot de service client qui répond poliment aux plaintes.**
 
