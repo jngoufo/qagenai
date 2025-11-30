@@ -422,11 +422,11 @@
         <li class="md-nav__item">
   <a href="#111-the-ai-spectrum-a-technological-evolution" class="md-nav__link">
     <span class="md-ellipsis">
-      1.1.1 The AI Spectrum: A Technological Evolution
+      1.1.1 The AI spectrum: a technological evolution
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1.1.1 The AI Spectrum: A Technological Evolution">
+    <nav class="md-nav" aria-label="1.1.1 The AI spectrum: a technological evolution">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -471,19 +471,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#112-how-llms-work-tokenization-and-context" class="md-nav__link">
+  <a href="#112-how-llms-work-tokenization-embedding-and-context" class="md-nav__link">
     <span class="md-ellipsis">
-      1.1.2 How LLMs Work: Tokenization and Context
+      1.1.2 How LLMs work: tokenization, embedding and context
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1.1.2 How LLMs Work: Tokenization and Context">
+    <nav class="md-nav" aria-label="1.1.2 How LLMs work: tokenization, embedding and context">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#tokenization" class="md-nav__link">
     <span class="md-ellipsis">
       Tokenization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embeddings
     </span>
   </a>
   
@@ -506,7 +515,7 @@
         <li class="md-nav__item">
   <a href="#113-model-categories" class="md-nav__link">
     <span class="md-ellipsis">
-      1.1.3 Model Categories
+      1.1.3 Model categories
     </span>
   </a>
   
@@ -515,7 +524,7 @@
         <li class="md-nav__item">
   <a href="#114-multimodality-and-vision-language" class="md-nav__link">
     <span class="md-ellipsis">
-      1.1.4 Multimodality and Vision-Language
+      1.1.4 Multimodality and vision-language
     </span>
   </a>
   
@@ -779,11 +788,11 @@
         <li class="md-nav__item">
   <a href="#111-the-ai-spectrum-a-technological-evolution" class="md-nav__link">
     <span class="md-ellipsis">
-      1.1.1 The AI Spectrum: A Technological Evolution
+      1.1.1 The AI spectrum: a technological evolution
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1.1.1 The AI Spectrum: A Technological Evolution">
+    <nav class="md-nav" aria-label="1.1.1 The AI spectrum: a technological evolution">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -828,19 +837,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#112-how-llms-work-tokenization-and-context" class="md-nav__link">
+  <a href="#112-how-llms-work-tokenization-embedding-and-context" class="md-nav__link">
     <span class="md-ellipsis">
-      1.1.2 How LLMs Work: Tokenization and Context
+      1.1.2 How LLMs work: tokenization, embedding and context
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1.1.2 How LLMs Work: Tokenization and Context">
+    <nav class="md-nav" aria-label="1.1.2 How LLMs work: tokenization, embedding and context">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#tokenization" class="md-nav__link">
     <span class="md-ellipsis">
       Tokenization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embeddings
     </span>
   </a>
   
@@ -863,7 +881,7 @@
         <li class="md-nav__item">
   <a href="#113-model-categories" class="md-nav__link">
     <span class="md-ellipsis">
-      1.1.3 Model Categories
+      1.1.3 Model categories
     </span>
   </a>
   
@@ -872,7 +890,7 @@
         <li class="md-nav__item">
   <a href="#114-multimodality-and-vision-language" class="md-nav__link">
     <span class="md-ellipsis">
-      1.1.4 Multimodality and Vision-Language
+      1.1.4 Multimodality and vision-language
     </span>
   </a>
   
@@ -894,9 +912,9 @@
 
 
 
-<h1 id="11-fundamentals-and-key-concepts-of-generative-ai">1.1 Fundamentals and Key Concepts of Generative AI</h1>
+<h1 id="11-fundamentals-and-key-concepts-of-generative-ai">1.1 Fundamentals and key Concepts of generative AI</h1>
 <p>To effectively test <strong>MagicFridge</strong> functionalities using AI, it is imperative to understand what is hidden under the hood. AI is not a monolithic block, but the result of a long technological evolution.</p>
-<h2 id="111-the-ai-spectrum-a-technological-evolution">1.1.1 The AI Spectrum: A Technological Evolution</h2>
+<h2 id="111-the-ai-spectrum-a-technological-evolution">1.1.1 The AI spectrum: a technological evolution</h2>
 <p>The history of artificial intelligence can be broken down into four major stages, all present at different levels in our application.</p>
 <h3 id="1-symbolic-ai">1. Symbolic AI</h3>
 <p>This is the historical form, based on strict logical rules coded by humans. It does not learn; it applies procedures.</p>
@@ -923,14 +941,20 @@
 <p>This is the flagship feature of the new version: when a user asks for a dinner idea with random leftovers, the AI does not look up a database response. It invents, word by word, a unique and coherent recipe that existed nowhere else, thus moving from the status of analyst to that of creator.</p>
 </div>
 <hr />
-<h2 id="112-how-llms-work-tokenization-and-context">1.1.2 How LLMs Work: Tokenization and Context</h2>
-<p>The engines of this textual generative AI are called <strong>LLMs (Large Language Models)</strong> and rely on a neural network architecture named <strong>Transformer</strong>. To understand LLMs properly, we must grasp two fundamental mechanisms.</p>
+<h2 id="112-how-llms-work-tokenization-embedding-and-context">1.1.2 How LLMs work: tokenization, embedding and context</h2>
+<p>The engines of this textual generative AI are called <strong>LLMs (Large Language Models)</strong> and rely on a neural network architecture named <strong>Transformer</strong>. To understand LLMs properly, we must grasp 3 fundamental mechanisms.</p>
 <h3 id="tokenization">Tokenization</h3>
 <p>Unlike us, LLMs do not read whole words. They break down text into smaller units called <strong>tokens</strong>, which can be words, syllables, or characters.</p>
 <div class="admonition example">
 <p class="admonition-title">Red thread: MagicFridge</p>
 <p>When a MagicFridge user types the instruction <em>"Cook a pie"</em>, the model actually perceives a numerical sequence corresponding to the fragments <code>[Cook]</code>, <code>[a]</code>, <code>[pi]</code>, <code>[e]</code>.</p>
 <p><strong>Note for the tester:</strong> This nuance is crucial because AI input limits are calculated in <strong>tokens</strong>, not in number of words.</p>
+</div>
+<h3 id="embeddings">Embeddings</h3>
+<p><strong>Embeddings</strong> transform tokens into lists of numbers (vectors) to enable the AI to understand their deep meaning and relationships. In this mathematical space, words with similar meanings are positioned physically close to each other.</p>
+<div class="admonition example">
+<p class="admonition-title">Red thread: MagicFridge</p>
+<p>If the user asks for a recipe with "Zucchini" but runs out, <strong>GUS</strong> knows mathematically that the word "Cucumber" is a very close neighbor (similar vector) while "Tire" is very far away. Thanks to embeddings, it can suggest a relevant replacement without having been explicitly taught a list of synonyms.</p>
 </div>
 <h3 id="the-context-window">The Context Window</h3>
 <p>It represents the model's "working memory," i.e., the maximum amount of information it can process simultaneously.</p>
@@ -941,7 +965,7 @@
 <p><strong>Consequence:</strong> The AI continues cooking, but it might suggest a dangerous recipe simply because the crucial information <em>"I am allergic to peanuts"</em>, written on the very first ticket now thrown away, has fallen out of its active memory.</p>
 </div>
 <hr />
-<h2 id="113-model-categories">1.1.3 Model Categories</h2>
+<h2 id="113-model-categories">1.1.3 Model categories</h2>
 <p>Not all models behave in the same way. The syllabus distinguishes three categories based on their specialization.</p>
 <table>
 <thead>
@@ -953,40 +977,40 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Base Model</strong></td>
+<td style="text-align: left;"><strong>Base model</strong></td>
 <td style="text-align: left;">Trained to predict the next most probable word crudely. Powerful but unpredictable.</td>
 <td style="text-align: left;">If the user writes <em>"My list"</em>, it might complete with <em>"of groceries:"</em> (simple completion).</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Instruction-Tuned</strong></td>
+<td style="text-align: left;"><strong>Instruction-tuned</strong></td>
 <td style="text-align: left;">Fine-tuned to understand and execute orders. Ideal for interactions.</td>
 <td style="text-align: left;">To the query <em>"Shopping list"</em>, it understands the intent and replies with a relevant list of ingredients.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Reasoning Model</strong></td>
+<td style="text-align: left;"><strong>Reasoning model</strong></td>
 <td style="text-align: left;">Uses "Chain of Thought" to break down complex problems.</td>
 <td style="text-align: left;">For a wedding menu with a tight budget and multiple restrictions, it first calculates costs and constraints before generating the menu.</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="114-multimodality-and-vision-language">1.1.4 Multimodality and Vision-Language</h2>
-<p>The ultimate current evolution lies in <strong>Multimodal LLMs</strong>. AI is no longer confined to text; it can process images, audio, and video simultaneously.</p>
+<h2 id="114-multimodality-and-vision-language">1.1.4 Multimodality and vision-language</h2>
+<p>One of the major developments in AI lies in <strong>multimodal LLM</strong>. AI is no longer limited to text; it can simultaneously process images, audio, and video.</p>
 <div class="admonition example">
 <p class="admonition-title">Red thread: MagicFridge</p>
 <p>This technology allows the user to take a simple photo of the inside of their open fridge. The vision-language model visually identifies yogurt pots and vegetables, associates these objects with their textual concepts, and generates a recipe consistent with what it "saw".</p>
-<p><strong>Testing Challenge:</strong> We must verify not only the quality of the text but also the accuracy of the visual interpretation.</p>
+<p><strong>Testing challenge:</strong> we must verify not only the quality of the text but also the accuracy of the visual interpretation.</p>
 </div>
 <hr />
 <div class="admonition info">
-<p class="admonition-title">🎓 Syllabus Point (Summary K1/K2)</p>
+<p class="admonition-title">🎓 Syllabus point (summary K1/K2)</p>
 <p>To conclude this section, here are the key concepts to remember for the exam:</p>
 <ul>
-<li><strong>Generative AI (GenAI):</strong> Branch of AI creating new content (text, image, code) via pre-trained models.</li>
-<li><strong>LLM (Large Language Model):</strong> Model based on the <strong>Transformer</strong> architecture, trained on vast textual data.</li>
-<li><strong>Tokenization:</strong> Process of breaking down data (text) into elementary units (tokens).</li>
-<li><strong>Context Window:</strong> Limit of the model's short-term memory during an interaction.</li>
-<li><strong>Hallucination:</strong> The act of generating plausible but factually false information.</li>
+<li><strong>Generative AI (GenAI):</strong> branch of AI creating new content (text, image, code) via pre-trained models.</li>
+<li><strong>LLM (Large Language Model):</strong> model based on the <strong>Transformer</strong> architecture, trained on vast textual data.</li>
+<li><strong>Tokenization:</strong> process of breaking down data (text) into elementary units (tokens).</li>
+<li><strong>Context window:</strong> limit of the model's short-term memory during an interaction.</li>
+<li><strong>Embeddings:</strong> numerical representations (vectors) of tokens enabling the AI to understand their semantic and contextual relationships.</li>
 </ul>
 </div>
 <p><br></p>
@@ -1000,7 +1024,7 @@
         <img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' />
     </a>
     <br>
-    <em>It's 0% fees for me, and 100% fuel for the next chapter! ☕</em>
+    <em>I truly appreciate your generosity ! 🤗</em>
 </div></p>
 </div>
 
