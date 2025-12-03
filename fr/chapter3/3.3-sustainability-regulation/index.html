@@ -22,7 +22,7 @@
     
     
       
-        <title>3.3 sustainability regulation - Cours de préparation à la certification ISTQB GenAI</title>
+        <title>3.3 Impact environnemental et réglementations - Cours de préparation à la certification ISTQB GenAI</title>
       
     
     
@@ -105,6 +105,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#33-impact-environnemental-et-reglementations" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -136,7 +141,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              3.3 sustainability regulation
+              3.3 Impact environnemental et réglementations
             
           </span>
         </div>
@@ -614,6 +619,34 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#331-consommation-energetique-et-impact-co2" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3.1 Consommation énergétique et impact CO2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#341-reglementations-et-cadres-de-bonnes-pratiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4.1 Réglementations et cadres de bonnes pratiques
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -629,9 +662,59 @@
 
 
 
-  <h1>3.3 sustainability regulation</h1>
+<h1 id="33-impact-environnemental-et-reglementations">3.3 Impact environnemental et réglementations</h1>
+<p>L'IA n'est pas virtuelle ; elle repose sur des centres de données physiques bien réels. De plus, elle évolue désormais dans un cadre légal strict. Pour <strong>FrigoMagique</strong>, ignorer ces aspects peut coûter cher, tant en facture d'électricité qu'en amendes.</p>
+<h2 id="331-consommation-energetique-et-impact-co2">3.3.1 Consommation énergétique et impact CO2</h2>
+<p>L'entraînement et l'utilisation (inférence) des LLM sont extrêmement énergivores. Le syllabus souligne que l'empreinte carbone varie énormément selon l'usage.</p>
+<p><strong>Ce qu'il faut savoir :</strong>
+*   <strong>Génération d'image vs texte :</strong> générer une image consomme beaucoup plus d'énergie que générer du texte (parfois autant que de charger un smartphone).
+*   <strong>Complexité du modèle :</strong> utiliser un modèle énorme (GPT-5) pour une tâche simple (trier une liste) est un gaspillage de ressources.</p>
+<div class="admonition example">
+<p class="admonition-title">Fil rouge : FrigoMagique</p>
+<p>L'équipe marketing veut que GUS génère une image 4K unique pour <strong>chaque</strong> ingrédient de la liste de courses de l'utilisateur (une image pour "Sel", une pour "Poivre", etc.).</p>
+<p><strong>Analyse du testeur (Green IT) :</strong>
+Le testeur calcule l'impact : <em>"Générer 50 images à chaque liste de courses multiplie la consommation CPU/GPU par 100 par rapport à du texte simple. C'est un désastre écologique et financier."</em></p>
+<p><strong>Recommandation :</strong> utiliser des images statiques stockées pour les ingrédients courants et réserver l'IA générative uniquement pour la photo du "Plat final exceptionnel".</p>
+</div>
+<h2 id="341-reglementations-et-cadres-de-bonnes-pratiques">3.4.1 Réglementations et cadres de bonnes pratiques</h2>
+<p>Des réglementations comme l'<strong>AI Act</strong> européen ou des standards comme l'<strong>ISO/IEC 42001</strong> imposent des règles strictes.</p>
+<p><strong>Les points de vigilance pour le testeur :</strong>
+1.  <strong>Transparence :</strong> l'utilisateur doit savoir qu'il interagit avec une IA.
+2.  <strong>Équité :</strong> l'IA ne doit pas discriminer.
+3.  <strong>Responsabilité :</strong> l'entreprise est responsable des erreurs de son IA.</p>
+<div class="admonition example">
+<p class="admonition-title">Fil rouge : FrigoMagique</p>
+<p>Lorsque l'utilisateur discute avec GUS pour la première fois.</p>
+<p><strong>Test de conformité (Compliance Testing) :</strong>
+La testeuse vérifie l'interface.</p>
+<ul>
+<li><em>Scénario A :</em> GUS dit "Bonjour, je suis le Chef Philippe, un humain passionné." -&gt; <strong>ÉCHEC CRITIQUE</strong>. C'est une tromperie illégale (AI Act).</li>
+<li><em>Scénario B :</em> GUS dit "Bonjour, je suis votre assistant virtuel intelligent." + Une mention "Généré par IA" apparaît sous chaque recette. -&gt; <strong>SUCCÈS</strong>. La transparence est respectée.</li>
+</ul>
+</div>
+<hr />
+<div class="admonition info">
+<p class="admonition-title"> Point syllabus (ce qu'il faut retenir)</p>
+<ul>
+<li><strong>Impact environnemental :</strong> Les LLM ont une empreinte carbone élevée. Il faut optimiser leur usage (choisir le bon modèle pour la bonne tâche).</li>
+<li><strong>Réglementation (AI Act, RGPD) :</strong> obligation de transparence et de traçabilité.</li>
+<li><strong>Standards :</strong> connaître l'existence de l'ISO/IEC 42001 (Management de l'IA) et ISO/IEC 23053 (Cadre ML).</li>
+</ul>
+</div>
+<p><br></p>
+<hr>
 
-
+<div class="admonition quote">
+<p class="admonition-title">Ce cours vous est utile ?</p>
+<p>Ce contenu est <strong>100% gratuit</strong>. Si cette section sur FrigoMagique vous a aidé :</p>
+<p><div style="text-align: center; margin-top: 15px;">
+    <a href='https://ko-fi.com/monwebmestre' target='_blank'>
+        <img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Soutenez-moi sur Ko-fi' />
+    </a>
+    <br>
+    <em>C'est 0% de frais pour moi, et 100% d'énergie pour la suite ! ☕</em>
+</div></p>
+</div>
 
 
 

@@ -719,27 +719,31 @@
 </table>
 <h2 id="323-strategies-dattenuation">3.2.3 Stratégies d'atténuation</h2>
 <p>Pour protéger les données et le système, l'organisation doit mettre en place des mesures robustes.</p>
-<p><strong>1. Protection des données</strong>
-*   <strong>Minimisation :</strong> ne jamais utiliser de données réelles (Production) dans les tests IA.
-*   <strong>Anonymisation :</strong> remplacer les données sensibles par des alias (ex: "User_123" au lieu de "Mme Michu").
-*   <strong>Environnements sécurisés :</strong> privilégier des instances d'IA privées (Enterprise) où les données ne servent pas à l'entraînement du modèle global.
-*   <strong>Formation des ressources :</strong> établir des programmes de formation clairs pour que les testeurs comprennent les implications éthiques et les risques de sécurité d'utiliser l'IA.</p>
+<p><strong>1. Protection des données</strong></p>
+<ul>
+<li><strong>Minimisation :</strong> ne jamais utiliser de données réelles (Production) dans les tests IA.</li>
+<li><strong>Anonymisation :</strong> remplacer les données sensibles par des alias (ex: "User_123" au lieu de "Mme Michu").</li>
+<li><strong>Environnements sécurisés :</strong> privilégier des instances d'IA privées (Enterprise) où les données ne servent pas à l'entraînement du modèle global.</li>
+<li><strong>Formation des ressources :</strong> établir des programmes de formation clairs pour que les testeurs comprennent les implications éthiques et les risques de sécurité d'utiliser l'IA.</li>
+</ul>
 <div class="admonition example">
 <p class="admonition-title">Fil rouge : FrigoMagique</p>
 </div>
 <p>L'entreprise organise un atelier obligatoire : "IA &amp; Sécurité : les 10 commandements".
 Chaque nouveau testeur apprend qu'il est interdit de copier du code source propriétaire dans un chatbot public, sous peine de licenciement.</p>
-<p><strong>2. Renforcement de la sécurité</strong>
-*   <strong>Revue systématique :</strong> un humain doit toujours valider le code ou les tests générés par l'IA avant de les exécuter.
-*   <strong>Audits de sécurité :</strong> organiser des sessions où des testeurs essaient activement de "casser" l'IA via du Prompt Injection pour identifier ses faiblesses.
-*   <strong>Évaluation par comparaison avec un autre LLM :</strong> soumettre le même prompt à plusieurs modèles différents et comparer leurs réponses. Si les modèles divergent fortement, il y a un risque de sécurité.</p>
+<p><strong>2. Renforcement de la sécurité</strong></p>
+<ul>
+<li><strong>Revue systématique :</strong> un humain doit toujours valider le code ou les tests générés par l'IA avant de les exécuter.</li>
+<li><strong>Audits de sécurité :</strong> organiser des sessions où des testeurs essaient activement de "casser" l'IA via du Prompt Injection pour identifier ses faiblesses.</li>
+<li><strong>Évaluation par comparaison avec un autre LLM :</strong> soumettre le même prompt à plusieurs modèles différents et comparer leurs réponses. Si les modèles divergent fortement, il y a un risque de sécurité.</li>
+</ul>
 <div class="admonition example">
 <p class="admonition-title">Fil rouge : FrigoMagique</p>
 <p>La testeuse demande à GUS de générer un script SQL complexe. Pour être sûre qu'il ne contient pas de faille de sécurité subtile, elle demande à un second LLM (d'une autre marque) d'analyser le code généré par GUS. C'est le principe du "Second avis médical" appliqué à l'IA.</p>
 </div>
 <hr />
 <div class="admonition info">
-<p class="admonition-title">🎓 Point syllabus (ce qu'il faut retenir)</p>
+<p class="admonition-title">Point syllabus (ce qu'il faut retenir)</p>
 <ul>
 <li><strong>Risques principaux :</strong> divulgation involontaire de données, non-conformité (RGPD), injection de prompt.</li>
 <li><strong>Vecteurs d'attaque :</strong> exfiltration, manipulation, empoisonnement, code malveillant.</li>
