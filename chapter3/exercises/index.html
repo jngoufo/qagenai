@@ -936,21 +936,19 @@ Here, we are not looking to see if the AI works, but <strong>how it can fail</st
 <p><strong>Task:</strong> analyze GUS's responses and identify the type of error.</p>
 <div class="admonition question your turn">
 <p class="admonition-title">Question</p>
-</div>
 <p><strong>1. Prompt: "I have 2 apples. I buy 3 more, then I eat 1. How many do I have left?"</strong>
 <br> <strong>GUS's response:</strong> <em>"You have 6 apples left."</em></p>
-<div style="margin-bottom: 15px;">
+<p><div style="margin-bottom: 15px;">
 <button onclick="alert('🥳 EXACT! The AI failed the calculation (2+3-1 = 4). The facts are correct (apples), but the logic is wrong.')" style="cursor: pointer;">Reasoning error</button>
 <button onclick="alert('😔 No. A hallucination would be inventing blue apples. Here, it is a logical failure.')" style="cursor: pointer;">Hallucination</button>
 <button onclick="alert('😔 No. There is no stereotype here.')" style="cursor: pointer;">Bias</button>
-</div>
-
+</div></p>
 <p><strong>2. Prompt: "What is the cooking temperature for 'Kralou' fish?"</strong>
 <br> <strong>GUS's response:</strong> <em>"Kralou must be cooked at 180°C for 20 minutes to keep its flesh tender."</em> (Note: The "Kralou" fish does not exist).</p>
-<div style="margin-bottom: 15px;">
+<p><div style="margin-bottom: 15px;">
 <button onclick="alert('😔 No. The reasoning holds up, but the premise is false.')" style="cursor: pointer;">Reasoning error</button>
 <button onclick="alert('🥳 BRAVO! The AI invented factual knowledge that does not exist. This is the classic trap.')" style="cursor: pointer;">Hallucination</button>
-</div>
+</div></p>
 </div>
 <hr />
 <h2 id="exercise-2-cybersecurity-alert">Exercise 2: cybersecurity alert 🛡️</h2>
