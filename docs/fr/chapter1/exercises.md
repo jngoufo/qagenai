@@ -15,11 +15,10 @@ La théorie, c'est bien. La pratique, c'est mieux. Voici 4 exercices interactifs
 ## Exercice 1 : le tri sélectif de l'IA 🧠
 *(Objectif : distinguer les types d'IA - LO 1.1.1)*
 
-**Consigne :** l'application FrigoMagique contient plusieurs fonctionnalités. Pour chacune d'elles, déterminez quelle technologie d'IA est à l'œuvre.
+**Consigne :** l'application FrigoMagique contient plusieurs fonctionnalités. Pour chacune d'elles, déterminez, en cliquant sur la bonne réponse, quelle technologie d'IA est à l'œuvre.
 
 <div class="admonition question">
 <p class="admonition-title">À vous de jouer</p>
-Cliquez sur la technologie qui correspond à la fonctionnalité décrite.<br>
 
 <b>1."Si la date du jour > date de péremption, envoyer une alerte."</b>
 <div style="margin-bottom: 10px;">
