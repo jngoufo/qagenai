@@ -92,6 +92,13 @@
         <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter3/3.3-sustainability-regulation/"/>
     </url>
     <url>
+        <loc>https://qagenai.monwebmestre.tech/chapter3/exercises/</loc>
+        <lastmod>2025-12-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qagenai.monwebmestre.tech/chapter3/exercises/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter3/exercises/"/>
+    </url>
+    <url>
         <loc>https://qagenai.monwebmestre.tech/chapter3/introduction/</loc>
         <lastmod>2025-12-03</lastmod>
         <changefreq>daily</changefreq>
@@ -188,6 +195,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter3/3.3-sustainability-regulation/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://qagenai.monwebmestre.tech/chapter3/3.3-sustainability-regulation/"/>
+    </url>
+    <url>
+        <loc>https://qagenai.monwebmestre.tech/fr/chapter3/exercises/</loc>
+        <lastmod>2025-12-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter3/exercises/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qagenai.monwebmestre.tech/chapter3/exercises/"/>
     </url>
     <url>
         <loc>https://qagenai.monwebmestre.tech/fr/chapter3/introduction/</loc>
