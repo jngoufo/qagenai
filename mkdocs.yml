@@ -1,4 +1,4 @@
-site_name: ISTQB GenAI Certification Prep Course
+site_name: ISTQB GenAI Certification... Made Easy
 site_url: https://qagenai.monwebmestre.tech/
 site_author: Monwebmestre
 site_description: A comprehensive course to prepare for the ISTQB GenAI certification exam for testing and quality-engineering professionals.
@@ -91,17 +91,27 @@ extra:
 nav:
   - 'Home': index.md
   - 'Chapter 1':
-      - 'Introduction & Objectives': chapter1/introduction.md  
+      - 'Introduction & Roadmap': chapter1/introduction.md  
       - '1.1 Foundations & Concepts': chapter1/1.1-foundations.md
       - '1.2 Leveraging Generative AI': chapter1/1.2-leveraging-genai.md
-      - '🧪 Practice lab': chapter1/exercises.md
+      - '🧪 Practice Lab': chapter1/exercises.md
   - 'Chapter 2':
-      - 'Introduction & roadmap': chapter2/introduction.md
+      - 'Introduction & Roadmap': chapter2/introduction.md
       - '2.1 Effective Prompt Development': chapter2/2.1-effective-prompting.md
       - '2.2 Applying Prompt Techniques': chapter2/2.2-applying-prompt-techniques.md
       - '2.3 Evaluate Results & Refine': chapter2/2.3-evaluate-refine-prompt.md
-      - '🧪 Practice lab': chapter2/exercises.md
-# -------------------------------------------------------------------------
+      - '🧪 Practice Lab': chapter2/exercises.md
+  - 'Chapter 3':
+      - 'Introduction & Roadmap': chapter3/introduction.md
+      - '3.1 Hallucinations, Reasoning errors & Biases': chapter3/3.1-hallucinations-bias.md
+      - '3.2 Data Privacy and Security Risks': chapter3/3.2-privacy-security.md
+      - '3.3 Environmental Impact and Regulations': chapter3/3.3-sustainability-regulation.md
+      - '🧪 Practice Lab': chapter3/exercises.md 
+  - 'Chapter 4':
+      - 'Introduction & Roadmap': chapter4/introduction.md
+      - '4.1 RAG & Agents': chapter4/4.1-architecture-rag-agents.md
+      - '4.2 Fine-Tuning & LLMOps': chapter4/4.2-finetuning-llmops.md
+      - '🧪 Practice Lab': chapter4/exercises.md
 # COPYRIGHT (Version par défaut : ANGLAIS)
 # -------------------------------------------------------------------------
 copyright: >
@@ -152,6 +162,17 @@ plugins:
                 - '2.2 Appliquer les techniques de prompt': chapter2/2.2-applying-prompt-techniques.md
                 - '2.3 Évaluer les résultats et affiner': chapter2/2.3-evaluate-refine-prompt.md
                 - '🧪 Laboratoire pratique': chapter2/exercises.md
+            - 'Chapitre 3':
+                - 'Introduction et feuille de route': chapter3/introduction.md  
+                - '3.1 Hallucinations, erreurs de raisonnement et biais': chapter3/3.1-hallucinations-bias.md
+                - '3.2 Risques liés à la confidentialité et à la sécurité des données': chapter3/3.2-privacy-security.md
+                - '3.3 Impact environnemental et réglementations': chapter3/3.3-sustainability-regulation.md
+                - '🧪 Laboratoire pratique': chapter3/exercises.md
+            - 'Chapitre 4':
+                - 'Introduction et feuille de route': chapter4/introduction.md
+                - '4.1 RAG et Agents': chapter4/4.1-architecture-rag-agents.md
+                - '4.2 Fine-Tuning et LLMOps': chapter4/4.2-finetuning-llmops.md
+                - '🧪 Laboratoire pratique': chapter4/exercises.md
           # 4. Traduction de la section EXTRA (Cookies & Feedback)
           extra:
             consent:

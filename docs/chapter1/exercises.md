@@ -15,11 +15,10 @@ Theory is good. Practice is better. Here are 4 interactive exercises to verify t
 ## Exercise 1: AI sorting hat 🧠
 *(Objective: distinguish AI types - LO 1.1.1)*
 
-**Task:** the MagicFridge application contains several features. For each one, determine which AI technology is at work.
+**Task:** the MagicFridge application contains several features. For each one, determine, by clicking on the correct answer, which AI technology is at work.
 
 <div class="admonition question">
 <p class="admonition-title">Your turn</p>
-Click on the technology that matches the described feature.<br>
 
 <b>1. "IF today > expiration date, send an alert."</b>
 <div style="margin-bottom: 10px;">

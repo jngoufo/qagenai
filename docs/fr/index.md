@@ -1,8 +1,8 @@
 # Bienvenue sur le guide de Certification ISTQB CT-GenAI
 
-**Préparez votre certification "Testing with Generative AI" en lisant les 70 pages du syllabus officiel… ou bien en parcourant ce guide plus simple.**
+**Préparez votre certification "Testing with Generative AI" soit en lisant les 70 pages du syllabus officiel, soit en parcourant ce guide plus simple, soit en lisant les deux (pourquoi pas ?).**
 
-Ce site est un cours complet, gratuit et interactif sur l'utilisation de l'IA générative dans les tests. Il est conçu pour les professionnels du test et de la qualité logicielle (QA).
+Ce site est un cours condensé, illustré, interactif et gratuit sur l'utilisation de l'IA générative dans les tests. Il est conçu pour les professionnels du test et de la qualité logicielle (QA).
 
 ---
 
@@ -39,10 +39,10 @@ Ce guide suit scrupuleusement le plan officiel de l'ISTQB (v1.0 - 2025) :
     *   Comprendre les LLM, la tokenisation et les fenêtres contextuelles.
 *   **[Chapitre 2 : Ingénierie de prompt](chapter2/introduction.md)**
     *   L'art de parler à la machine.
-*   **Chapitre 3 : Gestion des risques de l'IA générative**
+*   **[Chapitre 3 : Gestion des risques de l'IA générative](chapter3/introduction.md)**
     *   Hallucinations, biais et sécurité.
-*   **Chapitre 4 : Infrastructure de test basée sur les LLM**
-    *   Approches architecturales, réglage fin et LLMOps.
+*   **[Chapitre 4 : Infrastructure de test basée sur les LLM](chapter4/introduction.md)**
+    *   Approches architecturales, fine-tuning et LLMOps.
 *   **Chapitre 5 : Déploiement et intégration de l'IA générative**
     *   Adoption de l'IA générative, et gestion du changement.
 

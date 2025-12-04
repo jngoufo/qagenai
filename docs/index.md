@@ -1,8 +1,8 @@
 # Welcome to the ISTQB CT-GenAI Certification Guide
 
-**Prepare for your "Testing with Generative AI" certification by reading the 70-page official syllabus… or by browsing this simpler guide.**
+**Prepare for your "Testing with Generative AI" certification either by reading the 70 pages of the official syllabus, or by browsing this simpler guide, or by reading both (why not?).**
 
-This site is a comprehensive, free, and interactive course on using generative AI in testing. It is designed for testing and software quality (QA) professionals.
+This site is a condensed, illustrated, interactive, and free course on using generative AI in testing. It is designed for testing and software quality (QA) professionals.
 
 ---
 
@@ -39,9 +39,9 @@ This guide strictly follows the official ISTQB plan (v1.0 - 2025):
     *   Understanding LLMs, tokenization, and context windows.
 *   **[Chapter 2: Prompt engineering](chapter2/introduction.md)** 
     *   The art of speaking to the machine.
-*   **Chapter 3: Risks and ethics of generative AI** 
+*   **[Chapter 3: Risks and ethics of generative AI](chapter3/introduction.md)** 
     *   Hallucinations, bias, and security.
-*   **Chapter 4: LLM-Powered test infrastructure** 
+*   **[Chapter 4: LLM-Powered test infrastructure](chapter4/introduction.md)** 
     *   Architectural approaches, fine-tuning and LLMOps.
 *   **Chapter 5: Deploying and integrating generative AI** 
     *   Adoption and change management of generative AI.

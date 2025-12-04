@@ -31,20 +31,20 @@ You have learned the theory, now you must apply it. These exercises put you in t
 ## Exercise 2: which technique for which task? 🛠️
 *(Objective: choose the right prompting technique - LO 2.2.5)*
 
-**Task:** for each situation encountered at MagicFridge, click on the most suitable technique.
+**Task:** for each situation encountered at MagicFridge, determine, by clicking on the correct answer, the most suitable technique.
 
 !!! question "Your turn"
 
     **1. You want the AI to generate 50 test cases in strict Gherkin format, without syntax errors.**
     <div style="margin-bottom: 15px;">
-    ● <button onclick="alert('😔 No. Prompt chaining is useful for complex reasoning, not for forcing a repetitive format.')" style="cursor: pointer;">Prompt chaining</button><br>
+    ● <button onclick="alert('😔 No. Prompt Chaining is useful for complex reasoning, not for forcing a repetitive format.')" style="cursor: pointer;">Prompt Chaining</button><br>
     ● <button onclick="alert('🥳 EXACT! By giving 2 or 3 perfect Gherkin examples (shots), the AI will mimic their structure. This is the king method for formatting.')" style="cursor: pointer;">Few-shot prompting</button><br>
     ● <button onclick="alert('😔 Risky. Without an example, the AI might invent its own syntax.')" style="cursor: pointer;">Zero-shot prompting</button>
     </div>
 
     **2. You want the AI to analyze a complex user story, identify business rules, and then derive tests.**
     <div style="margin-bottom: 15px;">
-    ● <button onclick="alert('🥳 BRAVO! We break it down: 1. Analysis, 2. Rule extraction, 3. Test generation. This prevents the AI from getting confused.')" style="cursor: pointer;">Prompt chaining</button><br>
+    ● <button onclick="alert('🥳 BRAVO! We break it down: 1. Analysis, 2. Rule extraction, 3. Test generation. This prevents the AI from getting confused.')" style="cursor: pointer;">Prompt Chaining</button><br>
     ● <button onclick="alert('😔 Not suitable. Examples are not enough here; logical step-by-step reasoning is needed.')" style="cursor: pointer;">Few-shot prompting</button><br>
     ● <button onclick="alert('😔 No. Meta-prompting is used to create prompts, not to execute a complex analysis directly.')" style="cursor: pointer;">Meta-prompting</button>
     </div>

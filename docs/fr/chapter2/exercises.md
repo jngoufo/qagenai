@@ -31,7 +31,7 @@ Vous avez appris la théorie, maintenant il faut l'appliquer. Ces exercices vous
 ## Exercice 2 : quelle technique pour quelle tâche ? 🛠️
 *(Objectif : choisir la bonne technique de prompting - LO 2.2.5)*
 
-**Consigne :** pour chaque situation rencontrée chez FrigoMagique, cliquez sur la technique la plus adaptée.
+**Consigne :** pour chaque situation rencontrée chez FrigoMagique, déterminez, en cliquant sur la bonne réponse, la technique la plus adaptée.
 
 !!! question "À vous de jouer"
 
