@@ -22,7 +22,7 @@
     
     
       
-        <title>Exercises - ISTQB GenAI Certification... Made Easy</title>
+        <title>🧪 Practice lab: Quality Architect - ISTQB GenAI Certification... Made Easy</title>
       
     
     
@@ -105,6 +105,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#practice-lab-quality-architect" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -136,7 +141,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Exercises
+              🧪 Practice lab: Quality Architect
             
           </span>
         </div>
@@ -781,6 +786,52 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-1-the-rag-vs-fine-tuning-dilemma" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 1: the RAG vs Fine-tuning dilemma 🏗️
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-2-the-secret-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 2: the secret agent 🕵️
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-3-inside-the-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 3: inside the database 🛢️
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-4-crisis-in-production-llmops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 4: crisis in production (LLMOps) 🚨
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -796,9 +847,84 @@
 
 
 
-  <h1>Exercises</h1>
+<h1 id="practice-lab-quality-architect">🧪 Practice lab: Quality Architect</h1>
+<p>Welcome to the architecture office of <strong>MagicFridge</strong>.
+Here, we are no longer playing with the chat. We are building the factory. Your mission is to choose the right technological building blocks to solve industrial-scale problems.</p>
+<hr />
+<h2 id="exercise-1-the-rag-vs-fine-tuning-dilemma">Exercise 1: the RAG vs Fine-tuning dilemma 🏗️</h2>
+<p><em>(Objective: choose the right adaptation strategy - LO 4.1.2 vs 4.2.1)</em></p>
+<p><strong>Situation:</strong> The marketing team is launching a "Christmas 2026" campaign with very complex discount rules that change every day. GUS (the AI) is completely hallucinating on these rules.</p>
+<p><strong>The Project Manager asks you:</strong> <em>"Should we retrain the model (Fine-tuning) so it learns these rules?"</em></p>
+<div class="admonition question">
+<p class="admonition-title">Your technical recommendation</p>
+<p><strong>What is the best approach?</strong></p>
+<p><div style="margin-bottom: 15px;">
+● <button onclick="alert('😔 Bad idea. Fine-tuning is slow and expensive. If rules change every day, your model will always be obsolete.')" style="cursor: pointer;">Yes, let's launch a Fine-tuning every night.</button><br>
+● <button onclick="alert('🥳 EXACT! RAG allows connecting the AI to documentation in real-time. If we update the rules PDF, GUS is up to date to the second.')" style="cursor: pointer;">No, let's use RAG (Retrieval-Augmented Generation).</button>
+</div></p>
+</div>
+<hr />
+<h2 id="exercise-2-the-secret-agent">Exercise 2: the secret agent 🕵️</h2>
+<p><em>(Objective: identify an autonomous agent - LO 4.1.3)</em></p>
+<p><strong>Observation:</strong> You observe two different behaviors of GUS in the logs. Which one corresponds to the definition of an <strong>Autonomous Agent</strong>?</p>
+<div class="admonition question">
+<p class="admonition-title">You be the judge</p>
+<p><strong>Case A:</strong> The user asks "Delete my account". GUS replies: "To delete your account, go to Settings &gt; Profile."</p>
+<p><strong>Case B:</strong> The user asks "Delete my account". GUS connects to the Admin API, checks the balance, executes the SQL <code>DELETE</code> command, and sends a confirmation email.</p>
+<p>In which of these cases is GUS an agent?</p>
+<p><div style="margin-bottom: 15px;">
+● <button onclick="alert('😔 No. Here, GUS only generates text (an instruction). It does not act on the system.')" style="cursor: pointer;">Case A</button><br>
+● <button onclick="alert('🥳 BRAVO! Here, GUS uses tools (API, SQL, Email) to execute a real action on the world. This is the definition of an Agent.')" style="cursor: pointer;">Case B</button>
+</div></p>
+</div>
+<hr />
+<h2 id="exercise-3-inside-the-database">Exercise 3: inside the database 🛢️</h2>
+<p><em>(Objective: understand architectural components - LO 4.1.1)</em></p>
+<p><strong>Context:</strong> To make RAG work, MagicFridge must store its thousands of recipes in a way that the AI can "understand" semantically (for example, knowing that "Tomato" is close to "Red Sauce").</p>
+<p><strong>Question:</strong> What type of database should the architect install?</p>
+<ol>
+<li>A Relational Database (SQL)</li>
+<li>A Vector Database (Vector DB)</li>
+<li>A shared Excel file</li>
+</ol>
+<details class="success">
+<summary>See the answer</summary>
+<p><strong>Answer: 2. A Vector Database.</strong></p>
+<p>It allows storing the <strong>Embeddings</strong> (numerical vectors) of documents. This is what enables the system to perform a semantic search ("find me something that looks like a tomato") rather than an exact keyword search.</p>
+</details>
+<hr />
+<h2 id="exercise-4-crisis-in-production-llmops">Exercise 4: crisis in production (LLMOps) 🚨</h2>
+<p><em>(Objective: manage operational lifecycle - LO 4.2.2)</em></p>
+<p><strong>Alert:</strong> Since this morning's model update, API costs have multiplied by 10, and GUS answers in German half the time.</p>
+<p><strong>Which LLMOps practice failed?</strong></p>
+<ol>
+<li>Fine-tuning</li>
+<li>Monitoring</li>
+<li>Orchestration</li>
+</ol>
+<details class="failure">
+<summary>See the answer</summary>
+<p><strong>Answer: 2. Monitoring.</strong></p>
+<p>A good LLMOps strategy includes automatic alerts on:</p>
+<ul>
+<li><strong>Cost</strong> (to detect abnormal spikes).</li>
+<li><strong>Quality/Drift</strong> (to detect that the AI changes language without reason).</li>
+</ul>
+<p><em>Corrective action:</em> Immediate rollback to the previous model version.</p>
+</details>
+<hr />
+<p><br></p>
+<hr>
 
-
+<div class="admonition quote">
+<p class="admonition-title">Have you validated the architecture?</p>
+<p>If these exercises helped you understand the inner workings, a small coffee for the coach would be greatly appreciated! ☕</p>
+<p><div style="text-align: center; margin-top: 15px;">
+    <a href='https://ko-fi.com/monwebmestre' target='_blank'>
+        <img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee' />
+    </a>
+</div></p>
+</div>
 
 
 
