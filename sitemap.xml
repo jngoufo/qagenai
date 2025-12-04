@@ -120,6 +120,13 @@
         <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter4/4.2-finetuning-llmops/"/>
     </url>
     <url>
+        <loc>https://qagenai.monwebmestre.tech/chapter4/exercises/</loc>
+        <lastmod>2025-12-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qagenai.monwebmestre.tech/chapter4/exercises/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter4/exercises/"/>
+    </url>
+    <url>
         <loc>https://qagenai.monwebmestre.tech/chapter4/introduction/</loc>
         <lastmod>2025-12-04</lastmod>
         <changefreq>daily</changefreq>
@@ -244,6 +251,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter4/4.2-finetuning-llmops/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://qagenai.monwebmestre.tech/chapter4/4.2-finetuning-llmops/"/>
+    </url>
+    <url>
+        <loc>https://qagenai.monwebmestre.tech/fr/chapter4/exercises/</loc>
+        <lastmod>2025-12-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://qagenai.monwebmestre.tech/fr/chapter4/exercises/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qagenai.monwebmestre.tech/chapter4/exercises/"/>
     </url>
     <url>
         <loc>https://qagenai.monwebmestre.tech/fr/chapter4/introduction/</loc>
