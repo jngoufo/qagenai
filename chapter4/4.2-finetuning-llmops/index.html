@@ -22,7 +22,7 @@
     
     
       
-        <title>4.2 finetuning llmops - ISTQB GenAI Certification... Made Easy</title>
+        <title>4.2 Fine-tuning and LLMOps: operational implementation - ISTQB GenAI Certification... Made Easy</title>
       
     
     
@@ -105,6 +105,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#42-fine-tuning-and-llmops-operational-implementation" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -136,7 +141,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              4.2 finetuning llmops
+              4.2 Fine-tuning and LLMOps: operational implementation
             
           </span>
         </div>
@@ -781,6 +786,34 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#421-fine-tuning-llms" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.1 Fine-tuning LLMs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#422-llmops-large-language-model-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.2 LLMOps (Large Language Model Operations)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -796,9 +829,64 @@
 
 
 
-  <h1>4.2 finetuning llmops</h1>
+<h1 id="42-fine-tuning-and-llmops-operational-implementation">4.2 Fine-tuning and LLMOps: operational implementation</h1>
+<p>Once the architecture is in place, how do we ensure the model remains performant and maintainable over time? This is where <strong>fine-tuning</strong> (specialization) and <strong>LLMOps</strong> (operational management) come in.</p>
+<h2 id="421-fine-tuning-llms">4.2.1 Fine-tuning LLMs</h2>
+<p><strong>Fine-tuning</strong> involves slightly re-training a generic model on a specific dataset to specialize it for a precise task. Unlike RAG (which provides information), fine-tuning modifies the model's "behavior" or "style".</p>
+<p><strong>Why fine-tune?</strong></p>
+<ul>
+<li>To learn a proprietary code syntax.</li>
+<li>To adopt a specific reporting format.</li>
+<li>To reduce latency (a small specialized model is faster than a large generic model).</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Red thread: MagicFridge</p>
+<p>The team uses a very specific internal testing language called <strong>"FrigoScript"</strong>. Public models (Gemini 3) do not know it and make syntax errors.</p>
+<p><strong>The action:</strong> The AI engineer trains a small Open Source model (e.g., Llama 3) with 5000 examples of existing "FrigoScript" scripts.</p>
+<p><strong>The result:</strong> This new "GUS-Coder" model has become a world expert in FrigoScript, much better than Gemini 3 for this specific task, and cheaper to run.</p>
+</div>
+<h2 id="422-llmops-large-language-model-operations">4.2.2 LLMOps (Large Language Model Operations)</h2>
+<p><strong>LLMOps</strong> is the application of DevOps principles to LLMs. It is the set of practices to deploy, monitor, and maintain models in production.</p>
+<p>Key LLMOps activities for testing:</p>
+<ol>
+<li><strong>Deployment:</strong> Making the model available to testers (API, Server).</li>
+<li><strong>Monitoring:</strong> Verifying that the AI does not drift, become slower, or start hallucinating after an update.</li>
+<li><strong>Cost management:</strong> Tracking token consumption to avoid budget explosion.</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Red thread: MagicFridge</p>
+<p><strong>The QA Lead's LLMOps dashboard:</strong>
+She monitors GUS indicators in real-time:</p>
+<ul>
+<li><em>Cost per day:</em> $15 (Stable).</li>
+<li><em>Average response time:</em> 2.5 seconds (Rising, alert!).</li>
+<li><em>User feedback:</em> The rate of "Thumbs down" on GUS responses has increased by 10% since the last model update.</li>
+</ul>
+<p>Thanks to LLMOps, she decides to roll back to the previous version of the model before it impacts the team too much.</p>
+</div>
+<hr />
+<div class="admonition info">
+<p class="admonition-title">🎓 Syllabus point (key takeaways)</p>
+<ul>
+<li><strong>Fine-tuning:</strong> Model specialization via light re-training. Useful for style compliance or specific languages.</li>
+<li><strong>RAG vs. Fine-tuning:</strong> RAG provides <strong>knowledge</strong> (facts), fine-tuning adapts <strong>behavior</strong> (form).</li>
+<li><strong>LLMOps:</strong> Discipline encompassing deployment, monitoring (performance, quality, cost), and maintenance of AI models.</li>
+</ul>
+</div>
+<p><br></p>
+<hr>
 
-
+<div class="admonition quote">
+<p class="admonition-title">Is this course useful?</p>
+<p>This content is <strong>100% free</strong>. If this section on MagicFridge helped you:</p>
+<p><div style="text-align: center; margin-top: 15px;">
+    <a href='https://ko-fi.com/monwebmestre' target='_blank'>
+        <img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee' />
+    </a>
+    <br>
+    <em>It's 0% fees for me, and 100% fuel for the next chapter! ☕</em>
+</div></p>
+</div>
 
 
 

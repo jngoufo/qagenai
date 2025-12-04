@@ -852,18 +852,18 @@
 <p>Les LLM ont un défaut : ils ne connaissent pas vos secrets d'entreprise et leurs connaissances s'arrêtent à leur date d'entraînement. Le <strong>RAG</strong> est la solution pour connecter l'IA à vos documents privés.</p>
 <p><strong>Comment ça marche ?</strong></p>
 <ol>
-<li><strong>Récupération (Retrieval) :</strong> Le système cherche les documents pertinents dans votre base de connaissances (ex: vos User Stories) grâce à une recherche vectorielle (Embeddings).</li>
-<li><strong>Génération :</strong> Il envoie ces documents au LLM avec votre question.</li>
-<li><strong>Réponse :</strong> L'IA répond en se basant sur VOS données, pas juste sur sa mémoire.</li>
+<li><strong>Récupération (Retrieval) :</strong> le système cherche les documents pertinents dans votre base de connaissances (ex: vos User Stories) grâce à une recherche vectorielle (Embeddings).</li>
+<li><strong>Génération :</strong> il envoie ces documents au LLM avec votre question.</li>
+<li><strong>Réponse :</strong> l'IA répond en se basant sur VOS données, pas juste sur sa mémoire.</li>
 </ol>
 <div class="admonition example">
 <p class="admonition-title">Fil rouge : FrigoMagique</p>
-<p><strong>Le problème :</strong> La testeuse demande à GUS : <em>"Génère des tests pour la nouvelle fonctionnalité 'Panier Partagé'."</em>
+<p><strong>Le problème :</strong> la testeuse demande à GUS : <em>"Génère des tests pour la nouvelle fonctionnalité 'Panier Partagé'."</em>
 GUS répond des généralités, car il ne connaît pas les règles spécifiques de cette fonctionnalité qui vient d'être rédigée hier.</p>
 <p><strong>La solution RAG :</strong>
-L'infrastructure va chercher automatiquement la User Story "Panier Partagé" dans Confluence.
-Elle l'injecte dans le prompt : <em>"En utilisant la documentation ci-jointe </em><em>[Règles : seul le créateur du panier peut valider le paiement] génère les tests."</em>
-<strong>Résultat :</strong> GUS génère des tests précis et alignés avec les règles métier actuelles de FrigoMagique.</p>
+l'infrastructure va chercher automatiquement la User Story "Panier Partagé" dans Confluence.
+Elle l'injecte dans le prompt : <em>"En utilisant la documentation ci-jointe </em><em>[Règles : seul le créateur du panier peut valider le paiement] génère les tests."</em></p>
+<p><strong>Résultat :</strong> GUS génère des tests précis et alignés avec les règles métier actuelles de FrigoMagique.</p>
 </div>
 <h2 id="413-le-role-des-agents-alimentes-par-llm">4.1.3 Le rôle des agents alimentés par LLM</h2>
 <p>Un <strong>Agent</strong> est une IA capable non seulement de répondre, mais d'<strong>agir</strong>. Il peut utiliser des outils (calculatrice, accès web, exécution de code) pour accomplir une mission.</p>
@@ -889,9 +889,9 @@ Elle l'injecte dans le prompt : <em>"En utilisant la documentation ci-jointe </e
 <div class="admonition info">
 <p class="admonition-title">🎓 Point syllabus (ce qu'il faut retenir)</p>
 <ul>
-<li><strong>Architecture :</strong> Nécessite un Back-end pour orchestrer le flux entre l'utilisateur, les données et le modèle.</li>
-<li><strong>RAG :</strong> Technique indispensable pour fournir au LLM des données privées, fraîches et spécifiques à l'entreprise, réduisant ainsi les hallucinations.</li>
-<li><strong>Agents :</strong> Systèmes capables d'utiliser des outils externes pour automatiser des chaînes d'actions complexes (planifier -&gt; coder -&gt; exécuter -&gt; rapporter).</li>
+<li><strong>Architecture :</strong> nécessite un Back-end pour orchestrer le flux entre l'utilisateur, les données et le modèle.</li>
+<li><strong>RAG :</strong> technique indispensable pour fournir au LLM des données privées, fraîches et spécifiques à l'entreprise, réduisant ainsi les hallucinations.</li>
+<li><strong>Agents :</strong> systèmes capables d'utiliser des outils externes pour automatiser des chaînes d'actions complexes (planifier -&gt; coder -&gt; exécuter -&gt; rapporter).</li>
 </ul>
 </div>
 <p><br></p>
