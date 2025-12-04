@@ -22,7 +22,7 @@
     
     
       
-        <title>4.2 finetuning llmops - Cours de préparation à la certification ISTQB GenAI</title>
+        <title>4.2 Réglage fin et LLMOps : mise en œuvre opérationnelle - Cours de préparation à la certification ISTQB GenAI</title>
       
     
     
@@ -105,6 +105,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#42-reglage-fin-et-llmops-mise-en-uvre-operationnelle" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -136,7 +141,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              4.2 finetuning llmops
+              4.2 Réglage fin et LLMOps : mise en œuvre opérationnelle
             
           </span>
         </div>
@@ -781,6 +786,34 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#421-reglage-fin-des-llm-fine-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.1 Réglage fin des LLM (Fine-Tuning)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#422-llmops-large-language-model-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.2 LLMOps (Large Language Model Operations)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -796,9 +829,60 @@
 
 
 
-  <h1>4.2 finetuning llmops</h1>
+<h1 id="42-reglage-fin-et-llmops-mise-en-uvre-operationnelle">4.2 Réglage fin et LLMOps : mise en œuvre opérationnelle</h1>
+<p>Une fois l'architecture en place, comment s'assurer que le modèle est performant et maintenable dans le temps ? C'est ici qu'interviennent le <strong>Fine-Tuning</strong> (spécialisation) et le <strong>LLMOps</strong> (gestion opérationnelle).</p>
+<h2 id="421-reglage-fin-des-llm-fine-tuning">4.2.1 Réglage fin des LLM (Fine-Tuning)</h2>
+<p>Le <strong>Fine-Tuning</strong> consiste à ré-entraîner légèrement un modèle générique sur un jeu de données spécifique pour le spécialiser dans une tâche précise. Contrairement au RAG (qui donne de l'information), le Fine-Tuning modifie le "comportement" ou le "style" du modèle.</p>
+<p><strong>Pourquoi faire du Fine-Tuning ?</strong>
+*   Pour apprendre une syntaxe de code propriétaire.
+*   Pour adopter un format de rapport spécifique.
+*   Pour réduire la latence (un petit modèle spécialisé va plus vite qu'un gros modèle générique).</p>
+<div class="admonition example">
+<p class="admonition-title">Fil rouge : FrigoMagique</p>
+<p>L'équipe utilise un langage de test interne très spécifique appelé <strong>"FrigoScript"</strong>. Les modèles publics (GPT-4) ne le connaissent pas et font des erreurs de syntaxe.</p>
+<p><strong>L'action :</strong> L'ingénieur IA entraîne un petit modèle Open Source (ex: Llama 3) avec 5000 exemples de scripts "FrigoScript" existants.</p>
+<p><strong>Le résultat :</strong> Ce nouveau modèle "GUS-Coder" est devenu un expert mondial du FrigoScript, bien meilleur que GPT-4 pour cette tâche précise, et coûte moins cher à faire tourner.</p>
+</div>
+<h2 id="422-llmops-large-language-model-operations">4.2.2 LLMOps (Large Language Model Operations)</h2>
+<p>Le <strong>LLMOps</strong> est l'application des principes DevOps aux LLM. C'est l'ensemble des pratiques pour déployer, surveiller et maintenir les modèles en production.</p>
+<p>Les activités clés du LLMOps pour le test :
+1.  <strong>Déploiement :</strong> Mettre le modèle à disposition des testeurs (API, Serveur).
+2.  <strong>Surveillance (Monitoring) :</strong> Vérifier que l'IA ne dérive pas (Drift), ne devient pas plus lente ou ne commence pas à halluciner après une mise à jour.
+3.  <strong>Gestion des coûts :</strong> Suivre la consommation de tokens pour éviter l'explosion du budget.</p>
+<div class="admonition example">
+<p class="admonition-title">Fil rouge : FrigoMagique</p>
+<p><strong>Le tableau de bord LLMOps de la responsable QA :</strong>
+Elle surveille les indicateurs de GUS en temps réel :</p>
+<ul>
+<li><em>Coût par jour :</em> 15€ (Stable).</li>
+<li><em>Temps de réponse moyen :</em> 2.5 secondes (En hausse, alerte !).</li>
+<li><em>Feedback utilisateur :</em> Le taux de "Pouce bas" sur les réponses de GUS a augmenté de 10% depuis la dernière mise à jour du modèle.</li>
+</ul>
+<p>Grâce au LLMOps, elle décide de revenir à la version précédente du modèle avant que cela n'impacte trop l'équipe.</p>
+</div>
+<hr />
+<div class="admonition info">
+<p class="admonition-title">🎓 Point syllabus (ce qu'il faut retenir)</p>
+<ul>
+<li><strong>Fine-Tuning :</strong> Spécialisation du modèle via un ré-entraînement léger. Utile pour la conformité de style ou les langages spécifiques.</li>
+<li><strong>RAG vs Fine-Tuning :</strong> RAG pour apporter de la <strong>connaissance</strong> (faits), Fine-Tuning pour adapter le <strong>comportement</strong> (forme).</li>
+<li><strong>LLMOps :</strong> Discipline englobant le déploiement, le monitoring (performance, qualité, coût) et la maintenance des modèles d'IA.</li>
+</ul>
+</div>
+<p><br></p>
+<hr>
 
-
+<div class="admonition quote">
+<p class="admonition-title">Ce cours vous est utile ?</p>
+<p>Ce contenu est <strong>100% gratuit</strong>. Si cette section sur FrigoMagique vous a aidé :</p>
+<p><div style="text-align: center; margin-top: 15px;">
+    <a href='https://ko-fi.com/monwebmestre' target='_blank'>
+        <img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Soutenez-moi sur Ko-fi' />
+    </a>
+    <br>
+    <em>C'est 0% de frais pour moi, et 100% d'énergie pour la suite ! ☕</em>
+</div></p>
+</div>
 
 
 

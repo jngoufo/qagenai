@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://qagenai.monwebmestre.tech/sitemap.xml
