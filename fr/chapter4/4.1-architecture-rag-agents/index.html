@@ -805,9 +805,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#412-generation-augmentee-par-la-recuperation-rag" class="md-nav__link">
+  <a href="#412-retrieval-augmented-generation-rag" class="md-nav__link">
     <span class="md-ellipsis">
-      4.1.2 Génération augmentée par la récupération (RAG)
+      4.1.2 Retrieval-Augmented Generation (RAG)
     </span>
   </a>
   
@@ -841,39 +841,48 @@
 <h1 id="41-approches-architecturales-pour-une-infrastructure-de-test-basee-sur-le-llm">4.1 Approches architecturales pour une infrastructure de test basée sur le LLM</h1>
 <p>Utiliser ChatGPT dans un navigateur est utile pour un testeur isolé. Mais pour une organisation comme <strong>FrigoMagique</strong>, il faut une architecture intégrée où l'IA peut accéder aux spécifications internes et interagir avec les outils de test.</p>
 <h2 id="411-composants-architecturaux-cles">4.1.1 Composants architecturaux clés</h2>
-<p>Une infrastructure de test basée sur le LLM ne se résume pas au modèle lui-même. Elle comprend :
-1.  <strong>Le Front-end :</strong> l'interface utilisateur pour les testeurs.
-2.  <strong>Le Back-end :</strong> l'orchestrateur qui gère les requêtes.
-3.  <strong>Les Sources de données :</strong> bases de données vectorielles (pour le contexte) ou relationnelles.
-4.  <strong>Le LLM :</strong> le cerveau (hébergé en local ou via API).</p>
-<h2 id="412-generation-augmentee-par-la-recuperation-rag">4.1.2 Génération augmentée par la récupération (RAG)</h2>
-<p>Les LLM ont un défaut : ils ne connaissent pas vos secrets d'entreprise et leurs connaissances s'arrêtent à leur date d'entraînement. Le <strong>RAG (Retrieval-Augmented Generation)</strong> est la solution pour connecter l'IA à vos documents privés.</p>
-<p><strong>Comment ça marche ?</strong>
-1.  <strong>Récupération (Retrieval) :</strong> Le système cherche les documents pertinents dans votre base de connaissances (ex: vos User Stories) grâce à une recherche vectorielle (Embeddings).
-2.  <strong>Génération :</strong> Il envoie ces documents au LLM avec votre question.
-3.  <strong>Réponse :</strong> L'IA répond en se basant sur VOS données, pas juste sur sa mémoire.</p>
+<p>Une infrastructure de test basée sur le LLM ne se résume pas au modèle lui-même. Elle comprend :</p>
+<ol>
+<li><strong>Le Front-end :</strong> l'interface utilisateur pour les testeurs.</li>
+<li><strong>Le Back-end :</strong> l'orchestrateur qui gère les requêtes.</li>
+<li><strong>Les Sources de données :</strong> bases de données vectorielles (pour le contexte) ou relationnelles.</li>
+<li><strong>Le LLM :</strong> le cerveau (hébergé en local ou via API).</li>
+</ol>
+<h2 id="412-retrieval-augmented-generation-rag">4.1.2 Retrieval-Augmented Generation (RAG)</h2>
+<p>Les LLM ont un défaut : ils ne connaissent pas vos secrets d'entreprise et leurs connaissances s'arrêtent à leur date d'entraînement. Le <strong>RAG</strong> est la solution pour connecter l'IA à vos documents privés.</p>
+<p><strong>Comment ça marche ?</strong></p>
+<ol>
+<li><strong>Récupération (Retrieval) :</strong> Le système cherche les documents pertinents dans votre base de connaissances (ex: vos User Stories) grâce à une recherche vectorielle (Embeddings).</li>
+<li><strong>Génération :</strong> Il envoie ces documents au LLM avec votre question.</li>
+<li><strong>Réponse :</strong> L'IA répond en se basant sur VOS données, pas juste sur sa mémoire.</li>
+</ol>
 <div class="admonition example">
 <p class="admonition-title">Fil rouge : FrigoMagique</p>
 <p><strong>Le problème :</strong> La testeuse demande à GUS : <em>"Génère des tests pour la nouvelle fonctionnalité 'Panier Partagé'."</em>
 GUS répond des généralités, car il ne connaît pas les règles spécifiques de cette fonctionnalité qui vient d'être rédigée hier.</p>
 <p><strong>La solution RAG :</strong>
 L'infrastructure va chercher automatiquement la User Story "Panier Partagé" dans Confluence.
-Elle l'injecte dans le prompt : <em>"En utilisant la documentation ci-jointe [Contenu de la US], génère les tests."</em>
+Elle l'injecte dans le prompt : <em>"En utilisant la documentation ci-jointe </em><em>[Règles : seul le créateur du panier peut valider le paiement] génère les tests."</em>
 <strong>Résultat :</strong> GUS génère des tests précis et alignés avec les règles métier actuelles de FrigoMagique.</p>
 </div>
 <h2 id="413-le-role-des-agents-alimentes-par-llm">4.1.3 Le rôle des agents alimentés par LLM</h2>
 <p>Un <strong>Agent</strong> est une IA capable non seulement de répondre, mais d'<strong>agir</strong>. Il peut utiliser des outils (calculatrice, accès web, exécution de code) pour accomplir une mission.</p>
-<p>On distingue :
-*   <strong>Agents autonomes :</strong> ils planifient et exécutent sans intervention humaine.
-*   <strong>Agents semi-autonomes :</strong> ils demandent validation à un humain aux étapes clés.</p>
+<p>On distingue :</p>
+<ul>
+<li><strong>Agents autonomes :</strong> ils planifient et exécutent sans intervention humaine.</li>
+<li><strong>Agents semi-autonomes :</strong> ils demandent validation à un humain aux étapes clés.</li>
+</ul>
+<p>Lorsque plusieurs agents spécialisés collaborent (par exemple un agent "Testeur" et un agent "Développeur"), on parle d'<strong>orchestration</strong>. C'est la mécanique qui coordonne leurs échanges pour résoudre un problème complexe.</p>
 <div class="admonition example">
 <p class="admonition-title">Fil rouge : FrigoMagique</p>
 <p><strong>Mission :</strong> "Vérifie que tous les liens du site web fonctionnent."</p>
-<p><strong>L'Agent autonome GUS en action :</strong>
-1.  Il génère un script Python pour crawler le site.
-2.  Il <strong>exécute</strong> le script (il a accès à un terminal).
-3.  Il analyse les erreurs 404 trouvées.
-4.  Il <strong>se connecte</strong> à Jira et crée un ticket de bug pour chaque lien mort.</p>
+<p><strong>L'Agent autonome GUS en action :</strong></p>
+<ol>
+<li>Il génère un script Python pour crawler le site.</li>
+<li>Il <strong>exécute</strong> le script (il a accès à un terminal).</li>
+<li>Il analyse les erreurs 404 trouvées.</li>
+<li>Il <strong>se connecte</strong> à Jira et crée un ticket de bug pour chaque lien mort.</li>
+</ol>
 <p>Tout cela s'est fait sans que le testeur ne tape une seule ligne de code ou ne clique sur un bouton.</p>
 </div>
 <hr />

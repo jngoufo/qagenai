@@ -22,7 +22,7 @@
     
     
       
-        <title>4.1 architecture rag agents - ISTQB GenAI Certification... Made Easy</title>
+        <title>4.1 Architectural Approaches for LLM-powered Test Infrastructure - ISTQB GenAI Certification... Made Easy</title>
       
     
     
@@ -105,6 +105,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#41-architectural-approaches-for-llm-powered-test-infrastructure" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -136,7 +141,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              4.1 architecture rag agents
+              4.1 Architectural Approaches for LLM-powered Test Infrastructure
             
           </span>
         </div>
@@ -781,6 +786,43 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#411-key-architectural-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1.1 Key Architectural Components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#412-retrieval-augmented-generation-rag" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1.2 Retrieval-Augmented Generation (RAG)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#413-the-role-of-llm-powered-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1.3 The Role of LLM-powered Agents
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -796,9 +838,76 @@
 
 
 
-  <h1>4.1 architecture rag agents</h1>
+<h1 id="41-architectural-approaches-for-llm-powered-test-infrastructure">4.1 Architectural Approaches for LLM-powered Test Infrastructure</h1>
+<p>Using ChatGPT in a browser is useful for an isolated tester. But for an organization like <strong>MagicFridge</strong>, an integrated architecture is needed where the AI can access internal specifications and interact with test tools.</p>
+<h2 id="411-key-architectural-components">4.1.1 Key Architectural Components</h2>
+<p>An LLM-powered test infrastructure is not just the model itself. It includes:</p>
+<ol>
+<li><strong>The Front-end:</strong> the user interface for testers.</li>
+<li><strong>The Back-end:</strong> the orchestrator managing requests.</li>
+<li><strong>Data sources:</strong> vector databases (for context) or relational databases.</li>
+<li><strong>The LLM:</strong> the brain (hosted locally or via API).</li>
+</ol>
+<h2 id="412-retrieval-augmented-generation-rag">4.1.2 Retrieval-Augmented Generation (RAG)</h2>
+<p>LLMs have a flaw: they do not know your corporate secrets and their knowledge stops at their training cutoff date. <strong>RAG</strong> is the solution to connect the AI to your private documents.</p>
+<p><strong>How does it work?</strong></p>
+<ol>
+<li><strong>Retrieval:</strong> The system searches for relevant documents in your knowledge base (e.g., your User Stories) using vector search (embeddings).</li>
+<li><strong>Generation:</strong> It sends these documents to the LLM along with your question.</li>
+<li><strong>Response:</strong> The AI answers based on YOUR data, not just its memory.</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Red thread: MagicFridge</p>
+<p><strong>The problem:</strong> The tester asks GUS: <em>"Generate tests for the new 'Shared Cart' feature."</em>
+GUS answers with generalities because it does not know the specific rules of this feature which was written yesterday.</p>
+<p><strong>The RAG solution:</strong>
+The infrastructure automatically retrieves the "Shared Cart" User Story in Confluence.
+It injects it into the prompt: <em>"Using the attached documentation </em><em>[Rules: only the cart creator can validate payment]</em><em>, generate the tests."</em></p>
+<p><strong>Result:</strong> GUS generates accurate tests aligned with MagicFridge's current business rules.</p>
+</div>
+<h2 id="413-the-role-of-llm-powered-agents">4.1.3 The Role of LLM-powered Agents</h2>
+<p>An <strong>agent</strong> is an AI capable not only of answering but of <strong>acting</strong>. It can use tools (calculator, web access, code execution) to accomplish a mission.</p>
+<p>We distinguish:</p>
+<ul>
+<li><strong>Autonomous agents:</strong> they plan and execute without human intervention.</li>
+<li><strong>Semi-autonomous agents:</strong> they ask for validation from a human at key steps.</li>
+</ul>
+<p>When several specialized agents collaborate (for example, a "Tester" agent and a "Developer" agent), we speak of <strong>orchestration</strong>. It is the mechanism that coordinates their exchanges to solve a complex problem.</p>
+<div class="admonition example">
+<p class="admonition-title">Red thread: MagicFridge</p>
+<p><strong>Mission:</strong> "Verify that all website links work."</p>
+<p><strong>The autonomous agent GUS in action:</strong></p>
+<ol>
+<li>It generates a Python script to crawl the site.</li>
+<li>It <strong>executes</strong> the script (it has access to a terminal).</li>
+<li>It analyzes the 404 errors found.</li>
+<li>It <strong>connects</strong> to Jira and creates a bug ticket for every dead link.</li>
+</ol>
+<p>All this happened without the tester typing a single line of code or clicking a button.</p>
+</div>
+<hr />
+<div class="admonition info">
+<p class="admonition-title">🎓 Syllabus point (key takeaways)</p>
+<ul>
+<li><strong>Architecture:</strong> Requires a Back-end to orchestrate the flow between the user, the data, and the model.</li>
+<li><strong>RAG:</strong> Essential technique to provide the LLM with private, fresh, and company-specific data, thereby reducing hallucinations.</li>
+<li><strong>Agents:</strong> Systems capable of using external tools to automate complex action chains (plan -&gt; code -&gt; execute -&gt; report).</li>
+</ul>
+</div>
+<p><br></p>
+<hr>
 
-
+<div class="admonition quote">
+<p class="admonition-title">Is this course useful?</p>
+<p>This content is <strong>100% free</strong>. If this section on MagicFridge helped you:</p>
+<p><div style="text-align: center; margin-top: 15px;">
+    <a href='https://ko-fi.com/monwebmestre' target='_blank'>
+        <img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee' />
+    </a>
+    <br>
+    <em>It's 0% fees for me, and 100% fuel for the next chapter! ☕</em>
+</div></p>
+</div>
 
 
 
