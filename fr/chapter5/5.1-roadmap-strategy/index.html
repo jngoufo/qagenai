@@ -1003,30 +1003,32 @@
 </ul>
 <div class="admonition example">
 <p class="admonition-title">Fil rouge : FrigoMagique</p>
-<p>Avant la mise en place officielle de <strong>GUS</strong>, un développeur impatient utilisait secrètement une IA gratuite en ligne pour corriger ses bugs. Il a copié-collé tout le code source du module de paiement.
-<strong>Conséquence :</strong> le code propriétaire de FrigoMagique se retrouve potentiellement dans la base d'apprentissage d'une entreprise tierce.</p>
+<p>Avant la mise en place officielle de <strong>GUS</strong>, un développeur impatient utilisait secrètement une IA gratuite en ligne pour corriger ses bugs. Il a copié-collé tout le code source du module de paiement.</p>
+<p><strong>Conséquence :</strong> le code propriétaire de FrigoMagique se retrouve potentiellement dans la base d'apprentissage d'une entreprise tierce.</p>
 </div>
 <h2 id="512-aspects-cles-dune-strategie-genai">5.1.2 Aspects clés d'une stratégie GenAI</h2>
-<p>Pour réussir, la stratégie doit définir :
-1.  <strong>Les objectifs :</strong> que veut-on améliorer ? (Vitesse ? Couverture ? Coût ?).
-2.  <strong>La conformité :</strong> respect du RGPD et de l'AI Act.
-3.  <strong>La qualité des données :</strong> L'IA ne peut pas bien tester si les spécifications d'entrée sont mauvaises ("Garbage In, Garbage Out").</p>
+<p>Pour réussir, la stratégie doit définir :</p>
+<ol>
+<li><strong>Les objectifs :</strong> que veut-on améliorer ? (Vitesse ? Couverture ? Coût ?).</li>
+<li><strong>La conformité :</strong> respect du RGPD et de l'AI Act.</li>
+<li><strong>La qualité des données :</strong> L'IA ne peut pas bien tester si les spécifications d'entrée sont mauvaises ("Garbage In, Garbage Out").</li>
+</ol>
 <h2 id="513-selection-des-modeles-llm-vs-slm">5.1.3 Sélection des modèles : LLM vs SLM</h2>
 <p>Il n'y a pas que les géants (Gemini, GPT-5, Claude 3). Le syllabus introduit une distinction importante pour l'examen :</p>
 <ul>
-<li><strong>LLM (Large Language Model) :</strong> Modèles immenses, généralistes, très "intelligents" mais lents et coûteux.</li>
-<li><strong>SLM (Small Language Model) :</strong> Modèles compacts, moins de paramètres, plus rapides, moins chers et hébergeables en local.</li>
+<li><strong>LLM (Large Language Model) :</strong> modèles immenses, généralistes, très "intelligents" mais lents et coûteux.</li>
+<li><strong>SLM (Small Language Model) :</strong> modèles compacts, moins de paramètres, plus rapides, moins chers et hébergeables en local.</li>
 </ul>
 <p><strong>Critères de choix :</strong> performance, coût récurrent, potentiel de fine-tuning , communauté et assistance.</p>
 <div class="admonition example">
 <p class="admonition-title">Fil rouge : FrigoMagique</p>
 <p>La CTO de FrigoMagique doit choisir les modèles pour deux tâches :</p>
 <ul>
-<li><strong>Tâche A : Brainstorming de recettes créatives.</strong><ul>
+<li><strong>Tâche A : brainstorming de recettes créatives.</strong><ul>
 <li><em>Choix :</em> <strong>LLM</strong> (ex: Gemini). On a besoin de créativité et de culture générale immense. Le coût est acceptable car c'est ponctuel.</li>
 </ul>
 </li>
-<li><strong>Tâche B : Complétion de code pour les développeurs.</strong><ul>
+<li><strong>Tâche B : complétion de code pour les développeurs.</strong><ul>
 <li><em>Choix :</em> <strong>SLM</strong> (ex: un modèle spécialisé de 7 milliards de paramètres). Il doit être ultra-rapide (millisecondes) et tourner en local pour ne pas faire fuiter le code.</li>
 </ul>
 </li>
@@ -1043,7 +1045,7 @@
 <div class="admonition info">
 <p class="admonition-title">🎓 Point syllabus (ce qu'il faut retenir)</p>
 <ul>
-<li><strong>Shadow AI :</strong> l'ennemi n°1 de la sécurité au début du projet.</li>
+<li><strong>IA fantôme :</strong> l'ennemi n°1 de la sécurité.</li>
 <li><strong>Stratégie :</strong> doit inclure des objectifs clairs et une politique de données stricte.</li>
 <li><strong>Sélection :</strong> ne pas négliger les <strong>SLM</strong> (Small Language Models) pour les tâches spécifiques nécessitant rapidité et confidentialité.</li>
 </ul>
