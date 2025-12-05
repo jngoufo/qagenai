@@ -35,15 +35,15 @@ We will illustrate every point of the syllabus through the testing challenges of
 
 This guide strictly follows the official ISTQB plan (v1.0 - 2025):
 
-*   **[Chapter 1: Introduction to generative AI](chapter1/introduction.md)**
+*   **[Chapter 1: Introduction to Generative AI](chapter1/introduction.md)**
     *   Understanding LLMs, tokenization, and context windows.
-*   **[Chapter 2: Prompt engineering](chapter2/introduction.md)** 
+*   **[Chapter 2: Prompt Engineering](chapter2/introduction.md)** 
     *   The art of speaking to the machine.
-*   **[Chapter 3: Risks and ethics of generative AI](chapter3/introduction.md)** 
+*   **[Chapter 3: Risks and Ethics of Generative AI](chapter3/introduction.md)** 
     *   Hallucinations, bias, and security.
-*   **[Chapter 4: LLM-Powered test infrastructure](chapter4/introduction.md)** 
+*   **[Chapter 4: LLM-Powered Test Infrastructure](chapter4/introduction.md)** 
     *   Architectural approaches, fine-tuning and LLMOps.
-*   **Chapter 5: Deploying and integrating generative AI** 
+*   **[Chapter 5: Deploying and Integrating Generative AI](chapter5/introduction.md)** 
     *   Adoption and change management of generative AI.
 
 ---

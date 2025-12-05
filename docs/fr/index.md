@@ -43,7 +43,7 @@ Ce guide suit scrupuleusement le plan officiel de l'ISTQB (v1.0 - 2025) :
     *   Hallucinations, biais et sécurité.
 *   **[Chapitre 4 : Infrastructure de test basée sur les LLM](chapter4/introduction.md)**
     *   Approches architecturales, fine-tuning et LLMOps.
-*   **Chapitre 5 : Déploiement et intégration de l'IA générative**
+*   **[Chapitre 5 : Déploiement et intégration de l'IA générative](chapter5/introduction.md)**
     *   Adoption de l'IA générative, et gestion du changement.
 
 ---

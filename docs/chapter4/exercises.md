@@ -1,11 +1,11 @@
-# 🧪 Practice lab: Quality Architect
+# 🧪 Practice Lab: Quality Architect
 
 Welcome to the architecture office of **MagicFridge**.
 Here, we are no longer playing with the chat. We are building the factory. Your mission is to choose the right technological building blocks to solve industrial-scale problems.
 
 ---
 
-## Exercise 1: the RAG vs Fine-tuning dilemma 🏗️
+## Exercise 1: the RAG vs Fine-tuning Dilemma 🏗️
 *(Objective: choose the right adaptation strategy - LO 4.1.2 vs 4.2.1)*
 
 **Situation:** The marketing team is launching a "Christmas 2026" campaign with very complex discount rules that change every day. GUS (the AI) is completely hallucinating on these rules.
@@ -23,7 +23,7 @@ Here, we are no longer playing with the chat. We are building the factory. Your 
 
 ---
 
-## Exercise 2: the secret agent 🕵️
+## Exercise 2: The Secret Agent 🕵️
 *(Objective: identify an autonomous agent - LO 4.1.3)*
 
 **Observation:** You observe two different behaviors of GUS in the logs. Which one corresponds to the definition of an **Autonomous Agent**?
@@ -43,7 +43,7 @@ Here, we are no longer playing with the chat. We are building the factory. Your 
 
 ---
 
-## Exercise 3: inside the database 🛢️
+## Exercise 3: Inside the Database 🛢️
 *(Objective: understand architectural components - LO 4.1.1)*
 
 **Context:** To make RAG work, MagicFridge must store its thousands of recipes in a way that the AI can "understand" semantically (for example, knowing that "Tomato" is close to "Red Sauce").
@@ -61,7 +61,7 @@ Here, we are no longer playing with the chat. We are building the factory. Your 
 
 ---
 
-## Exercise 4: crisis in production (LLMOps) 🚨
+## Exercise 4: Crisis in Production (LLMOps) 🚨
 *(Objective: manage operational lifecycle - LO 4.2.2)*
 
 **Alert:** Since this morning's model update, API costs have multiplied by 10, and GUS answers in German half the time.
