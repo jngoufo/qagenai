@@ -1,7 +1,7 @@
 site_name: ISTQB GenAI Certification... Made Easy
-site_url: https://qagenai.monwebmestre.tech/
+site_url: https://qagenai.justingoufo.com/
 site_author: Monwebmestre
-site_description: A comprehensive course to prepare for the ISTQB GenAI certification exam for testing and quality-engineering professionals.
+site_description: A condensed course to prepare for the ISTQB GenAI certification exam.
 
 # Configuration du Thème
 theme:
@@ -53,7 +53,7 @@ extra:
       link: https://ko-fi.com/monwebmestre 
       name: Buy me a Coffee
     - icon: fontawesome/solid/envelope
-      link: mailto:justin@monwebmestre.tech
+      link: mailto:justin@justingoufo.com
       name: Contact / Feedback
   
   # Google Analytics
@@ -112,13 +112,24 @@ nav:
       - '4.1 RAG & Agents': chapter4/4.1-architecture-rag-agents.md
       - '4.2 Fine-Tuning & LLMOps': chapter4/4.2-finetuning-llmops.md
       - '🧪 Practice Lab': chapter4/exercises.md
+  - 'Chapter 5':
+        - 'Introduction & Roadmap': chapter5/introduction.md
+        - '5.1 Adoption of Generative AI': chapter5/5.1-roadmap-strategy.md
+        - '5.2 Change Management': chapter5/5.2-change-management.md
+        - '🧪 Practice Lab': chapter5/exercises.md
+# -------------------------------------------------------------------------
 # COPYRIGHT (Version par défaut : ANGLAIS)
 # -------------------------------------------------------------------------
+# Copyright Principal (affiché pour la version EN)
 copyright: >
-  &copy; 2025 made by 
-  <a href="https://monwebmestre.tech" target="_blank" rel="noopener">Monwebmestre</a>
-  - All rights reserved.
-
+  <div style="text-align: center;">
+    &copy; 2026 made by 
+    <a href="https://monwebmestre.ca" target="_blank" rel="noopener">Monwebmestre</a>.
+    <br>
+    <span style="font-size: 0.8em; opacity: 0.7;">
+      ✨ Content co-created with AI, verified by <a href='https://www.linkedin.com/in/qa-analyst' target='_blank'>Justin N</a>.
+    </span>
+  </div>
 # -------------------------------------------------------------------------
 # PLUGINS & TRADUCTIONS (i18n)
 # -------------------------------------------------------------------------
@@ -139,14 +150,19 @@ plugins:
           build: true
           
           # 1. Traduction des Métadonnées du site
-          site_name: Cours de préparation à la certification ISTQB GenAI
-          site_description: Un cours complet pour préparer l'examen de certification ISTQB GenAI.
+          site_name: Certification ISTQB GenAI... Facile
+          site_description: Un cours condensé pour préparer l'examen de certification ISTQB GenAI.
           
           # 2. Traduction du Copyright
           copyright: >
-            &copy; 2025 made by 
-            <a href="https://monwebmestre.tech" target="_blank" rel="noopener">Monwebmestre</a>
-            - Tous droits réservés.
+            <div style="text-align: center;">
+              &copy; 2026 made by 
+              <a href="https://monwebmestre.ca" target="_blank" rel="noopener">Monwebmestre</a>.
+              <br>
+              <span style="font-size: 0.8em; opacity: 0.7;">
+                ✨ Contenu co-construit avec l'IA, vérifié par l'Humain.
+              </span>
+            </div>
 
           # 3. Traduction du Menu
           nav:
@@ -173,6 +189,11 @@ plugins:
                 - '4.1 RAG et Agents': chapter4/4.1-architecture-rag-agents.md
                 - '4.2 Fine-Tuning et LLMOps': chapter4/4.2-finetuning-llmops.md
                 - '🧪 Laboratoire pratique': chapter4/exercises.md
+            - 'Chapitre 5':
+                - 'Introduction et feuille de route': chapter5/introduction.md
+                - '5.1 Adoption de l''IA générative': chapter5/5.1-roadmap-strategy.md
+                - '5.2 Gestion du changement': chapter5/5.2-change-management.md  
+                - '🧪 Laboratoire pratique': chapter5/exercises.md
           # 4. Traduction de la section EXTRA (Cookies & Feedback)
           extra:
             consent:

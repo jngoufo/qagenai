@@ -13,7 +13,7 @@ Le syllabus officiel est dense. Très dense. <br>En vous fournissant ce guide, j
 2.  **Valider** les objectifs d'apprentissage du syllabus.<br>
 3.  **Réussir** votre certification du premier coup.
 
-## 🥑 Le Fil rouge : "FrigoMagique"
+## 🥑 Le fil rouge : "FrigoMagique"
 
 Pour rendre les concepts abstraits de l'IA générative concrets, nous allons nous immerger dans les coulisses d'une entreprise fictive, mais très réaliste : **FrigoMagique**.
 
@@ -43,7 +43,7 @@ Ce guide suit scrupuleusement le plan officiel de l'ISTQB (v1.0 - 2025) :
     *   Hallucinations, biais et sécurité.
 *   **[Chapitre 4 : Infrastructure de test basée sur les LLM](chapter4/introduction.md)**
     *   Approches architecturales, fine-tuning et LLMOps.
-*   **Chapitre 5 : Déploiement et intégration de l'IA générative**
+*   **[Chapitre 5 : Déploiement et intégration de l'IA générative](chapter5/introduction.md)**
     *   Adoption de l'IA générative, et gestion du changement.
 
 ---
