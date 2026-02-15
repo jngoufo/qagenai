@@ -1,10 +1,10 @@
-# Introduction to chapter 1
+# Introduction to Chapter 1
 
 Welcome to this first chapter of your preparation for the **ISTQB CT-GenAI** certification.
 
 This chapter lays the essential theoretical foundations. Before learning how to "prompt" or test an AI, it is crucial to understand what is happening under the hood. We will strictly define what Generative AI is compared to previous forms of AI, and detail the internal mechanics of Large Language Models (LLMs).
 
-## 🗺️ Chapter roadmap
+## 🗺️ Chapter Roadmap
 
 We will structure this first part into four key points:
 

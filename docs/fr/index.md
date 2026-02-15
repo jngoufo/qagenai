@@ -13,7 +13,7 @@ Le syllabus officiel est dense. Très dense. <br>En vous fournissant ce guide, j
 2.  **Valider** les objectifs d'apprentissage du syllabus.<br>
 3.  **Réussir** votre certification du premier coup.
 
-## 🥑 Le Fil rouge : "FrigoMagique"
+## 🥑 Le fil rouge : "FrigoMagique"
 
 Pour rendre les concepts abstraits de l'IA générative concrets, nous allons nous immerger dans les coulisses d'une entreprise fictive, mais très réaliste : **FrigoMagique**.
 

@@ -1,5 +1,5 @@
 site_name: ISTQB GenAI Certification... Made Easy
-site_url: https://qagenai.monwebmestre.tech/
+site_url: https://qagenai.justingoufo.com/
 site_author: Monwebmestre
 site_description: A condensed course to prepare for the ISTQB GenAI certification exam.
 
@@ -53,7 +53,7 @@ extra:
       link: https://ko-fi.com/monwebmestre 
       name: Buy me a Coffee
     - icon: fontawesome/solid/envelope
-      link: mailto:justin@monwebmestre.tech
+      link: mailto:justin@justingoufo.com
       name: Contact / Feedback
   
   # Google Analytics
@@ -123,11 +123,11 @@ nav:
 # Copyright Principal (affiché pour la version EN)
 copyright: >
   <div style="text-align: center;">
-    &copy; 2025 made by 
-    <a href="https://monwebmestre.tech" target="_blank" rel="noopener">Monwebmestre</a>.
+    &copy; 2026 made by 
+    <a href="https://monwebmestre.ca" target="_blank" rel="noopener">Monwebmestre</a>.
     <br>
     <span style="font-size: 0.8em; opacity: 0.7;">
-      ✨ Content co-created with AI, verified by Human.
+      ✨ Content co-created with AI, verified by <a href='https://www.linkedin.com/in/qa-analyst' target='_blank'>Justin N</a>.
     </span>
   </div>
 # -------------------------------------------------------------------------
@@ -156,8 +156,8 @@ plugins:
           # 2. Traduction du Copyright
           copyright: >
             <div style="text-align: center;">
-              &copy; 2025 made by 
-              <a href="https://monwebmestre.tech" target="_blank" rel="noopener">Monwebmestre</a>.
+              &copy; 2026 made by 
+              <a href="https://monwebmestre.ca" target="_blank" rel="noopener">Monwebmestre</a>.
               <br>
               <span style="font-size: 0.8em; opacity: 0.7;">
                 ✨ Contenu co-construit avec l'IA, vérifié par l'Humain.

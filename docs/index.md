@@ -6,14 +6,14 @@ This site is a condensed, illustrated, interactive, and free course on using gen
 
 ---
 
-## 🎯 Why this course?
+## 🎯 Why this Course ?
 
 The official syllabus is dense. Very dense.<br> By providing you with this guide, I simplify every concept (LLM, Prompting, RAG, Risks...) to help you:<br>
 1.  **Truly understand** how Generative AI works.<br>
 2.  **Validate** the learning objectives of the syllabus.<br>
 3.  **Pass** your certification on the first try.
 
-## 🥑 The red thread: "MagicFridge"
+## 🥑 The Red Thread: "MagicFridge"
 
 To make the abstract concepts of generative AI concrete, we will immerse ourselves in the behind-the-scenes of a fictional, yet very realistic company: **MagicFridge**.
 
